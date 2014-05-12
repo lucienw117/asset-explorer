@@ -173,8 +173,7 @@
 														src="images/spacer.gif"></td>
 													<td valign="top" class="ptop5" nowrap="nowrap"><nobr>
 															<a href="javascript: preLogout()" style="display: inline"
-																class="pleft8 pright8"><strong>退出</strong></a> [ Tim
-															Tian ]
+																class="pleft8 pright8"><strong>退出</strong></a> [ Tim-Tian ]
 														</nobr></td>
 													<td width="20" nowrap="nowrap"></td>
 												</tr>
@@ -185,7 +184,7 @@
 													width="500">
 													<tr>
 														<td valign="bottom">
-															<div class="logo">&nbsp;</div>
+															<div class="logo">安全运行监管平台</div>
 														</td>
 														<td valign="bottom">
 
@@ -193,44 +192,18 @@
 															<table cellpadding="0" class="top_tabs" cellspacing="0"
 																border="0">
 																<tr>
-
-
-																	<td class="first-child"><a class="active"
-																		href="/AssetHomePage.do">主页</a></td>
-
+																	<td class="first-child"><a class="active" href="/AssetHomePage.do">首页</a></td>
 																	<!--checking for remote server-->
-
 																	<td><a href="/InventoryHome.do">资产</a></td>
-
-
 																	<!-- Software Tab -->
-
 																	<td><a href="/SoftwareHome.do">软件</a></td>
-
-
-
-																	<td><a href="/PurchaseOrderList.do">订购单</a></td>
-
-
-
-																	<td><a href="/ContractView.do">合同</a></td>
-
-
-
-
-																	<td><a href="/CMDBAction.do?mode=listView">CMDB</a></td>
-
-
-
-																	<td><a href="/AdminHome.do">管理</a></td>
-
-
-
+																	<td><a href="/PurchaseOrderList.do">运维</a></td>
+																	<td><a href="/ContractView.do">审计</a></td>
+																	<td><a href="/CMDBAction.do?mode=listView">安全</a></td>
+																	<td><a href="/AdminHome.do">告警</a></td>
 																	<td><a href="/CustomReportHandler.do">报表</a></td>
-
-
-
-																	<td class="last-child"><a href="/Support.do">支持</a></td>
+																	<td><a href="/CustomReportHandler.do">文档</a></td>
+																	<td class="last-child"><a href="/Support.do">管理</a></td>
 
 																</tr>
 															</table>
@@ -412,18 +385,7 @@
 											</ul>
 										</li>
 									</ul>
-
-
-
-									<a href="/jsp/GettingStarted.jsp" class="toplinks-dropmenu"
-										style="text-decoration: none;"> <b
-										class="toplinks-drop-left"></b> <span
-										class="toplinks-drop-center">&nbsp;入门&nbsp;</span> <b
-										class="toplinks-getstart-right"></b>
-									</a>
-
 									<div class="searchsection">
-
 										<form name="SearchNForm" method="post" action="/SearchN.do">
 											<input type="hidden" name="selectName" value="" id="selName">
 											<table cellpadding="0" cellspacing="0" border="0">
@@ -433,9 +395,6 @@
 														class="search_filter" href="#">&nbsp; <img
 															src="images/search_allresources_icon.gif"
 															id="searchImage" /> <script>document.getElementById('selName').value=getMessageForKey("sdp.common.search.allresources")</script>
-
-
-
 													</a></td>
 													<td><input type="text" name="searchText" value="搜索资产"
 														onblur="checkField(this)" onfocus="checkField(this)"
@@ -547,7 +506,7 @@
 function showMenuAsDialog(holder, source) {
 	var reqX = findPosX(document.getElementById(holder));
 	var reqY = findPosY(document.getElementById(holder));
-	var offsetWidth = document.getElementById(holder).offsetHeight
+	var offsetWidth = document.getElementById(holder).offsetHeight;
 		showDialog(document.getElementById(source).innerHTML,'position=absolute,closeButton=no,closeOnBodyClick=yes,srcElement=CreateNew_PH,left=' + (reqX-document.body.scrollLeft) + ',top=' + (reqY+ offsetWidth-document.body.scrollTop));
 }
 
@@ -792,24 +751,34 @@ var css_browser_selector = function() {
 																	<td valign='top' class='RightItemBorder'>
 																		<div id="Resourcelinks">
 																			<div id="subHeader" class="accordionTabTitleBar">
-																				<a id="ITAssets" href="javascript:void(0)"
-																					onClick="ShowAndHide('itassetslinks','nonitassetslinks','Components','viewlinks','Softwarediv')">IT资产</a>
+																				<a id="ITAssets" href="javascript:void(0)" onClick="">工作站</a>
 																			</div>
 																			<div id="subHeader" class="accordionTabTitleBar">
-																				<a href="javascript:void(0)"
-																					onClick="ShowAndHide('nonitassetslinks','itassetslinks','Components','viewlinks','Softwarediv')">非IT资产</a>
+																				<a href="javascript:void(0)" onClick="">服务器</a>
 																			</div>
 																			<div id="subHeader" class="accordionTabTitleBar">
-																				<a href="javascript:void(0)"
-																					onClick="ShowAndHide('Components','nonitassetslinks','itassetslinks','viewlinks','Softwarediv')">资产组件</a>
+																				<a href="javascript:void(0)" onClick="">网络设备</a>
 																			</div>
 																			<div id="subHeader" class="accordionTabTitleBar">
-																				<a href="javascript:void(0)"
-																					onClick="ShowAndHide('Softwarediv','Components','nonitassetslinks','itassetslinks','viewlinks')">软件</a>
+																				<a href="javascript:void(0)" onClick="">网络链路</a>
 																			</div>
 																			<div id="subHeader" class="accordionTabTitleBar">
-																				<a id="assetGroups" href="javascript:void(0)"
-																					onClick="ShowAndHide('viewlinks','Components','nonitassetslinks','itassetslinks','Softwarediv')">组</a>
+																				<a href="javascript:void(0)" onClick="">安全设备</a>
+																			</div>
+																			<div id="subHeader" class="accordionTabTitleBar">
+																				<a href="javascript:void(0)" onClick="">存储</a>
+																			</div>
+																			<div id="subHeader" class="accordionTabTitleBar">
+																				<a href="javascript:void(0)" onClick="">操作系统</a>
+																			</div>
+																			<div id="subHeader" class="accordionTabTitleBar">
+																				<a href="javascript:void(0)" onClick="">中间件</a>
+																			</div>
+																			<div id="subHeader" class="accordionTabTitleBar">
+																				<a href="javascript:void(0)" onClick="">数据库</a>
+																			</div>
+																			<div id="subHeader" class="accordionTabTitleBar">
+																				<a href="javascript:void(0)" onClick="">应用软件</a>
 																			</div>
 																		</div>
 
@@ -836,7 +805,7 @@ var css_browser_selector = function() {
 																					href="javascript:void(0)" class="leftnavheading"><img
 																						src="images/spacer.gif"
 																						class="leftnavitems_expand" hspace="1" vspace="0"
-																						border="0" id="bulletrecentitems"> 最近访问链接 </a></td>
+																						border="0" id="bulletrecentitems">可用性巡检 </a></td>
 
 																			</tr>
 																		</table>
@@ -853,7 +822,7 @@ var css_browser_selector = function() {
 																				<tr>
 																					<td width="8" class="RIbottomBorder" nowrap
 																						class="fontBlack"><img
-																						src="images/ri_workstation_icon.gif"
+																						src="images/ri_asset_icon.gif"
 																						title="pa01-nb-think.workgroup" width="16"
 																						height="16" hspace="0" vspace="0"
 																						id='recentItemImg'></td>
@@ -861,13 +830,13 @@ var css_browser_selector = function() {
 																						href="ViewWSDetails.do?wsId=5409"
 																						class="FontBlackLink"
 																						title="pa01-nb-think.workgroup"
-																						style="width: 100%">pa01-nb-think.workgrou...</a></td>
+																						style="width: 100%">连通性检测</a></td>
 																				</tr>
 
 																				<tr>
 																					<td width="8" class="RIbottomBorder" nowrap
 																						class="fontBlack"><img
-																						src="images/ri_workstation_icon.gif"
+																						src="images/ri_asset_icon.gif"
 																						title="acc12-nb-think.workgroup" width="16"
 																						height="16" hspace="0" vspace="0"
 																						id='recentItemImg'></td>
@@ -875,19 +844,19 @@ var css_browser_selector = function() {
 																						href="ViewWSDetails.do?wsId=5408"
 																						class="FontBlackLink"
 																						title="acc12-nb-think.workgroup"
-																						style="width: 100%">acc12-nb-think.workgro...</a></td>
+																						style="width: 100%">数据接口检测</a></td>
 																				</tr>
 
 																				<tr>
 																					<td width="8" class="RIbottomBorder" nowrap
 																						class="fontBlack"><img
-																						src="images/ri_workstation_icon.gif"
+																						src="images/ri_asset_icon.gif"
 																						title="ca06-pc.workgroup" width="16" height="16"
 																						hspace="0" vspace="0" id='recentItemImg'></td>
 																					<td class="RIbottomBorder"><a
 																						href="ViewWSDetails.do?wsId=5407"
 																						class="FontBlackLink" title="ca06-pc.workgroup"
-																						style="width: 100%">ca06-pc.workgroup</a></td>
+																						style="width: 100%">可用性检测</a></td>
 																				</tr>
 
 																				<tr>
@@ -899,87 +868,8 @@ var css_browser_selector = function() {
 																					<td class="RIbottomBorder"><a
 																						href="ViewWSDetails.do?wsId=3301"
 																						class="FontBlackLink" title="Hp Computers"
-																						style="width: 100%">Hp Computers</a></td>
+																						style="width: 100%">可用性分析</a></td>
 																				</tr>
-
-																				<tr>
-																					<td width="8" class="RIbottomBorder" nowrap
-																						class="fontBlack"><img
-																						src="images/ri_workstation_icon.gif"
-																						title="ca04.workgroup" width="16" height="16"
-																						hspace="0" vspace="0" id='recentItemImg'></td>
-																					<td class="RIbottomBorder"><a
-																						href="ViewWSDetails.do?wsId=5406"
-																						class="FontBlackLink" title="ca04.workgroup"
-																						style="width: 100%">ca04.workgroup</a></td>
-																				</tr>
-
-																				<tr>
-																					<td width="8" class="RIbottomBorder" nowrap
-																						class="fontBlack"><img
-																						src="images/ri_workstation_icon.gif"
-																						title="ca03-pc-pc.workgroup" width="16"
-																						height="16" hspace="0" vspace="0"
-																						id='recentItemImg'></td>
-																					<td class="RIbottomBorder"><a
-																						href="ViewWSDetails.do?wsId=5405"
-																						class="FontBlackLink" title="ca03-pc-pc.workgroup"
-																						style="width: 100%">ca03-pc-pc.workgroup</a></td>
-																				</tr>
-
-																				<tr>
-																					<td width="8" class="RIbottomBorder" nowrap
-																						class="fontBlack"><img
-																						src="images/ri_workstation_icon.gif"
-																						title="designstudio.workgroup" width="16"
-																						height="16" hspace="0" vspace="0"
-																						id='recentItemImg'></td>
-																					<td class="RIbottomBorder"><a
-																						href="ViewWSDetails.do?wsId=5404"
-																						class="FontBlackLink"
-																						title="designstudio.workgroup" style="width: 100%">designstudio.workgroup...</a></td>
-																				</tr>
-
-																				<tr>
-																					<td width="8" class="RIbottomBorder" nowrap
-																						class="fontBlack"><img
-																						src="images/ri_workstation_icon.gif"
-																						title="ca05.workgroup" width="16" height="16"
-																						hspace="0" vspace="0" id='recentItemImg'></td>
-																					<td class="RIbottomBorder"><a
-																						href="ViewWSDetails.do?wsId=5403"
-																						class="FontBlackLink" title="ca05.workgroup"
-																						style="width: 100%">ca05.workgroup</a></td>
-																				</tr>
-
-																				<tr>
-																					<td width="8" class="RIbottomBorder" nowrap
-																						class="fontBlack"><img
-																						src="images/ri_workstation_icon.gif"
-																						title="helpdesk-test1.zohocorpin.com" width="16"
-																						height="16" hspace="0" vspace="0"
-																						id='recentItemImg'></td>
-																					<td class="RIbottomBorder"><a
-																						href="ViewWSDetails.do?wsId=913"
-																						class="FontBlackLink"
-																						title="helpdesk-test1.zohocorpin.com"
-																						style="width: 100%">helpdesk-test1.zohocor...</a></td>
-																				</tr>
-
-																				<tr>
-																					<td width="8" class="RIbottomBorder" nowrap
-																						class="fontBlack"><img
-																						src="images/ri_workstation_icon.gif"
-																						title="Dell Hg Server 222 - PO# 3[2]" width="16"
-																						height="16" hspace="0" vspace="0"
-																						id='recentItemImg'></td>
-																					<td class="RIbottomBorder"><a
-																						href="ViewWSDetails.do?wsId=943"
-																						class="FontBlackLink"
-																						title="Dell Hg Server 222 - PO# 3[2]"
-																						style="width: 100%">Dell Hg Server 222 - P...</a></td>
-																				</tr>
-
 																			</table>
 																		</div>
 
@@ -1082,7 +972,7 @@ var css_browser_selector = function() {
 																			class="pad0px" cellpadding="0" border="0"
 																			width="100%" style="padding: 0px;">
 																			<tr>
-																				<td class="lcnagreehrbg">操控板</td>
+																				<td class="lcnagreehrbg">控制面板</td>
 																			</tr>
 																			<tr>
 																				<td class="pad10">
@@ -1290,7 +1180,7 @@ function closeMenusDialog(source)
 																												<td valign="top">
 																													<div class="component23">
 																														<div class="conh1">
-																															<em></em> <b class="hdr">我的所有资产</b> <i></i>
+																															<em></em> <b class="hdr">资产</b> <i></i>
 																														</div>
 
 																														<div class="control23">
@@ -1299,7 +1189,7 @@ function closeMenusDialog(source)
 																																href="javascript:displayGraphInDialog('first')"
 																																class="bt_dashboard_max23"></a> <span>
 																																<a href="javascript:void(0)"
-																																id="More1_PH" class="moredrop">不同地点的资产</a>
+																																id="More1_PH" class="moredrop">不同状态的资产</a>
 																															</span>
 																															<div id="More1">
 																																<iframe width="160" height="90"
@@ -1330,61 +1220,50 @@ function closeMenusDialog(source)
 
 																														<div id="firstGraph"
 																															style="display: block">
-																															<div class="content23 grydash"
-																																align="center">
-																																<!--h4 id="firstHeading">Assets By Site</h4-->
-																																<div class="spc"></div>
+																															
+												<div class="content23 ">
+                                                <div class="spc"></div>
+                                                <div class="graph" align="center">
+                                                
+		
+						
+                                                <map id="ResourcesByStateChart" name="ResourcesByStateChart">
+<area shape="poly" coords="130,43,154,40,180,39,180,71,180,71" title="In Use = 8" alt="" href="/AssetListView.do?Type=Resources&amp;isFirst=true&amp;AssetType=In Use">
+<area shape="poly" coords="180,39,215,41,244,47,266,56,273,61,277,66,277,72,275,78,269,83,261,88,237,96,205,101,169,102,136,99,108,92,97,88,89,83,84,77,81,71,83,66,87,60,94,55,103,51,130,43,180,71,180,71" title="In Store = 88" alt="" href="/AssetListView.do?Type=Resources&amp;isFirst=true&amp;AssetType=In Store">
+</map>
+                                                <img src="images/ResourcesByState_386_1399895100652.png" usemap="#ResourcesByStateChart" border="0">
+                                           
+                                                </div>
 
-																																<map id="firstDisplayChart"
-																																	name="firstDisplayChart">
-																																	<area shape="rect"
-																																		coords="253,112,269,121"
-																																		title="IT Assets = 7" alt=""
-																																		href="/AssetDrillDownListView.do?columnNames=Site&columnValues=Pleasanton%2CCA&Type=IT Asset" />
-																																	<area shape="rect"
-																																		coords="102,19,118,20"
-																																		title="Components = 1" alt=""
-																																		href="/AssetListViewForGraph.do?type=Components&criteria=SiteNotKnown&ciTypeId=null&fromTab=Asset" />
-																																	<area shape="rect"
-																																		coords="102,20,118,33"
-																																		title="Non-IT Assets = 10" alt=""
-																																		href="/AssetListViewForGraph.do?type=Non-IT Asset&criteria=SiteNotKnown&ciTypeId=null&fromTab=Asset" />
-																																	<area shape="rect"
-																																		coords="102,33,118,120"
-																																		title="IT Assets = 65" alt=""
-																																		href="/AssetListViewForGraph.do?type=IT Asset&criteria=SiteNotKnown&ciTypeId=null&fromTab=Asset" />
-																																</map>
-																																<img
-																																	src="images/firstDisplay_386_1399871662887.jpg"
-																																	border="0" usemap="#firstDisplayChart" />
+                                                	
+									<div class="doubleL">
+								<b style="display:none" class="cIn"><b class="cb4 graph"></b><b class="cb3 graph">
+							</b><b class="cb2 graph"></b><b class="cb1"></b></b>	
+						
+							<div class="inf">
+							<table cellpadding="0" cellspacing="0">
+							<tbody><tr>
+								<td>
+								
 
-
-
-																																<div class="singleL">
-
-																																	<div class="inf">
-																																		<table cellpadding="0" cellspacing="0">
-																																			<tr>
-																																				<td><b><em class="g_orange"></em><i>组件</i></b>
-																																					<b><em class="g_green"></em><i>IT资产</i></b> 
-																																					<b><em class="g_blue"></em><i>非IT资产</i></b>
-																																				</td>
-																																			</tr>
-																																		</table>
-																																	</div>
-
-																																	<b style="display: none"
-																																		class="cBox curveFix"
-																																		style="position:relative; top:-5px;"><b
-																																		class="cb4 color_vdb"></b><b
-																																		class="cb3 color_vdb"></b> <b
-																																		class="cb2 color_vdb"></b><b
-																																		class="cb1"></b></b>
-																																</div>
-
-																															</div>
+									<b class="field-color-indicator"><em class="em" style="background:#a6ce39;"></em><i>In Use = 8</i></b>									
 
 
+									<b class="field-color-indicator"><em class="em" style="background:#7d9cca;"></em><i>In Store = 88</i></b>									
+
+									</td>
+													</tr>
+													</tbody></table>
+								</div>
+								<b class="cBox curveFix" style="position:relative; display:none; top:-5px;"><b class="cb4 color_vdb"></b><b class="cb3 color_vdb">
+							</b><b class="cb2 color_vdb"></b><b class="cb1"></b></b></div>
+
+                                        </div>
+										<!-- Inline Botttom Line -->
+										<!--b class="astbtc mtp">
+													<b class="astbtc4 col"></b><b class="astbtc3 col"></b><b class="astbtc2 col"></b><b class="astbtc1"></b>
+												</b-->
+  
 																														</div>
 																														<b class="assetborder"></b>
 																													</div>
@@ -1426,7 +1305,7 @@ if(window.jQuery != null){
 																													class="paddingLeft">
 																													<div class="component23">
 																														<div class="conh1">
-																															<em></em> <b class="hdr">Workstation</b>
+																															<em></em> <b class="hdr">运维事件</b>
 																															<i></i>
 																														</div>
 																														<div class="control23">
@@ -1435,7 +1314,7 @@ if(window.jQuery != null){
 																																href="javascript:displayGraphInDialog('third')"
 																																class="bt_dashboard_max23"></a> <span>
 																																<a href="javascript:void(0)"
-																																id="More3_PH" class="moredrop">不同操作系统的工作站</a>
+																																id="More3_PH" class="moredrop">不同阶段的运维事件</a>
 																															</span>
 																															<div id="More3">
 																																<iframe width="160" height="200"
@@ -1574,7 +1453,7 @@ if(window.jQuery != null){
 																												<td valign="top">
 																													<div class="component23">
 																														<div class="conh1">
-																															<em></em> <b class="hdr">软件</b> <i></i>
+																															<em></em> <b class="hdr">审计事件</b> <i></i>
 																														</div>
 																														<div class="control23">
 																															<!--a href="javascript:displayGraphInDialog('fourth')" class="bt_dashboard_max23" >View All</a-->
@@ -1582,7 +1461,7 @@ if(window.jQuery != null){
 																																href="javascript:displayGraphInDialog('fourth')"
 																																class="bt_dashboard_max23"></a> <span>
 																																<a href="javascript:void(0)"
-																																id="More4_PH" class="moredrop">软件厂商-不合规</a>
+																																id="More4_PH" class="moredrop">不同要求的审计事件</a>
 																															</span>
 
 																															<div id="More4">
@@ -1702,7 +1581,7 @@ if(window.jQuery != null){
 																												<td valign="top" class="paddingLeft">
 																													<div class="component23">
 																														<div class="conh1">
-																															<em></em> <b class="hdr">订购单与合同</b> <i></i>
+																															<em></em> <b class="hdr">安全事件</b> <i></i>
 																														</div>
 																														<div class="control23">
 																															<!--a href="javascript:displayGraphInDialog('second')" class="bt_dashboard_max23" >View All</a-->
@@ -1710,7 +1589,7 @@ if(window.jQuery != null){
 																																href="javascript:displayGraphInDialog('second')"
 																																class="bt_dashboard_max23"></a> <span>
 																																<a href="javascript:void(0)"
-																																id="More2_PH" class="moredrop">订购单一览</a>
+																																id="More2_PH" class="moredrop">不同级别的安全事情</a>
 																															</span>
 
 																															<div id="More2">
