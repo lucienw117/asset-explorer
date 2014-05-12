@@ -1,0 +1,193 @@
+/* $Id$ */
+.editor_body {
+	font-family:verdana,arial, helvetica,sans-serif; 
+	font-size:8pt;
+	cursor: text;
+	display:block;
+}
+
+.htmlarea { 
+	background: url(../../images/htmlarea/htmleditorbg.gif) repeat-x left top #fff;
+	padding:4px;
+	border: 2px solid ;
+	border-color: #C7D6E3 #929DA8 #929DA8 #C7D6E3;
+}
+ 
+.htmlarea .toolbar {
+  cursor: default;
+  width:100%;
+  padding: 0 2px 2px 2px;
+}
+
+.htmlarea .toolbar table { font-family:verdana,sans-serif; font-size:11px; background-image: url(../images/toolbarbg.gif);}
+.htmlarea .toolbar img { border: none;}
+.htmlarea .toolbar .label { padding: 0px 3px;}
+
+.htmlarea .toolbar .button {
+	padding:1px;
+	margin: 0px;
+	cursor:pointer;
+	height: 24px;
+}
+.htmlarea .toolbar .buttonHover {
+  color: #EEEEEE;
+}
+.htmlarea .toolbar .buttonActive, .htmlarea .toolbar .buttonPressed {
+	background-color: #E5E5E5;
+}
+.htmlarea .toolbar .buttonPressed {
+	background-color: #FFFFFF;
+/*  background: ButtonHighlight;*/
+}
+.htmlarea .toolbar .indicator {
+  padding: 0px 3px;
+  overflow: hidden;
+  width: 24px;
+  text-align: center;
+  cursor: default;
+  border: 1px solid ButtonShadow;
+}
+
+.htmlarea .toolbar .buttonDisabled img {
+  -moz-opacity: 0.25;
+}
+
+.htmlarea .toolbar .separator {
+  position: relative;
+  margin: 3px;
+  width: 0px;
+  height: 18px;
+  padding: 0px;
+}
+
+.htmlarea .toolbar .space { width: 5px; }
+
+.htmlarea .toolbar select { font:normal 12px Tahoma,Verdana,sans-serif; }
+
+.htmlarea .toolbar select,
+.htmlarea .toolbar select:hover,
+.htmlarea .toolbar select:active { /*background: FieldFace;*/ color: ButtonText; }
+
+.htmlarea .statusBar {
+  padding: 2px 4px;
+  color: ButtonText;
+  font:normal 12px Tahoma,Verdana,sans-serif;
+}
+
+.htmlarea .statusBar .statusBarTree a {
+  padding: 2px 5px;
+  color:  #0053A5;
+}
+
+.htmlarea .statusBar .statusBarTree a:visited { color: #00f; }
+.htmlarea .statusBar .statusBarTree a:hover {
+  background-color: Highlight;
+  color: HighlightText;
+  padding: 1px 4px;
+  border: 1px solid HighlightText;
+}
+
+/* Hidden DIV popup dialogs (PopupDiv) */
+
+.dialog {
+  color: ButtonText;
+  background: #fafaf4;
+}
+
+.textarea {
+	border: 1px solid #666666;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	font-weight:normal;
+	color: #000000;
+	width:99%;
+	padding:0px;
+	margin:0px;
+	background: url(../../images/formshdw.gif) no-repeat  -3px -3px #FCFCFC;
+	cursor: text;
+}
+
+.dialog .content { padding: 2px; }
+
+.dialog, .dialog button, .dialog input, .dialog select, .dialog textarea, .dialog table {
+  font:normal 12px Tahoma,Verdana,sans-serif;
+}
+
+.dialog table { border-collapse: collapse; }
+
+.dialog .title {
+  background: #008;
+  color: #ff8;
+  border-bottom: 1px solid #000;
+  padding: 1px 0px 2px 5px;
+  font-size:13px;
+  font-weight:bold;
+  cursor: default;
+}
+
+.dialog .title .button {
+  float: right;
+  border: 1px solid #66a;
+  padding: 0px 1px 0px 2px;
+  margin-right: 1px;
+  color: #fff;
+  text-align: center;
+}
+
+.dialog .title .button-hilite { border-color: #88f; background: #44c; }
+
+.dialog button {
+  width: 5em;
+  padding: 0px;
+}
+
+.dialog .buttonColor {
+  padding: 1px;
+  cursor: default;
+  border: 1px solid;
+  border-color: ButtonHighlight ButtonShadow ButtonShadow ButtonHighlight;
+}
+
+.dialog .buttonColor-hilite {
+  border-color: #000;
+}
+
+.dialog .buttonColor .chooser, .dialog .buttonColor .nocolor {
+  height: 0.6em;
+  border: 1px solid;
+  padding: 0px 1em;
+  border-color: ButtonShadow ButtonHighlight ButtonHighlight ButtonShadow;
+}
+
+.dialog .buttonColor .nocolor { padding: 0px; }
+.dialog .buttonColor .nocolor-hilite { background-color: #fff; color: #f00; }
+
+.dialog .label { text-align: right; width: 6em; }
+.dialog .value input { width: 100%; }
+.dialog .buttons { text-align: right; padding: 2px 4px 0px 4px; }
+
+.dialog legend { font-weight:bold; }
+.dialog fieldset table { margin: 2px 0px; }
+
+.popupdiv {
+  border: 2px solid;
+  border-color: ButtonHighlight ButtonShadow ButtonShadow ButtonHighlight;
+}
+
+.popupwin {
+  padding: 0px;
+  margin: 0px;
+}
+
+.popupwin .title {
+  background: #fff;
+  color: #000;
+  font-weight:bold;
+  font-size:120%;
+  padding: 3px 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid black;
+  letter-spacing: 2px;
+}
+
+form { margin: 0px; border: none; }

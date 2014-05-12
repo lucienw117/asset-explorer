@@ -1,0 +1,668 @@
+/* $Id$ */
+#poblock {
+	position: relative;
+	width: 700px;
+	z-index: 9;
+}
+#pocyclebg {
+	width: 511px;
+	height: 232px;
+	position: absolute;
+	z-index: 10;
+	margin-top: 25px;
+}
+#pocyclefix {
+	margin: 25px 0px 45px 0px;
+}
+table tr td>div#pocyclefix {
+	margin: 25px 0px 25px 0px;
+}
+table tr td div>div#pocyclebg {
+	margin-top: 0px;
+}
+#pocycle {
+	width: 700px;
+	height: 232px;
+	margin: 0px;
+	padding: 0px;
+	position: relative;
+	z-index: 11;
+}
+table tr td div>div#pocycle {
+	height: 207px;
+}
+#pocycle #createpo {
+	position: absolute;
+	width: auto;
+}
+#pocycle #createpo #createpobtn {
+	background: url(/images/pobtn1m.gif) repeat-x;
+	padding: 0px 10px;
+	font: normal 13px Arial, Verdana, Helvetica, sans-serif;
+	color: #000;
+	text-decoration: none !important;
+	line-height: 27px;
+	display: block;
+	width: auto;
+	white-space: nowrap;
+	z-index: 11;
+}
+#pocycle #submitapprove {
+	position: absolute;
+	width: auto;
+	top: 7px;
+}
+#pocycle #submitapprove #submitapprovebtn {
+	background: url(/images/pobtn1m.gif) repeat-x;
+	padding: 0px 10px;
+	font: normal 13px Arial, Verdana, Helvetica, sans-serif;
+	color: #000;
+	text-decoration: none !important;
+	line-height: 27px;
+	display: block;
+	width: auto;
+	white-space: nowrap;
+	z-index: 11;
+}
+#pocycle #porejected {
+	position: absolute;
+	width: auto;
+	top: 68px;
+}
+#pocycle #porejected #rejectedbtn {
+	background: url(/images/potbtnr1m.gif) repeat-x;
+	padding: 0px 10px;
+	font: normal 13px Arial, Verdana, Helvetica, sans-serif;
+	color: #000;
+	text-decoration: none !important;
+	line-height: 29px;
+	display: block;
+	width: auto;
+	white-space: nowrap;
+	z-index: 11;
+}
+#pocycle #poapproved {
+	position: absolute;
+	width: auto;
+	top: 68px;
+}
+#pocycle #poapproved #approvedbtn {
+	background: url(/images/potbtng1m.gif) repeat-x;
+	padding: 0px 10px;
+	font: normal 13px Arial, Verdana, Helvetica, sans-serif;
+	color: #000;
+	text-decoration: none !important;
+	line-height: 29px;
+	display: block;
+	width: auto;
+	white-space: nowrap;
+	z-index: 11;
+}
+#pocycle #poordered {
+	position: absolute;
+	width: auto;
+	top: 140px;
+}
+#pocycle #poordered #orderedbtn {
+	background: url(/images/pobtn1m.gif) repeat-x;
+	padding: 0px 10px;
+	font: normal 13px Arial, Verdana, Helvetica, sans-serif;
+	color: #000;
+	text-decoration: none !important;
+	line-height: 27px;
+	display: block;
+	width: auto;
+	white-space: nowrap;
+	z-index: 11;
+}
+#pocycle #partialreceive {
+	position: absolute;
+	width: auto;
+	top: 196px;
+}
+#pocycle #partialreceive #partialreceivebtn {
+	background: url(/images/pobtn1m.gif) repeat-x;
+	padding: 0px 4px;
+	font: normal 13px Arial, Verdana, Helvetica, sans-serif;
+	color: #000;
+	text-decoration: none !important;
+	line-height: 27px;
+	display: block;
+	width: auto;
+	white-space: nowrap;
+	z-index: 11;
+}
+#pocycle #partialreceive2 {
+	position: absolute;
+	width: auto;
+	top: 196px;
+}
+#pocycle #partialreceive2 #partialreceivebtn2 {
+	background: url(/images/pobtn1m.gif) repeat-x;
+	padding: 0px 4px;
+	font: normal 13px Arial, Verdana, Helvetica, sans-serif;
+	color: #000;
+	text-decoration: none !important;
+	line-height: 27px;
+	display: block;
+	width: auto;
+	white-space: nowrap;
+	z-index: 11;
+}
+#pocycle #invoicereceived {
+	position: absolute;
+	width: auto;
+	top: 204px;
+}
+#pocycle #invoicereceived #receivebtn {
+	background: url(/images/pobtn2m.gif) repeat-x;
+	padding: 0px 10px;
+	font: normal 13px Arial, Verdana, Helvetica, sans-serif;
+	color: #000;
+	text-decoration: none !important;
+	line-height: 15px;
+	height: 42px;
+	padding-top: 5px;
+	display: block;
+	width: auto;
+	white-space: nowrap;
+	z-index: 11;
+}
+#pocycle #paymentdone {
+	position: absolute;
+	width: auto;
+	top: 178px;
+}
+#pocycle #paymentdone #paymentbtn {
+	background: url(/images/pobtn2m.gif) repeat-x;
+	padding: 0px 10px;
+	font: normal 13px Arial, Verdana, Helvetica, sans-serif;
+	color: #000;
+	text-decoration: none !important;
+	line-height: 15px;
+	height: 42px;
+	padding-top: 5px;
+	display: block;
+	width: auto;
+	white-space: nowrap;
+	z-index: 11;
+}
+#pocycle #closedpo {
+	position: absolute;
+	width: auto;
+	top: 120px;
+}
+#pocycle #closedpo #closedpobtn {
+	background: url(/images/pobtn1m.gif) repeat-x;
+	padding: 0px 10px;
+	font: normal 13px Arial, Verdana, Helvetica, sans-serif;
+	color: #000;
+	text-decoration: none !important;
+	line-height: 27px;
+	display: block;
+	width: auto;
+	white-space: nowrap;
+	z-index: 11;
+}
+.gecko #pocycle #createpo #createpobtn, .gecko #pocycle #submitapprove #submitapprovebtn, .gecko #pocycle #porejected #rejectedbtn, .gecko #pocycle #poapproved #approvedbtn, .gecko #pocycle #poordered #orderedbtn, .gecko #pocycle #partialreceive #partialreceivebtn, .gecko #pocycle #partialreceive2 #partialreceivebtn2, .gecko #pocycle #invoicereceived #receivebtn, .gecko #pocycle #paymentdone #paymentbtn, .gecko #pocycle #closedpo #closedpobtn {
+	position:relative;
+}
+.pobtn1l {
+	width: 9px;
+	height: 27px;
+	display: inline-block;
+	position:absolute;
+}
+.pobtn1r {
+	width: 9px;
+	height: 27px;
+	display: inline-block;
+	position:absolute;
+}
+.pobtn2l {
+	width: 9px;
+	height: 42px;
+	display: inline-block;
+	position:absolute;
+}
+.pobtn2r {
+	width: 9px;
+	height: 42px;
+	display: inline-block;
+	position:absolute;
+}
+.pobtnr1l {
+	width: 9px;
+	height: 29px;
+	display: inline-block;
+	position:absolute;
+}
+.pobtnr1r {
+	width: 9px;
+	height: 29px;
+	display: inline-block;
+	position:absolute;;
+}
+.potbtng1l {
+	width: 9px;
+	height: 29px;
+	display: inline-block;
+	position:absolute;
+}
+.potbtng1r {
+	width: 9px;
+	height: 29px;
+	display: inline-block;
+	position:absolute;
+}
+.pobtn3l {
+	width: 9px;
+	height: 27px;
+	display: inline-block;
+	position:absolute;
+}
+.pobtn3r {
+	width: 9px;
+	height: 27px;
+	display: inline-block;
+	position:absolute;
+}
+.headerboldfont {
+	color: #fff;
+	font: bold 13px Arial, Verdana, Helvetica, sans-serif !important;
+}
+.textStyle {
+	border: 1px solid #616F45;
+	font: normal 12px Arial, Verdana, Helvetica, sans-serif;
+	color: #000000;
+	background: url(/images/formshdw.gif) no-repeat -4px -4px #fff;
+}
+table.POformHeader {
+	background: #c8e0f2;
+	border-left: 2px #fff solid;
+	border-right: 2px #fffsolid;
+}
+table.POformHeader tr td strong {
+	font: bold 15px Arial, Verdana, Helvetica, sans-serif;
+	color: #000;
+}
+table.POformHeader tr td input {
+	padding: 2px;
+	border: 1px #17478f solid;
+	height: 18px;
+}
+span.POvendorName {
+	color: #305086;
+	font: bold 16px Arial, Verdana, Helvetica, sans-serif;
+}
+span.POvendorAddress {
+	font: normal 13px Arial, Verdana, Helvetica, sans-serif;
+}
+.tbox2 {
+	height: 16px;
+	font: normal 12px Arial, Verdana, Helvetica, sans-serif;
+	border: 1px #757575 solid;
+}
+.priceBox1 {
+	padding: 2px;
+	border: 1px #c5c5c5 solid;
+	height: 18px;
+}
+.priceBox2 {
+	padding: 2px;
+	border: 1px #17478f solid;
+	height: 18px;
+}
+div.POaddItemsBtn {
+	position: relative;
+	top: 19px;
+}
+div>.POaddItemsBtn {
+	top: 16px;
+}
+table.POitemAddHeader {
+	background: #8db5e0;
+	margin-top: 3px;
+}
+table.POitemAddHeader tr td {
+	background: #c8e0f2;
+	padding: 5px;
+}
+table.POitemAddList {
+	background: #c5c5c5;
+}
+table.POitemAddList     tr td {
+	height: 18px;
+	background: #ffffff;
+}
+div#add_new_product table.POitemAddList     tr.rowEven {
+	height: 18px;
+	background: #ffffff;
+}
+div#add_new_product table.POitemAddList     tr.rowOdd {
+	height: 18px;
+	background: #cccccc;
+}
+table.AllPOItemList {
+	background: #c5c5c5;
+}
+table.AllPOItemList tr.normal td {
+	background: #ccc;
+}
+table.AllPOItemList tr.rowHighlight td {
+	background: #fcfcce;
+	height: 18px;
+	font: normal 12px Arial, Verdana, Helvetica, sans-serif;
+	border: 0px solid none !important;
+}
+.blueborderline {
+	border: 1px #5670A9 solid;
+}
+.graybg2 {
+	background: #cccccc !important;
+}
+.fontstyle1 {
+	font: normal 12px Arial, Verdana, Helvetica, sans-serif;
+}
+.ie #poformedit .fixheightpo {
+	height: 12px;
+}
+.ie #poformview .fixheightpo {
+	height: 0px;
+}
+#poformedit .fixheightpo {
+	height: 0px;
+}
+#poformview .fixheightpo {
+	height: 8px;
+}
+.pocyclebg-bullet, .pocyclebg-bullet-red, .pocyclebg-bullet-green {
+	position:absolute;
+	width:17px;
+	height:16px;	
+}
+.pocyclebg-bullet {
+	background:url(/images/pocyclebg-bullet.png) no-repeat;
+}
+.pocyclebg-bullet-red {
+	background:url(/images/pocyclebg-bullet-red.png) no-repeat;
+}
+.pocyclebg-bullet-green {
+	background:url(/images/pocyclebg-bullet-green.png) no-repeat;
+}
+#createpo .pocyclebg-bullet {
+	bottom:-8px;
+}
+#submitapprove .pocyclebg-bullet {
+	bottom: -12px; 
+}
+#porejected .pocyclebg-bullet-red {
+	top: -6px; 
+}
+#poapproved .pocyclebg-bullet-green {
+	top: -9px; 
+}
+#poordered .pocyclebg-bullet {
+	top: -8px; 
+}
+#partialreceive .pocyclebg-bullet {
+	top: -10px; 
+}
+#invoicereceived .pocyclebg-bullet {
+	top: -11px; 
+}
+#paymentdone .pocyclebg-bullet {
+	top: -9px; 
+}
+#closedpo .pocyclebg-bullet {
+	top: -7px; 
+}
+.poapproverlist-control .label {
+	width:50px;	
+	font-weight:bold;
+}
+.poapproverlist-added {
+	border:1px #757575 solid;
+	border-left:1px #cacccb solid;
+	border-right:1px #cacccb solid;
+	border-bottom:1px #cacccb solid;
+	padding:4px;
+	width:300px;
+	_width:306px;
+	overflow:auto;
+	display:block;
+	min-height:34px;
+	height: expression( this.scrollHeight < 35 ? "36px" : "auto" );
+	margin-left:20px; 
+}
+.poapprovallist-row {
+	margin-top:12px;	
+}
+.poapproverlist-added span {
+	border:1px #f1f1f1 solid;
+	border-radius:3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	margin:4px 0;
+	display:inline-block;
+	position:relative;  
+	padding:5px;
+  	background:#F1F1F1;
+}
+.poapproverlist-added b {
+	font-weight:normal;
+	display:inline-block;
+	padding:0 8px;
+	height:20px;
+	position:relative;
+	top:-3px;
+	color:#777;
+}
+.poapproverlist-added img {
+	position:absolute;
+	right:-7px;
+	top:-6px;
+	cursor:pointer;
+	visibility:hidden;
+}
+.poapprover-cnt {
+	padding:20px 10px;
+}
+.poapprover-cnt .clear {
+	padding:7px 0;
+}
+.closebtn-circle {
+	background:url(/images/closebtn-circle.png) no-repeat;
+	width:15px;
+	height:14px;
+}
+.poapprover-popup-col1 {
+	width:130px;
+	padding-top:6px;
+}
+.poapprover-popup-col2 .floatFields {
+	width:30%;
+}
+table.POitemAddHeader .poapproverlist td {
+	background:#fff;	
+}
+.poapproverlist .label {
+	font-weight:bold;
+}
+.poapproverlistitems {
+	padding:10px 0;
+	clear:both;
+}
+.poapproverlist-label {
+	width:96px;
+	display:inline-block;
+}
+.poapproverlist-value {
+	display:block;
+}
+.po-approval-rowcnt {
+	padding:8px 0;	
+}
+.po-approval-inforow .approvar-name { 
+	color:#484848;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	font-weight:bold;	
+	display:inline-block;
+	width:30%;
+	padding:0;
+}
+.po-approval-inforow .approve-info {
+	padding:2px 0 0 0;
+}
+.po-approval-inforow .approval-status-approved,
+.po-approval-inforow .approval-status-rejected,
+.po-approval-inforow .approval-status-pending { 
+	color:#585858;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:bold;
+	display:inline-block;
+}
+.po-approval-inforow .approval-date { 
+	color:#585858;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:normal;
+	display:inline-block;
+	padding:5px 0 5px 0;
+}
+.po-approval-inforow .approval-desc { 
+	color:#737373;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:normal;
+	padding:0;
+	clear:both;
+}
+.approval-separator { 
+	background:url(/images/blackdot-bdr.gif) center repeat-x;
+	height:16px;
+}
+.approval-separator .box { 
+	background:#e3e3e3;
+	color:#737373;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:normal;
+	border-bottom:1px #bfbfbf solid;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	padding:4px 5px;
+}
+.approver-check {
+	display:inline-block;
+	width:49%;
+	padding:8px 0;
+}
+.poapprover-configmsg {
+	color:#7b7b7b;
+	position:relative;
+	top:5px;	
+}
+.po-approval-inforow { 
+	 margin:4px 10px 4px 30px;
+}
+	 
+.po-approval-rowcnt {
+	padding:8px 17; 
+}
+.po-approval-inforow .approvar-name { 
+	color:#484848;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	font-weight:bold;	
+	display:inline-block;
+	width:30%;
+	padding:0;
+}
+.po-approval-inforow .approve-info {
+	padding:2px 0 0 0;
+}
+.po-approval-inforow .approval-status-approved,
+.po-approval-inforow .approval-status-rejected,
+.po-approval-inforow .approval-status-pending { 
+	color:#585858;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:bold;
+	display:inline-block;
+}
+.po-approval-inforow .approval-status-rejected { 
+	 background:url(/images/servicecat-delete.gif) no-repeat; 
+}
+.po-approval-inforow .approval-status-pending{
+	 font-weight:normal;
+	 color:#818181 
+}
+.po-approval-inforow .approval-status-approved { 
+	 background:url(/images/approve-btn.png) no-repeat; 
+}
+
+.po-approval-inforow .approval-date { 
+	color:#585858;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:normal;
+	display:inline-block;
+	padding:5px 0 5px 0;
+}
+.po-approval-inforow .approval-desc { 
+	color:#737373;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:normal;
+	padding:0;
+	clear:both;
+}
+.approval-separator { 
+	background:url(/images/blackdot-bdr.gif) center repeat-x;
+	height:16px;
+}
+.approval-separator .box { 
+	background:#e3e3e3;
+	color:#737373;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:normal;
+	border-bottom:1px #bfbfbf solid;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	padding:4px 5px;
+}
+.approver-check {
+	display:inline-block;
+	width:49%;
+	padding:8px 0;
+}
+.poapprover-configmsg {
+	color:#7b7b7b;
+	position:relative;
+	top:5px;	
+}
+.poapprovalhdr {
+	background-color:#e8f1ff;
+	border-bottom:1px solid #afc2e2;
+	height:26px;
+}
+.poapprovelevels {
+	color:#174fca;
+	font-size:12px;
+	width:29%;
+	margin-top:2px;
+}
+.poapprovel-nfydate {
+	color:#505050;
+	margin-top:2px;
+}
+.poapproval-nfyagain {
+	color:#174fca;
+	text-decoration:none;
+}

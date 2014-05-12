@@ -1,0 +1,497 @@
+/*$Id$ */
+.dragattrib {
+	border-right: 1px #8CBBE7 solid;
+	padding: 6px 10px;
+	background: #ECF3F9;
+	border-bottom: 1px #8CBBE7 solid;
+}
+.attribspace {
+	border-right: 1px #BABABA solid;
+	padding: 6px 10px;
+	background: #F2F2F2 url(/images/cmdb-red-dot-line.gif) bottom repeat-x;
+}
+.attribline {
+	background: url(/images/cmdb-red-dot-line.gif) bottom repeat-x;
+	padding: 6px 5px;
+}
+.cmdb-blue-hbg, .cmdb-grey-hbg td {
+	color: #07539F;
+	font-weight: bold;
+	padding-left: 4px;
+}
+.cmdb-blue-hbg {
+	background: url(/images/cmdb-blue-hbg.gif) top repeat-x;
+}
+.cmdb-grey-hbg {
+	background: url(/images/cmdb-grey-hbg.gif) top repeat-x;
+}
+.disableGray td {
+	color: #8E8E8E;
+}
+.fields {
+	height: 204px;
+	overflow: auto;
+	border-bottom: 2px #8BBCE7 solid;
+	padding: 2px 0px;
+	width: 100%;
+}
+.field-icons {
+	margin: 0px;
+	padding: 0px;
+}
+.fields ul.field-icons li {
+	list-style: none;
+	margin-top: 0px;
+	white-space: nowrap;
+	font-size: 12px;
+	font-weight: bold;
+	cursor: move;
+	display: block;
+	border: 1px #fff solid;
+	width: 191px;
+	margin-bottom: 3px;
+}
+.fields>ul.field-icons li {
+	margin-bottom: 6px;
+}
+.fields ul.fields-icons li.field-icons-active {
+	color: #344792;
+}
+ul li.field-icons-active table {
+	background: #F2F5FC;
+}
+ul li.field-icons-hover {
+	list-style: none;
+	width: 100%;
+}
+ul li.field-icons-hover table {
+	background-color: #FFFE97;
+	cursor: move;
+	width: 100%;
+	border: 1px #A4A36D dashed;
+}
+ul.field-icons li table tr td {
+	padding-left: 6px;
+}
+table.dragItem {
+	border: 1px #A1C8EE dashed;
+	background: #fff;
+	text-decoration: none;
+}
+table.dragItem tr td {
+	line-height: 24px;
+	color: #0362BE;
+	font-size: 12px;
+}
+.bbline {
+	border-bottom: 1px #8CBBE7 solid;
+	padding: 6px 5px;
+}
+.bluebtmline {
+	border-bottom: 2px #8BBCE7 solid;
+}
+.bluebtmline1 {
+	border-bottom: 1px #8BBCE7 solid;
+}
+.fontColorBlue {
+	color: #07539F;
+}
+.field-outer-container-hover .editfldicnbg, .field-outer-container-drag .editfldicnbg {
+	background: #F8C86A;
+}
+.padralr8 {
+	padding-right: 8px;
+	text-align: right;
+}
+a.editfieldicon {
+	background: url(/images/editicon-orange.gif) no-repeat;
+	text-decoration: none;
+	vertical-align: top;
+	width: 17px;
+	cursor: pointer;
+	height: 30px;
+	display: block;
+	float: right;
+	visibility: hidden;
+}
+a.closefieldicon {
+	background: url(/images/clostbtn-orange.gif) no-repeat;
+	text-decoration: none;
+	vertical-align: top;
+	width: 10px;
+	cursor: pointer;
+	height: 11px;
+	display: block;
+	float: right;
+	visibility: hidden;
+}
+a.dragItemLink {
+	display: block;
+	border-bottom: 1px #b8dcf9 solid;
+	border-right: 1px #b8dcf9 solid;
+	border-top: 1px #FFF solid;
+	border-left: 1px #FFF solid;
+	background: #E4EEF5;
+	padding-left: 8px;
+	text-decoration: none;
+	height: 20px;
+	line-height: 20px;
+	font-size: 12px
+}
+a.dragItemLink table tr td {
+	line-height: 20px;
+}
+a.dragItemLink:hover {
+	border: 1px #ff9978 dashed;
+	background: #FFC;
+	color: #000;
+	cursor: move
+}
+.fontblue3 {
+	color: #006697;
+	font-weight: bold;
+}
+.rshipbdr {
+	border: 1px #08699C solid;
+}
+.rshipbdr2 {
+	border: 1px #8DB9E8 solid;
+}
+.field-outer-container-drag a.editfieldicon, .field-outer-container-hover a.editfieldicon, .field-outer-container-active a.editfieldicon {
+	visibility: visible;
+}
+.field-outer-container-drag a.closefieldicon, .field-outer-container-hover a.closefieldicon, .field-outer-container-active a.closefieldicon {
+	visibility: visible;
+}
+.field-outer-container {
+	width: 98%;
+	background-color: #fff;
+	border: 1px dashed white;
+	cursor: move;
+	padding: 0px -2px 1px 0px;
+	margin: 0px 2px 3px 2px;
+}
+.field-outer-container-action, .field-outer-container-hover {
+	width: 98%;
+	padding: 0px -2px 5px 0px;
+	margin: 0px 0px 3px 2px;
+	border: 1px solid #E3805E;
+	background-color: #FFC;
+}
+.field-outer-container-hover {
+	cursor: move;
+}
+.field-outer-container-drag {
+	width: 97%;
+	padding: 0px;
+	margin: 0px 0px 10px 0px;
+	cursor: move;
+	background-color: #FFFFCC;
+	border: 1px solid #E3805E;
+}
+.field-action {
+	text-decoration: none;
+	vertical-align: top;
+	background: #F3D173 url(/images/editicon-orange.gif) no-repeat bottom left;
+	width: 16px;
+	cursor: pointer;
+}
+.field-action-hover {
+	background: #BBD3FF url(/images/editicon-orange.gif) no-repeat bottom left;
+	width: 16px;
+	cursor: pointer;
+}
+.tableHeaderGrey {
+	font: bold 12px Arial, Verdana, Helvetica, sans-serif;
+	text-align: left;
+	white-space: nowrap;
+	color: #000 !important;
+	background: #D8D8D8 url(/images/columnheadbggrey.gif)  repeat-x left top !important;
+}
+.bluehbg {
+	background: #C9E3FE;
+	color: #1E57C0;
+	font-weight: bold;
+	font-size: 12px;
+	height: 25px;
+	padding-left: 5px;
+}
+.bluehbg2 {
+	color: #325084;
+	font-size: 12px;
+	font-weight: bold;
+	border-bottom: 4px #EBF2F8 solid;
+	height: 27px;
+}
+.attrib-system-icon {
+	background: url(/images/attrib-system-icon.gif) no-repeat;
+	width: 22px;
+	height: 18px;
+}
+.attrib-singleline-icon {
+	background: url(/images/attrib-singleline-icon.gif) no-repeat;
+	width: 22px;
+	height: 18px;
+}
+.attrib-multiline-icon {
+	background: url(/images/attrib-multiline-icon.gif) no-repeat;
+	width: 22px;
+	height: 18px;
+}
+.attrib-picklist-icon {
+	background: url(/images/attrib-picklist-icon.gif) no-repeat;
+	width: 22px;
+	height: 18px;
+}
+.attrib-date-icon {
+	background: url(/images/attrib-date-icon.gif) no-repeat;
+	width: 22px;
+	height: 18px;
+}
+.attrib-datetime-icon {
+	background: url(/images/attrib-datetime-icon.gif) no-repeat;
+	width: 22px;
+	height: 20px;
+}
+.attrib-field-rarrow {
+	background: url(/images/attrib-field-rarrow.gif) no-repeat;
+	width: 11px;
+	height: 11px;
+}
+.attrib-showicon-plus {
+	background: url(/images/attrib-showicon-plus.gif) no-repeat;
+	width: 13px;
+	height: 13px;
+}
+.attrib-hideicon-minus {
+	background: url(/images/attrib-hideicon-minus.gif) no-repeat;
+	width: 13px;
+	height: 13px;
+}
+.attribheadertxt1 {
+	height: 34px;
+	padding-bottom: 8px;
+	padding-top:32px;
+}
+.attribheadertxt2 {
+	background: url(/images/attrib-bottomshade2.gif) bottom left no-repeat;
+	height: 34px;
+	padding-bottom: 8px;
+	padding-top:32px;
+}
+.attribheadertxt1 a, .attribheadertxt2 a {
+	color: #0175E2;
+	font: bold 14px Arial, Verdana, Helvetica, sans-serif;
+	text-decoration: none;
+}
+.attribheadertxt1 a.serviceCatHeader, .attribheadertxt2 a.serviceCatHeader {
+	display:block;
+	padding-bottom:0px;
+}
+span.attrib-bottomshade2 {
+	position: absolute;
+	z-index: 10;
+	margin-top: 19px;
+}
+img.attrib-bottomshade2 {
+	background: url(/images/attrib-bottomshade2.gif) bottom left no-repeat;
+	width: 155px;
+	height: 3px;
+}
+#ServerAttrib .RightPadding, #DefAttrib .RightPadding, #ConfItemAttrib .RightPadding {
+	padding-right: 8px;
+}
+#ServerAttrib .TopPadding, #DefAttrib .TopPadding, #ConfItemAttrib .TopPadding {
+	padding-top: 8px;
+}
+.LeftPanelNotes {
+	color: #7483A4;
+	line-height: 18px;
+	padding: 18px 4px 0px 8px;
+}
+.attrib-helpicon {
+	background: url(/images/attrib-helpicon.gif) no-repeat;
+	width: 41px;
+	height: 32px;
+}
+.dropPanel {
+	border: 1px #7F7F7F dotted;
+	height: 375px;
+}
+#DropFieldsInfo {
+	font: normal 16px Arial, Verdana, Helvetica, sans-serif;
+	color: #999;
+	height: 370px;
+	text-align: center;
+}
+.cmdb-submit-activeleft {
+	background: url(/images/cmdb-submit-activeleft.gif) no-repeat;
+	width: 5px;
+	height: 24px;
+}
+.cmdb-submit-activeright {
+	background: url(/images/cmdb-submit-activeright.gif) no-repeat;
+	width: 5px;
+	height: 24px;
+}
+.cmdb-submit-activebg {
+	background: url(/images/cmdb-submit-activebg.gif) repeat-x;
+	height: 24px;
+	cursor: pointer;
+	padding: 0px 10px;
+	font: bold 13px Arial, Verdana, Helvetica, sans-serif;
+	border: none;
+}
+.cmdb-submit-normalleft {
+	background: url(/images/cmdb-submit-normalleft.gif) no-repeat;
+	width: 5px;
+	height: 24px;
+}
+.cmdb-submit-normalright {
+	background: url(/images/cmdb-submit-normalright.gif) no-repeat;
+	width: 5px;
+	height: 24px;
+}
+.cmdb-submit-normalbg {
+	background: url(/images/cmdb-submit-normalbg.gif) repeat-x;
+	height: 24px;
+	cursor: pointer;
+	padding: 0px 10px;
+	font: normal 13px Arial, Verdana, Helvetica, sans-serif;
+	border: none;
+}
+.cmdb-addattrip-footerbg {
+	background: #EEE;
+	border-left: 3px #0265CB solid;
+	border-right: 3px #0265CB solid;
+}
+.sysattribnotes {
+	padding: 18px 9px;
+	color: #7E7E7E;
+	line-height: 15px;
+}
+.sysattrib-pop-closelnk {
+	font-size: 12px;
+	margin-left: 330px;
+	color: #fff;
+	text-decoration: none;
+}
+.sysattrib-hstyle1 {
+	color: #0067cb;
+	font: bold 13px Arial, Verdana, Helvetica, sans-serif;
+}
+.sysattrib-pop-closelnk:hover {
+	color: #fff;
+}
+.sysattrib-pop-header {
+	background: #0265CB;
+	color: #fff;
+	font: bold 13px Arial, Verdana, Helvetica, sans-serift;
+}
+.sysattrib-pop-border {
+	border-left: 3px #0265CB solid;
+	border-right: 3px #0265CB solid;
+}
+img.attrib-tl-curve {
+	background: url(/images/attrib-tl-curve.gif) no-repeat;
+	width: 6px;
+	height: 6px;
+}
+img.attrib-tr-curve {
+	background: url(/images/attrib-tr-curve.gif) no-repeat;
+	width: 6px;
+	height: 6px;
+}
+img.attrib-bl-curve {
+	background: url(/images/attrib-bl-curve.gif) no-repeat;
+	width: 6px;
+	height: 6px;
+}
+img.attrib-br-curve {
+	background: url(/images/attrib-br-curve.gif) no-repeat;
+	width: 6px;
+	height: 6px;
+}
+.sysattrib-popbottom-bg {
+	border-bottom: 3px #0265CB solid;
+	background: #EEE;
+}
+.attrib-top-bg {
+	background: #0265CB;
+}
+.cmdb-attrib-pop-hbg {
+	background: url(/images/cmdb-attrib-pop-hbg.gif) repeat-x;
+	height: 29px;
+	font-weight: bold;
+}
+img.cmdb-show-plus2 {
+	background: url(/images/cmdb-show-plus2.gif) no-repeat;
+	width: 17px;
+	height: 17px;
+}
+img.cmdb-hide-minus2 {
+	background: url(/images/cmdb-hide-minus2.gif) no-repeat;
+	width: 17px;
+	height: 17px;
+}
+.attrib-curve-cnt {
+	padding: 0px;
+	position: absolute;
+	margin-top: 44px;
+	margin-left: -216px;
+}
+.attrib-curve {
+	background: transparent;
+	width: 216px;
+	height: 221px;
+}
+.attrib-curve .attrib-content h1 {
+	margin: 0;
+	font-size: 11px;
+	padding: 0px 3px 3px 4px;
+}
+.attrib-curve .attrib-content {
+	display: block;
+	border: 0 solid #fcc799;
+	border-width: 0px 0px 0px 1px;
+	padding: 2px 0px 2px 11px;
+}
+.attrib-curve .atBox {
+	display: block;
+	background: transparent;
+	font-size: 1px;
+}
+.attrib-curve .atcolor {
+	background: #FFF;
+	border-color: #81C1E5;
+}
+.atb1, .atb2, .atb3, .atb4 {
+	display: block;
+	overflow: hidden;
+}
+.atb1, .atb2, .atb3 {
+	height: 1px;
+}
+.atb2, .atb3, .atb4 {
+	border-left: 1px solid #81C1E5;
+	border-right: 1px solid #fff;
+	background: #FFF;
+}
+.atb1 {
+	margin: 0 0px 0px 5px;
+	background: #81C1E5;
+}
+.atb2 {
+	margin: 0 0px 0px 3px;
+	border-width: 0 0px 0px 2px;
+}
+.atb3 {
+	margin: 0 0px 0px 2px;
+}
+.atb4 {
+	height: 2px;
+	margin: 0 0px 0px 1px;
+}
+.atb5 {
+	margin: 0 0px 0px 2px;
+}

@@ -1,0 +1,58 @@
+body {
+	padding: 0px;
+	margin: 0px;
+	background: #ffffff;
+	color: #000;
+}
+table {
+	color: #000;
+	font: normal 11px Verdana, Arial, Helvetica, sans-serif;
+}
+table tbody tr td {
+	color: #000;
+	font: normal 11px Verdana, Arial, Helvetica, sans-serif;
+}
+table tbody tr td a {
+	color: #000000;
+	text-decoration: none;
+}
+a:hover {
+	color: #f00;
+	text-decoration: none;
+}
+*form {
+	margin: 0px;
+	border: none;
+}
+label {
+	cursor: default;
+}
+fieldset {
+	border: 1px solid #5670A9;
+	padding: 10px;
+	background-color: #fff;
+}
+fieldset legend {
+	background-color: #5670A9;
+	border-left: 2px solid #7F93BF;
+	border-top: 2px solid #7F93BF;
+	border-right: 2px solid #213052;
+	border-bottom: 2px solid #213052;
+	font: bold 12px Verdana, Arial, Helvetica, sans-serif;
+	color: #ffffff;
+	text-align: right;
+	vertical-align: middle;
+	text-decoration: none;
+	padding: 2px 8px 2px 8px;
+}
+label input {
+	margin-bottom: -2px;
+}
+ul {
+	margin: 0px;
+	padding: 0px;
+}
+.fontNormal {
+	color: #000;
+	font: normal 12px Verdana, Arial, Helvetica, sans-serif;
+}
