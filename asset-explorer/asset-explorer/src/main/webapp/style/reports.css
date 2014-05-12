@@ -1,0 +1,131 @@
+/*$Id$ */
+.reportwizardheader {
+	background: url(/images/accountdetbg.gif) repeat-x left top;
+	background-color: #ffffff;
+	border-top: 3px solid #7992B8;
+	border-left: 0px solid #7992B8;
+	border-right: 0px solid #7992B8;
+	padding-bottom: 0px;
+}
+#reportstep {
+	background: #97CCF5 url(/images/bg_dash_main_title.gif) repeat-x bottom;
+	height: 23px;
+	background: #ECECEC;
+	position: relative;
+	cursor: pointer;
+	margin: 0px;
+	padding-left: 20px;
+}
+#rcstep1, #rcstep2, #rcstep3, #rcstep4, #rcstep5 {
+	float: left;
+	margin: 10px;
+	margin-left: 12px;
+	padding-bottom: 10px;
+	width: auto;
+}
+.reportsOutline {
+	padding: 1px;
+	border: 1px #DBDBDB solid;
+}
+.whitebgBorderreport {
+	border: 1px solid #CCD3DA;
+	border-bottom:none;
+}
+.reportsHeading {
+	border: 1px solid #8CBAE8;
+	height: 24px;
+	background: url("../images/accordiontabtitlebg.png") repeat-x scroll center bottom #F5F5F5;
+	padding:6px 2px 6px 14px;
+	border-bottom:none;
+}
+.reportsHeading #heading a {
+	color:#325FA3;
+	font:bold 12px Arial, Verdana, Helvetica, sans-serif;
+	display: block;
+	text-decoration: none;
+	background: url(/images/myview_itembullet.gif) no-repeat 5px 4px;
+	padding: 0 0 0 20px;
+}
+.reportsHeading #heading a:hover {
+	color: red;
+	background: url(/images/myview_itembullet.gif) no-repeat 5px 5px;
+}
+.privateReport {
+	color: #000;
+	display: block;
+	height: 13px;
+	background: url(/images/privatereport.gif) no-repeat 3px 2px;
+	padding: 4px 0 4px 35px;
+	font-weight:normal;
+}
+a.privateReport:hover {
+	color: #000;
+	background:#fcfcce url(/images/privatereport.gif) no-repeat 4px 3px;
+}
+.publicReport {
+	color: #000;
+	display: block;
+	height: 13px;
+	background: url(/images/publicreport.gif) no-repeat 3px 2px;
+	padding: 4px 0 4px 35px;
+	font-weight:normal;
+	text-decortion:none;
+}
+a.publicReport:hover {
+	color: #000;
+	background: #fcfcce url(/images/publicreport.gif) no-repeat 4px 3px;
+	text-decortion:none;
+}
+.reportsEditLink {
+	position: relative;
+	display: block;
+	height: 18px;
+	width: auto;
+	text-align: right;
+	float: right;
+	padding: 5px 55px 0 0;
+}
+.reportsEditLink a {
+	text-decoration: underline;
+	color: #000;
+}
+.calendar-req-innertl {
+	background:url(/images/calendar-req-innertl.gif) no-repeat;
+	width:6px;
+	height:6px;
+}
+.calendar-req-innertr {
+	background:url(/images/calendar-req-innertr.gif) no-repeat;
+	width:6px;
+	height:6px;
+}
+.calendar-req-innerbl {
+	background:url(/images/calendar-req-innerbl.gif) no-repeat;
+	width:6px;
+	height:6px;
+}
+.calendar-req-innerbr {
+	background:url(/images/calendar-req-innerbr.gif) no-repeat;
+	width:6px;
+	height:6px;
+}
+.pad10 {
+	padding:10px;
+}
+.lineh18 {
+	line-height:18px;
+}
+.infoicon {
+	background:url(/images/infoicon.gif) no-repeat;
+	width:18px;
+	height:19px;
+}
+.p30px10px10px10px {
+	padding:30px 10px 10px 10px;	
+}
+.p10px0pt0pt28px {
+	padding:10px 0 0 28px;	
+}
+.p0px25px70px0px {
+	padding:0 25px 70px 0;	
+}

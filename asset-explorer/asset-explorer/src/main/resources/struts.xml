@@ -8,7 +8,7 @@
 
 	<package name="basic-action-mappings" extends="struts-default">
 		<action name="login">
-			<result>index.jsp</result>
+			<result>WEB-INF/main_page.jsp</result>
 		</action>
 	</package>
 </struts>
