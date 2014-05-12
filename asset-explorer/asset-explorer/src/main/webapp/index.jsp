@@ -7,14 +7,20 @@
 <meta http-equiv="Content-Type" content="text/html; charset=GB2312">
 <title>登陆系统</title>
 <link rel="stylesheet" href="style/style.css" type="text/css">
+<style type="text/css">
+td.tdLabel {
+	font-family: KaiTi_GB2312;
+	font-size: 20px;
+}
+</style>
 </head>
 <body style="background-image:url(images/login-background.jpg);">
 <center>
-<div style="margin-top: 260px;text-align:-moz-center;font-size:70px;">AssetExplorer</div>
+<div style="margin-top: 230px;text-align:-moz-center;font-size:55px;">安全运行监管平台</div>
 <div style="margin-top: 50px;text-align:-moz-center;">
 <s:form action="login">
   <s:textfield name="userName" label="用户名" />
-  <s:textfield name="password" label="密码" />
+  <s:password name="password" label="密码" />
   <s:submit value="登陆" cssClass="cust_button" />
 </s:form>
 </div>

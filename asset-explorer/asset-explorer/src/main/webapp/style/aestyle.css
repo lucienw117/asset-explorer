@@ -7142,11 +7142,13 @@ table tr td>#topHeader .efx {
 	margin-top: 0px;
 }
 div.logo {
-	background: url(../images/header_logo.png?5500) no-repeat center;
-	width: 131px;
-	height: 37px;
-	padding-top: 10px;
-	margin: 0px 10px;
+	font-family: KaiTi_GB2312;
+    font-size: 21px;
+    font-weight: bold;
+    height: 37px;
+    margin: 0 10px;
+    padding-top: 10px;
+    width: 190px;
 }
 
 #topHeader table.top_tabs {
