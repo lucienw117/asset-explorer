@@ -10,5 +10,8 @@
 		<action name="login">
 			<result>WEB-INF/main_page.jsp</result>
 		</action>
+		<action name="asset_list">
+			<result>WEB-INF/asset_list.jsp</result>
+		</action>
 	</package>
 </struts>
