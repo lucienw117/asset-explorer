@@ -68,8 +68,274 @@
 						class="topheaderbg">
 						<tr>
 							<td valign="top">
-								<%@ include file="page_header.jsp" %>
-								<%@ include file="tools_bar.jsp" %>
+								<table cellpadding="0" id="topHeader" cellspacing="0" border="0"
+									width="100%">
+									<tr>
+										<td valign="top"><input type="hidden" name="loggedUserID"
+											value="2"> <input type="hidden" name="tabName"
+											value="Home"> <script>
+        signedIn();
+</script> <!--Start Header  -->
+											<div id="dropmenudiv" style="visibility: hidden;"
+												onMouseOver="clearhidemenu()"
+												onMouseOut="dynamichide(event)"></div> <!--link href="/style/CreamyBlue_new.css" rel="stylesheet" type="text/css"-->
+											<div id="timeToLoad" style="display: none;"></div> <!-- For fixing relogin issue start -->
+											<!-- For fixing relogin issue end-->
+
+
+											<table cellspacing="0" cellpadding="0" border="0"
+												class="top_links">
+												<tr>
+													<!-- Should not show the below table for registered and free license. Only for Traial version  -->
+													<td width="20" nowrap="nowrap"></td>
+													<td valign="top" class="ptop3"><a
+														href="javascript:NewWindow('../jsp/About.jsp','About','525','325','yes','center')"
+														class="pleft8 pright8">关于</a></td>
+													<td valign="top" class="ptop3" width="1"><img
+														width="1" hspace="3" height="18" class="toplink-sptr"
+														src="images/spacer.gif"></td>
+													<td valign="top" class="ptop3"><a
+														href="javascript:void(0)" onclick=""
+														class="pleft8 pright8">联系我们</a></td>
+													<td valign="top" class="ptop3" width="1"><img
+														width="1" hspace="3" height="18" class="toplink-sptr"
+														src="images/spacer.gif"></td>
+													<td valign="top" class="ptop3"><a
+														href="http://www.manageengine.com/products/asset-explorer/help/index.html"
+														class="pleft8 pright8" target="new">帮助</a></td>
+													<td valign="top" class="ptop3" width="1"><img
+														width="1" hspace="3" height="18" class="toplink-sptr"
+														src="images/spacer.gif"></td>
+													<td valign="top" class="ptop5" nowrap="nowrap"><nobr>
+															<a href="javascript: preLogout()" style="display: inline"
+																class="pleft8 pright8"><strong>退出</strong></a> [ Tim-Tian ]
+														</nobr></td>
+													<td width="20" nowrap="nowrap"></td>
+												</tr>
+											</table>
+
+											<div class="efx">
+												<table cellpadding="0" cellspacing="0" border="0"
+													width="500">
+													<tr>
+														<td valign="bottom">
+															<div class="logo">安全运行监管平台</div>
+														</td>
+														<td valign="bottom">
+
+
+															<table cellpadding="0" class="top_tabs" cellspacing="0"
+																border="0">
+																<tr>
+																	<td class="first-child"><a class="active" href="/AssetHomePage.do">首页</a></td>
+																	<!--checking for remote server-->
+																	<td><a href="/InventoryHome.do">资产</a></td>
+																	<!-- Software Tab -->
+                                                                    <!-- <td><a href="/SoftwareHome.do">软件</a></td> -->
+																	<td><a href="/PurchaseOrderList.do">运维</a></td>
+																	<td><a href="/ContractView.do">审计</a></td>
+																	<td><a href="/CMDBAction.do?mode=listView">安全</a></td>
+																	<td><a href="/AdminHome.do">告警</a></td>
+																	<td><a href="/CustomReportHandler.do">报表</a></td>
+																	<td><a href="/CustomReportHandler.do">文档</a></td>
+																	<td class="last-child"><a href="/Support.do">管理</a></td>
+
+																</tr>
+															</table>
+														</td>
+														<td></td>
+														<td>&nbsp;</td>
+													</tr>
+												</table>
+											</div>
+											<div id="SearchOptions" style="width: 180px; display: none;"
+												class="border-dark-gray">
+												<table border="0" cellspacing="0" cellpadding="0"
+													width="190px">
+													<tr>
+														<td class="searchlink" colspan="2"><a href="#"
+															onclick="changeSearchOption('Home')"><img
+																src="images/search_allresources_icon.gif" />All Assets</a>
+															<a href="#" onclick="changeSearchOption('Assets')"><img
+																src="images/search_workstation_icon.gif" />Workstation
+																/ Server</a> <a href="#"
+															onclick="changeSearchOption('Users')"><img
+																src="images/spacer.gif" class="usersicon" />Users</a> <a
+															href="#" onclick="changeSearchOption('Software')"><img
+																src="images/search_software_icon.gif" />Software</a> <a
+															href="#" onclick="changeSearchOption('Purchase')"><img
+																src="images/search_purchase_icon.gif" />Purchase</a> <a
+															href="#" onclick="changeSearchOption('Contracts')"><img
+																src="images/search_contact_icon.gif" />Contracts</a> <a
+															href="#" onclick="changeSearchOption('CMDB')"><img
+																src="images/spacer.gif" class="citype-defaulticn" />All
+																CIs</a></td>
+
+														<td width="6px">&nbsp;</td>
+													</tr>
+												</table>
+											</div></td>
+									</tr>
+								</table>
+								<div class="top-grayband">
+
+									<ul id="QuickLinksMenu" class="dropList">
+										<li class="f">
+											<table cellspacing="0" cellpadding="0" border="0">
+												<tr>
+													<td><em></em></td>
+													<td><b class='mact'>快速链接</b></td>
+													<td><i></i></td>
+												</tr>
+											</table> <iframe width="205" height="220" frameborder="0"
+												src="/framework/html/blank.html" style="display: none;"
+												class="dLf1"></iframe>
+											<ul style="display: none;">
+												<li><a href="/WorkstationListView.do" class="fontBlack"
+													title="Click to view all workstations">All Workstations</a></li>
+												<li><a
+													href="/WorkstationListView.do?AssetType=In Store"
+													class="fontBlack"
+													title="Click to view the workstation(s) In Store">Workstations
+														In Store</a></li>
+												<li><a href="/FailedWsListView.do" class="fontBlack"
+													title="Click to view the Un-audited workstations.">Un-audited
+														Workstations</a></li>
+												<li><a
+													href="/SoftwareListView.do?softwareManufacturer=-1&site=-1&swType=2&swComplianceType=0&showZeroCount=false"
+													class="fontBlack"
+													title="Click to view all Managed Software in the system.">Managed
+														Software</a></li>
+												<li><a
+													href="/SoftwareListView.do?softwareManufacturer=-1&site=-1&swType=4&swComplianceType=0&fromSoftwareHome=true&showZeroCount=false"
+													class="fontBlack"
+													title="Click to view all Prohibited Software in the system">Prohibited
+														Software</a></li>
+
+												<li><a href="/ManageGroups.do" class="fontBlack"
+													title="Click to manage Asset Groups">Manage Groups</a></li>
+
+												<li><a href="/GroupResourcesDef.do" class="fontBlack"
+													title="Click to create New Asset Group">Create Group</a></li>
+
+												<li><a href="/SetUpWizard.do?forwardTo=notification"
+													class="fontBlack" title="Notification Rules">Notification
+														Rules</a></li>
+
+												<li><a
+													href="/CMDBAction.do?mode=listView&allRelationships=true"
+													class="fontBlack" title="All Relationships">All
+														Relationships</a></li>
+
+											</ul>
+										</li>
+									</ul>
+
+
+									<ul id="CreateNewMenu" class="dropList">
+										<li class="f">
+											<table cellspacing="0" cellpadding="0" border="0">
+												<tr>
+													<td><em></em></td>
+													<td><b class='mact'>创建新的</b></td>
+													<td><i></i></td>
+												</tr>
+											</table> <iframe width="205" height="260" frameborder="0"
+												src="/framework/html/blank.html" style="display: none;"
+												class="dLf1"></iframe>
+											<ul style="display: none;">
+
+
+												<li><a href="javascript:void(0)"
+													onClick="showURLInDialog('/AddCI.do?mode=showDialog','closeButton=no,position=absolute,top=100,height=500,overflow=visible,left=350,modal=yes')"
+													class="fontBlack" title="Add New CI">CI</a></li>
+
+												<li><a href="javascript:void(0)"
+													onclick="showURLInDialog('/AddCI.do?mode=showAssetDialog&filter=allassetproducts','closeButton=no,position=absolute,top=100,height=500,overflow=visible,left=350,modal=yes')"
+													class="fontBlack"
+													title="Click to create a new Asset/Component">Asset/Component</a></li>
+												<li><a href="/ManualNodeAddition.do" class="fontBlack"
+													title="Click to create a new workstation">Workstation</a></li>
+												<li><a href="/ManualNodeAddition.do?isServer=true"
+													class="fontBlack" title="Click to create a New Server">Server</a></li>
+
+												<li><a href="/SoftwareLicense.do?operation=new"
+													class="fontBlack"
+													title="Click to create New Software License">Software
+														License</a></li>
+												<li><a
+													href="/LicenseAgreement.do?operation=newagreement"
+													class="fontBlack"
+													title="Click to create a New License Agreement">License
+														Agreement</a></li>
+
+												<li><a href="/PurchaseOrder.do?module=newPO"
+													class="fontBlack"
+													title="Click to create a New Purchase Order.">Purchase
+														Order</a></li>
+
+												<li><a href="/ContractDef.do" class="fontBlack"
+													title="Click to create a new Contract">Contract</a></li>
+
+												<li><a href="/RequesterDef.do?toShowView=addForm"
+													class="fontBlack" title="Click to create a New User">User</a></li>
+												<li><a href="/ProductDef.do?toShowView=addForm"
+													class="fontBlack" title="Click to create New Product">Product</a></li>
+												<li><a href="/VendorDef.do?toShowView=addForm"
+													class="fontBlack" title="Click to create a New Vendor">Vendor</a></li>
+
+											</ul>
+										</li>
+									</ul>
+									<div class="searchsection">
+										<form name="SearchNForm" method="post" action="/SearchN.do">
+											<input type="hidden" name="selectName" value="" id="selName">
+											<table cellpadding="0" cellspacing="0" border="0">
+												<tr>
+													<td class="search" valign="top"><a id="Search_Button"
+														href="javascript:showMenuAsDialog('Search_Button','SearchOptions');"
+														class="search_filter" href="#">&nbsp; <img
+															src="images/search_allresources_icon.gif"
+															id="searchImage" /> <script>document.getElementById('selName').value=getMessageForKey("sdp.common.search.allresources")</script>
+													</a></td>
+													<td><input type="text" name="searchText" value="搜索资产"
+														onblur="checkField(this)" onfocus="checkField(this)"
+														class="" id="searchText"> <script>
+					function checkField(source)
+					{
+						if(source.value == 'Search' || source.value == getMessageForKey( "sdp.leftpanel.search.title" ) || source.value == getMessageForKey( "ae.header.search.allAssets" ) || source.value == getMessageForKey( "ae.header.search.wsAndServer" ) || source.value == getMessageForKey( "ae.header.search.users" ) || source.value == getMessageForKey( "ae.header.search.software" ) || source.value == getMessageForKey( "ae.header.search.purchase" ) || source.value == getMessageForKey( "ae.header.search.contracts" ) || source.value == getMessageForKey( "ae.header.search.allCIs" ))
+						{ 
+							source.value = '';
+						}
+						else if(source.value == '')
+						{
+							if(optionSearchText == '')
+							{ 
+								source.value = 'Search Assets';
+							}
+							else
+							{
+								source.value = optionSearchText;
+							}
+						} 
+					}
+				</script></td>
+													<td valign="top">
+														<!--<input type="submit" name="submitbutton" value="Go" onclick="return validateSearchValue(this.form)" class="button" title="Go">-->
+														<input type="submit" name="submitbutton" value="&nbsp;"
+														onclick="return validateSearchValue(this.form)"
+														class="button" title="Go"> <!--a href="#" class="go_button">GO</a-->
+
+
+													</td>
+												</tr>
+											</table>
+										</form>
+
+
+									</div>
+								</div>
+
 								<div id="Scan" style="display: none;">
 									<table border="0" cellspacing="0" cellpadding="0" width="180px">
 										<tr>
@@ -340,9 +606,261 @@ if(window.jQuery != null) {
 								<table border="0" cellpadding="0" cellspacing="0" width="100%">
 									<tbody>
 										<tr>
-											<%@ include file="left_panel.jsp" %>
+											<!--  Left Panel Start -->
+											<td align="center" valign="top" class="Lefttd">
+
+												<table id="Left-Section" cellspacing="0" cellpadding="0"
+													border="0"
+													style="height: 100%; width: 100%; display: block;"
+													class='floatRight'>
+													<tr>
+														<td colspan="3" class="lnavtm alignRight"><img
+															class="lnavtr" src="images/spacer.gif"></td>
+													</tr>
+													<tr>
+														<td valign="top"><img src="images/spacer.gif"
+															width="10" height=506 border="0" /></td>
+														<td valign='top' height="100%"
+															class='content pad10pxrtlft alignLeft'><br> <SCRIPT
+																src="/scripts/common.js?6100" type="text/javascript"></SCRIPT>
+															<script>
+var css_browser_selector = function() {
+	var ua=navigator.userAgent.toLowerCase();
+	var is=function(t){ return ua.indexOf(t) != -1; };
+	var h=document.getElementsByTagName('html')[0];
+	var b=(!(/opera|webtv/i.test(ua))&&/msie (\d)/.test(ua))?('ie ie'+RegExp.$1):is('gecko/')? 'gecko':is('opera/9')?'opera opera9':/opera (\d)/.test(ua)?'opera opera'+RegExp.$1:is('konqueror')?'konqueror':is('applewebkit/')?'webkit safari':is('mozilla/')?'gecko':'';
+	var os=(is('x11')||is('linux'))?' linux':is('mac')?' mac':is('win')?' win':'';
+	var c=b+os+' js';
+	h.className += h.className?' '+c:c;
+}();
+//this method is for remote server case
+//function ShowAndHideRemote(divId1,divId2)
+//{
+//	alert("HI"+divId1+divId1);
+//}
+	
+</script>
+
+															<table class="LeftTable" width='100%' border="0"
+																cellspacing="0" cellpadding="0">
+																<tr class="DashboardTableColor">
+																	<td width="100%" class="leftnavstrip"><a
+																		href="javascript:void(0)" class="leftnavheading"><img
+																			src="images/spacer.gif" class="leftnavitems_expand"
+																			border="0" id="bulletResourcelinks">资产</a></td>
+																</tr>
+																<tr>
+																	<td valign='top' class='RightItemBorder'>
+																		<div id="Resourcelinks">
+																			<div id="subHeader" class="accordionTabTitleBar">
+																				<a id="ITAssets" href="javascript:void(0)" onClick="">工作站</a>
+																			</div>
+																			<div id="subHeader" class="accordionTabTitleBar">
+																				<a href="javascript:void(0)" onClick="">服务器</a>
+																			</div>
+																			<div id="subHeader" class="accordionTabTitleBar">
+																				<a href="javascript:void(0)" onClick="">网络设备</a>
+																			</div>
+																			<div id="subHeader" class="accordionTabTitleBar">
+																				<a href="javascript:void(0)" onClick="">网络链路</a>
+																			</div>
+																			<div id="subHeader" class="accordionTabTitleBar">
+																				<a href="javascript:void(0)" onClick="">安全设备</a>
+																			</div>
+																			<div id="subHeader" class="accordionTabTitleBar">
+																				<a href="javascript:void(0)" onClick="">存储</a>
+																			</div>
+																			<div id="subHeader" class="accordionTabTitleBar">
+																				<a href="javascript:void(0)" onClick="">操作系统</a>
+																			</div>
+																			<div id="subHeader" class="accordionTabTitleBar">
+																				<a href="javascript:void(0)" onClick="">中间件</a>
+																			</div>
+																			<div id="subHeader" class="accordionTabTitleBar">
+																				<a href="javascript:void(0)" onClick="">数据库</a>
+																			</div>
+																			<div id="subHeader" class="accordionTabTitleBar">
+																				<a href="javascript:void(0)" onClick="">应用软件</a>
+																			</div>
+																		</div>
+
+																	</td>
+																</tr>
+															</table> <br>
+															<table width="210" border="0" cellspacing="0"
+																cellpadding="0">
+																<tr>
+																	<td>
+																		<table width="100%" border="0" cellspacing="0"
+																			cellpadding="0">
+																			<tr>
+																				<td colspan="2"><b class="ptop"> <b
+																						class="cb1 DashboardTableColor"> </b> <b
+																						class="cb2 DashboardTableColor"> </b> <b
+																						class="cb3 DashboardTableColor"> </b> <b
+																						class="cb4 DashboardTableColor"> </b>
+																				</b></td>
+																			</tr>
+																			<tr class="DashboardTableColor">
+
+																				<td class="leftnavstrip"><a
+																					href="javascript:void(0)" class="leftnavheading"><img
+																						src="images/spacer.gif"
+																						class="leftnavitems_expand" hspace="1" vspace="0"
+																						border="0" id="bulletrecentitems">可用性巡检 </a></td>
+
+																			</tr>
+																		</table>
+																	</td>
+																</tr>
+																<tr>
+																	<td valign="top" class="RightItemBorder">
+
+
+																		<div id="recentitems">
+																			<table width="95%" border="0" cellspacing="0"
+																				cellpadding="4">
+
+																				<tr>
+																					<td width="8" class="RIbottomBorder" nowrap
+																						class="fontBlack"><img
+																						src="images/ri_asset_icon.gif"
+																						title="pa01-nb-think.workgroup" width="16"
+																						height="16" hspace="0" vspace="0"
+																						id='recentItemImg'></td>
+																					<td class="RIbottomBorder"><a
+																						href="ViewWSDetails.do?wsId=5409"
+																						class="FontBlackLink"
+																						title="pa01-nb-think.workgroup"
+																						style="width: 100%">连通性检测</a></td>
+																				</tr>
+
+																				<tr>
+																					<td width="8" class="RIbottomBorder" nowrap
+																						class="fontBlack"><img
+																						src="images/ri_asset_icon.gif"
+																						title="acc12-nb-think.workgroup" width="16"
+																						height="16" hspace="0" vspace="0"
+																						id='recentItemImg'></td>
+																					<td class="RIbottomBorder"><a
+																						href="ViewWSDetails.do?wsId=5408"
+																						class="FontBlackLink"
+																						title="acc12-nb-think.workgroup"
+																						style="width: 100%">数据接口检测</a></td>
+																				</tr>
+
+																				<tr>
+																					<td width="8" class="RIbottomBorder" nowrap
+																						class="fontBlack"><img
+																						src="images/ri_asset_icon.gif"
+																						title="ca06-pc.workgroup" width="16" height="16"
+																						hspace="0" vspace="0" id='recentItemImg'></td>
+																					<td class="RIbottomBorder"><a
+																						href="ViewWSDetails.do?wsId=5407"
+																						class="FontBlackLink" title="ca06-pc.workgroup"
+																						style="width: 100%">可用性检测</a></td>
+																				</tr>
+
+																				<tr>
+																					<td width="8" class="RIbottomBorder" nowrap
+																						class="fontBlack"><img
+																						src="images/ri_asset_icon.gif"
+																						title="Hp Computers" width="16" height="16"
+																						hspace="0" vspace="0" id='recentItemImg'></td>
+																					<td class="RIbottomBorder"><a
+																						href="ViewWSDetails.do?wsId=3301"
+																						class="FontBlackLink" title="Hp Computers"
+																						style="width: 100%">可用性分析</a></td>
+																				</tr>
+																			</table>
+																		</div>
+
+																	</td>
+																</tr>
+															</table> <br></td>
+														<!--script language="javascript">
+    matchHeight=function(){
+         var divs,contDivs,maxHeight,divHeight,d;
+         // get all <div> elements in the document
+         divs=document.getElementsByTagName('td');
+         contDivs=[];
+         // initialize maximum height value
+         maxHeight=0;
+         // iterate over all <div> elements in the document
+         for(var i=0;i<divs.length;i++){
+              // make collection with <div> elements with class attribute 'container'
+              if(/\bdivHolder\b/.test(divs[i].className)){
+                    d=divs[i];
+                    contDivs[contDivs.length]=d;
+                    // determine height for <div> element
+                    if(d.offsetHeight){
+                         divHeight=d.offsetHeight;
+                    }
+                    else if(d.style.pixelHeight){
+                         divHeight=d.style.pixelHeight;
+                    }
+                    // calculate maximum height
+                    maxHeight=Math.max(maxHeight,divHeight);
+              }
+         }
+         // assign maximum height value to all of container <div> elements
+         for(var i=0;i<contDivs.length;i++){
+              contDivs[i].style.height=maxHeight;
+         }
+    }
+    // execute function when page loads
+    window.onload=function(){
+         if(document.getElementsByTagName){
+
+              matchHeight();
+         }
+    }
+
+
+</script-->
+
+														<td class="divHolder centerclosebg" id="divHolder"
+															valign="top"><span style="height: 450px;"><img
+																src="images/spacer.gif" width="10"
+																style='min-height: 450px; height: 450px;' border="0"
+																id="LeftIndicatorClosed" /></span></td>
+													</tr>
+													<tr height="13">
+														<td colspan="3" class="lnavbm alignRight"><img
+															class="lnavbr" src="images/spacer.gif"></td>
+													</tr>
+												</table>
+												<table cellspacing="0" cellpadding="0" border="0"
+													height="100%" width="20" id="LeftOpen"
+													style="display: none;">
+													<tr height="13">
+														<td class="lnavtm alignRight"><img class="lnavhtr"
+															src="images/spacer.gif"></td>
+													</tr>
+													<tr>
+														<td valign="top" class="centerclosebg"><a
+															href="javascript:showLeftNav('Open')"
+															class="leftnavshowarrow" style="height: 450px;"><img
+																src="images/spacer.gif" width="10" border="0"
+																height="450px" id="LeftIndicator"
+																style='min-height: 450px; height: 450px;'
+																class="leftnavshowarrow" /></a></td>
+													</tr>
+													<tr height="13">
+														<td class="lnavbm alignRight"><img class="lnavhbr"
+															src="images/spacer.gif"></td>
+													</tr>
+												</table>
+
+											</td>
+											<!--  Left Panel End -->
 											<td valign="top" width="99%" class="pad5">
 												<!--Start Contents-->
+
+
+
+
+
 												<table cellspacing="0" cellpadding="0" border="0"
 													width="100%">
 													<tr>
@@ -612,8 +1130,8 @@ function closeMenusDialog(source)
 		
 						
                                                 <map id="ResourcesByStateChart" name="ResourcesByStateChart">
-<area shape="poly" coords="130,43,154,40,180,39,180,71,180,71" title="In Use = 8" alt="" href="asset_list.action">
-<area shape="poly" coords="180,39,215,41,244,47,266,56,273,61,277,66,277,72,275,78,269,83,261,88,237,96,205,101,169,102,136,99,108,92,97,88,89,83,84,77,81,71,83,66,87,60,94,55,103,51,130,43,180,71,180,71" title="In Store = 88" alt="" href="asset_list.action">
+<area shape="poly" coords="130,43,154,40,180,39,180,71,180,71" title="In Use = 8" alt="" href="/AssetListView.do?Type=Resources&amp;isFirst=true&amp;AssetType=In Use">
+<area shape="poly" coords="180,39,215,41,244,47,266,56,273,61,277,66,277,72,275,78,269,83,261,88,237,96,205,101,169,102,136,99,108,92,97,88,89,83,84,77,81,71,83,66,87,60,94,55,103,51,130,43,180,71,180,71" title="In Store = 88" alt="" href="/AssetListView.do?Type=Resources&amp;isFirst=true&amp;AssetType=In Store">
 </map>
                                                 <img src="images/ResourcesByState_386_1399895100652.png" usemap="#ResourcesByStateChart" border="0">
                                            
