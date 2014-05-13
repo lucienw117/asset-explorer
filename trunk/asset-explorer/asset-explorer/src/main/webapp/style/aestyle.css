@@ -12198,6 +12198,10 @@ font-size:11px;
 .grayacnbtn:hover{
 border: 1px solid #BBBBBB;
 }  
+.trailBar {
+color: #000000;
+font: bold 15px arial,verdana;
+}
 .ie .wi100ie{width:100%;} 
 /* Style added for purchase order receive items page */ 
 /* PO Receive Items style start */

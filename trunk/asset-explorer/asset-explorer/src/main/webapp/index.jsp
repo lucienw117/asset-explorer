@@ -18,7 +18,7 @@ td.tdLabel {
 <center>
 <div style="margin-top: 230px;text-align:-moz-center;font-size:55px;">安全运行监管平台</div>
 <div style="margin-top: 50px;text-align:-moz-center;">
-<s:form action="login">
+<s:form action="main_page">
   <s:textfield name="userName" label="用户名" />
   <s:password name="password" label="密码" />
   <s:submit value="登陆" cssClass="cust_button" />
