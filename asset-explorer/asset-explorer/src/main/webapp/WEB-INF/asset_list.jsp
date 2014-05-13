@@ -153,8 +153,8 @@
                 <td valign="top" height="0"> 
                   <table width="100%" cellspacing="0" cellpadding="0" border="0">
                     <tbody><tr> 
-                      <td class="fontBlack"><a class="fontBlack" href="InventoryHome.do">资产</a>&nbsp;&gt;
-                        <span class="fontBlackBold"></span>Resources<br>
+                      <td class="trailBar"><a class="trailBar" href="InventoryHome.do">资产</a>&nbsp;&gt;
+                        <span class="trailBar">Resources</span><br>
                         </td>
 			<td valign="middle" class="fontBlackBold alignright">[ <a title="点击从CSV文件导入资产" class="fontBlackBold" href="/ImportCIs.do?from=assetImport&amp;ciTypeId=21">从CSV文件导入</a> ]</td>
                             
@@ -739,7 +739,7 @@
                                            <td width="10" nowrap="nowrap"></td>
 											<td valign="middle" nowrap="" align="center" style="background:none" class="fontBlack menubar2">
 			
-						<ul class="actionscombo" id="nav-actions">																<li class="first">																			<a class="parent" href="javascript:void(0)">动作</a>
+						<ul class="actionscombo" id="nav-actions">																<li class="first">																			<a class="parent" href="javascript:void(0);">操作</a>
 																											<ul style="display: none;">
 																												<li>
 						
@@ -991,7 +991,7 @@
 			  
 			  <td class=" evenRow">
 
-<a target="_self" href="ViewCIDetails.do?ciId=904&amp;"> aetest-xp.helpdesk-test.com</a>
+<a target="_self" href="asset_details.action"> aetest-xp.helpdesk-test.com</a>
 </td>
 			
 		
@@ -1091,7 +1091,7 @@ Administrator
 			  
 			  <td class=" oddRow">
 
-<a target="_self" href="ViewCIDetails.do?ciId=303&amp;"> assetexplorer.zohocorpin.com</a>
+<a target="_self" href="asset_details.action"> assetexplorer.zohocorpin.com</a>
 </td>
 			
 		
@@ -1191,7 +1191,7 @@ Administrator
 			  
 			  <td class=" evenRow">
 
-<a target="_self" href="ViewCIDetails.do?ciId=6711&amp;"> clim cave</a>
+<a target="_self" href="asset_details.action"> clim cave</a>
 </td>
 			
 		

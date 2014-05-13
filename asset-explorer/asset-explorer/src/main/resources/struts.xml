@@ -7,11 +7,14 @@
 	<constant name="struts.devMode" value="true" />
 
 	<package name="basic-action-mappings" extends="struts-default">
-		<action name="login">
+		<action name="main_page">
 			<result>WEB-INF/main_page.jsp</result>
 		</action>
 		<action name="asset_list">
 			<result>WEB-INF/asset_list.jsp</result>
+		</action>
+		<action name="asset_details">
+			<result>WEB-INF/asset_details.jsp</result>
 		</action>
 	</package>
 </struts>

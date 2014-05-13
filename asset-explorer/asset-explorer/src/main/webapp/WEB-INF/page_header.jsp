@@ -43,7 +43,7 @@
 						<td valign="bottom">
 							<table cellpadding="0" class="top_tabs" cellspacing="0" border="0">
 								<tr>
-									<td class="first-child"> <a class="active" href="javascript:void(0);">首页</a></td>
+									<td class="first-child"> <a class="active" href="main_page.action">首页</a></td>
 									<td><a href="javascript:void(0);">资产</a></td>
 									<!-- <td><a href="javascript:void(0);">软件</a></td> -->
 									<td><a href="javascript:void(0);">运维</a></td>

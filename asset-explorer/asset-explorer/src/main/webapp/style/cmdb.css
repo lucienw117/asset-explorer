@@ -125,7 +125,7 @@ html, body {
 	display: none;
 	width: 16px;
 	height: 16px;
-	background: url(/images/more_info.gif) no-repeat;
+	background: url(../images/more_info.gif) no-repeat;
 	cursor: pointer;
 	z-index: 9999;
 }
@@ -139,7 +139,7 @@ html, body {
 	width: 16px;
 	height: 18px;
 	visibility: hidden;
-	background: url(/images/attribute_info.gif) no-repeat;
+	background: url(../images/attribute_info.gif) no-repeat;
 	cursor: pointer;
 }
 .node-relattr {
@@ -319,7 +319,7 @@ html, body {
 .desc_moreinfo ul {
 	margin: 5px 15px;
 	padding: 0px;
-	list-style-image: url(/images/incidents_left_arrow.gif);
+	list-style-image: url(../images/incidents_left_arrow.gif);
 }
 .desc_moreinfo ul li {
 	color: #000;
@@ -362,7 +362,7 @@ html, body {
 	text-decoration: none;
 }
 ul.ci_attribute {
-	list-style-image: url(/images/incidents_left_arrow.gif);
+	list-style-image: url(../images/incidents_left_arrow.gif);
 	margin: 0px 7px 0px 15px;
 	padding: 10px 0px;
 }
@@ -401,17 +401,17 @@ ul.ci_attribute li strong {
 	padding-right: 2px;
 }
 .cmdb-addrel-bl {
-	background: url(/images/cmdb-addrel-bl.gif) no-repeat;
+	background: url(../images/cmdb-addrel-bl.gif) no-repeat;
 	width: 3px;
 	height: 21px;
 }
 .cmdb-addrel-br {
-	background: url(/images/cmdb-addrel-br.gif) no-repeat;
+	background: url(../images/cmdb-addrel-br.gif) no-repeat;
 	width: 3px;
 	height: 21px;
 }
 .cmdb-addrel-bm {
-	background: url(/images/cmdb-addrel-bm.gif) repeat-x;
+	background: url(../images/cmdb-addrel-bm.gif) repeat-x;
 }
 .cmdb-addrel-bm a, .cmdb-addrel-bm a:hover {
 	font-weight: bold;
@@ -444,7 +444,7 @@ ul.ci_attribute li strong {
 .CMDBtoggleLnk {
 	text-decoration: none;
 	padding-left: 16px;
-	background: url(/images/attrib-showicon-plus.gif) no-repeat;
+	background: url(../images/attrib-showicon-plus.gif) no-repeat;
 }
 .CMDBtoggleLnk:hover {
 	color: #000;
@@ -469,25 +469,25 @@ ul.ci_attribute li strong {
 	text-decoration: none;
 	color: #000;
 	padding-top: 3px;
-	background: url(/images/cmdb-allci-bg.gif) no-repeat;
+	background: url(../images/cmdb-allci-bg.gif) no-repeat;
 	padding-left: 20px;
 	margin-left: 10px;
 }
 .CMDBtoggleLnk, .CMDBtoggleLnkshow {
 	text-decoration: none;
-	background: url(/images/ci-showicon-plus.gif) no-repeat;
+	background: url(../images/ci-showicon-plus.gif) no-repeat;
 	width: 17px;
 	height: 16px;
 }
 .CMDBtoggleLnkhide {
 	text-decoration: none;
-	background: url(/images/ci-hideicon-minus.gif) no-repeat;
+	background: url(../images/ci-hideicon-minus.gif) no-repeat;
 	width: 17px;
 	height: 16px;
 }
 .viewAllCITitlebg {
 	COLOR: #000000;
-	background: #ceec8c url(/images/leftnavtabtbarh.gif) repeat-x;
+	background: #ceec8c url(../images/leftnavtabtbarh.gif) repeat-x;
 	border-bottom: 1px solid #A9B9C6;
 	text-align: right;
 	border-left: 1px solid #A9B9C6;
@@ -499,7 +499,7 @@ ul.ci_attribute li strong {
 .viewAllCITitlebg a {
 	color: #000;
 	text-decoration: none;
-	background: url(/images/autocompleteitembullet.gif) 0px 3px no-repeat;
+	background: url(../images/autocompleteitembullet.gif) 0px 3px no-repeat;
 	padding-left: 8px;
 }
 .viewAllCITitlebg a:hover {
@@ -507,7 +507,7 @@ ul.ci_attribute li strong {
 }
 .accordionTabTitleBarHover {
 	COLOR: #000000;
-	background: #ceec8c url(/images/leftnavtabtbarh.gif) repeat-x;
+	background: #ceec8c url(../images/leftnavtabtbarh.gif) repeat-x;
 	height: 23px;
 }
 .cmdb-importci-info {
@@ -532,7 +532,7 @@ ul.ci_attribute li strong {
 	margin-top: 7px;
 	display: block;
 	width: auto;
-	background: #d4e9f7 url(/images/cmdb-import-btnbg.gif) left no-repeat;
+	background: #d4e9f7 url(../images/cmdb-import-btnbg.gif) left no-repeat;
 	border-right: 1px #8cbae8 solid;
 	margin-left: 20px;
 	padding: 0px 13px 0px 31px;
@@ -540,14 +540,14 @@ ul.ci_attribute li strong {
 }
 .cmdb-import-btn:hover {
 	color: #2f5993;
-	background: #b9d4f0 url(/images/cmdb-import-btnbg-h.gif) left no-repeat;
+	background: #b9d4f0 url(../images/cmdb-import-btnbg-h.gif) left no-repeat;
 }
 .cmdbpopbox {
 	border: 1px #8cbae8 solid;
 }
 .cmdbpoptabheader {
 	height: 109px;
-	background: url(/images/cmdb-poptabbg.gif) bottom repeat-x;
+	background: url(../images/cmdb-poptabbg.gif) bottom repeat-x;
 }
 .cmdbpoptabhderfnt {
 	color: #356da5;
@@ -566,24 +566,24 @@ ul.ci_attribute li strong {
 	padding:22px 0px 0px 65px;
 }
 .cmdbtabhdertable a.one-normal {
-	background: transparent url(/images/cmdb-step1-normal.gif) 8px 8px no-repeat;
+	background: transparent url(../images/cmdb-step1-normal.gif) 8px 8px no-repeat;
 }
 .cmdbtabhdertable a.one-active {
-	background: #fff url(/images/cmdb-step1-active.gif) 8px 8px no-repeat;
+	background: #fff url(../images/cmdb-step1-active.gif) 8px 8px no-repeat;
 	border-top: 2px solid #BADAF9;
 }
 .cmdbtabhdertable a.two-normal {
-	background: transparent url(/images/cmdb-step2-normal.gif) 8px 8px no-repeat;
+	background: transparent url(../images/cmdb-step2-normal.gif) 8px 8px no-repeat;
 }
 .cmdbtabhdertable a.two-active {
-	background: #fff url(/images/cmdb-step2-active.gif) 8px 8px no-repeat;
+	background: #fff url(../images/cmdb-step2-active.gif) 8px 8px no-repeat;
 	border-top: 2px solid #BADAF9;
 }
 .cmdbtabhdertable a.three-normal {
-	background: transparent url(/images/cmdb-step3-normal.gif) 8px 8px no-repeat;
+	background: transparent url(../images/cmdb-step3-normal.gif) 8px 8px no-repeat;
 }
 .cmdbtabhdertable a.three-active {
-	background: #fff url(/images/cmdb-step3-active.gif) 8px 8px no-repeat;
+	background: #fff url(../images/cmdb-step3-active.gif) 8px 8px no-repeat;
 	border-top: 2px solid #BADAF9;
 }
 .cmdbpoptabcnt {
@@ -597,7 +597,7 @@ ul.cmdblist-redarrow {
 }
 ul.cmdblist-redarrow li {
 	list-style: none;
-	background: url(/images/cmdb-redbullet.gif) no-repeat;
+	background: url(../images/cmdb-redbullet.gif) no-repeat;
 	font: bold 11px/15px Verdana, Arial, Helvetica, sans-serif;
 	padding-bottom: 10px;
 	padding-left: 20px;
@@ -619,7 +619,7 @@ ul.cmdblist-redarrow li span {
 	font-weight: bold;
 	padding-top: 2px;
 	padding-left: 20px;
-	background: url(/images/cmdb-allci-bg.gif) no-repeat;
+	background: url(../images/cmdb-allci-bg.gif) no-repeat;
 	text-decoration:underline;
 }
 #AutoAssignWsView_CT td .editAutoAssign a {
@@ -634,7 +634,7 @@ ul.cmdblist-redarrow li span {
 }
 .CIprogress {
 	height: 30px;
-	background: url(/images/processing.gif) 10px 5px no-repeat;
+	background: url(../images/processing.gif) 10px 5px no-repeat;
 }
 .CIprogress span {
 	padding-top: 8px;
@@ -652,7 +652,7 @@ ul.cmdblist-redarrow li span {
 	opacity: 0.5;
 	filter: alpha(opacity=50);
 	zoom: 1;
-	background: url(/images/process.gif) right bottom no-repeat;
+	background: url(../images/process.gif) right bottom no-repeat;
 }
 .importcsvicon {
 	padding-left: 20px;
@@ -676,7 +676,7 @@ ul.cmdblist-redarrow li span {
 	white-space: nowrap
 }
 .cisearchbar-middle {
-	background: url(/images/cisearchbar-middle.gif) repeat-x;
+	background: url(../images/cisearchbar-middle.gif) repeat-x;
 	white-space: nowrap;
 }
 .cisearchbar-middle a span {
@@ -684,12 +684,12 @@ ul.cmdblist-redarrow li span {
 	color: #444;
 }
 .cisearchbar-left {
-	background: url(/images/cisearchbar-left.gif) no-repeat;
+	background: url(../images/cisearchbar-left.gif) no-repeat;
 	width: 6px;
 	height: 23px;
 }
 .cisearchbar-arrow {
-	background: url(/images/cisearchbar-arrow.gif) no-repeat;
+	background: url(../images/cisearchbar-arrow.gif) no-repeat;
 	width: 11px;
 	height: 6px;
 }
@@ -711,7 +711,7 @@ ul.cmdblist-redarrow li span {
 	height: 23px;
 	display: inline-block;
 	text-decoration: none;
-	background: url(/images/cisearchbar-right.gif) right no-repeat;
+	background: url(../images/cisearchbar-right.gif) right no-repeat;
 }
 .cisearchbar-right:hover {
 	color: #fff;
@@ -734,7 +734,7 @@ ul.cmdblist-redarrow li span {
 	width:215px;
 }
 .citype-dropmenu ul li a.dropmenu {
-	background: url(/images/formshdw.gif) no-repeat -4px -4px;
+	background: url(../images/formshdw.gif) no-repeat -4px -4px;
 	height: 16px;
 	line-height: 16px;
 	display: block;
@@ -753,7 +753,7 @@ ul.cmdblist-redarrow li span {
 	color: #000;
 }
 .citype-dropmenu ul li a.dropmenu i {
-	background: url(/images/def-drop-right.gif) no-repeat;
+	background: url(../images/def-drop-right.gif) no-repeat;
 	width: 17px;
 	height: 14px;
 	display: block;
@@ -794,7 +794,7 @@ ul.cmdblist-redarrow li span {
 	font-weight: normal;
 }
 .citype-dropmenu ul li ul li a {
-	background: url(/images/dropcontentbullet.gif) 3px 5px no-repeat;
+	background: url(../images/dropcontentbullet.gif) 3px 5px no-repeat;
 	display: block !important;
 	text-decoration: none;
 	padding: 3px 7px 3px 18px;
@@ -804,7 +804,7 @@ ul.cmdblist-redarrow li span {
 	white-space: nowrap;
 }
 .citype-dropmenu ul li ul a:hover, .citype-dropmenu .current {
-	background: #B2C7F4 url(/images/dropcontentbullet.gif) 3px 5px no-repeat;
+	background: #B2C7F4 url(../images/dropcontentbullet.gif) 3px 5px no-repeat;
 	color: #000000;
 }
 .citype-dropmenu ul li ul li ul, ul.dropcontent li ul li ul, .citype-dropmenu ul li ul li ul li ul li ul, .citype-dropmenu ul li ul li ul li ul li ul li ul {
@@ -822,7 +822,7 @@ ul.cmdblist-redarrow li span {
 	font-weight: bold;
 	color: #3969aa;
 	height: 20px;
-	background: url(/images/searchicn.gif) no-repeat;
+	background: url(../images/searchicn.gif) no-repeat;
 	padding: 3px 0px 3px 23px;
 }
 .ciReldetail {
@@ -877,15 +877,15 @@ ul.cmdblist-redarrow li span {
 .astbtnl {
 	width: 5px;
 	height: 19px;
-	background: url(/images/astbtnl.gif) no-repeat;
+	background: url(../images/astbtnl.gif) no-repeat;
 }
 .astbtnr {
 	width: 5px;
 	height: 19px;
-	background: url(/images/astbtnr.gif) no-repeat;
+	background: url(../images/astbtnr.gif) no-repeat;
 }
 .astbtnm {
-	background: url(/images/astbtnm.gif) repeat-x;
+	background: url(../images/astbtnm.gif) repeat-x;
 	width: auto;
 	height: 19px;
 }
@@ -894,7 +894,7 @@ ul.cmdblist-redarrow li span {
 	text-decoration: none;
 }
 input.astbtnm {
-	background: url(/images/astbtnm.gif) repeat-x;
+	background: url(../images/astbtnm.gif) repeat-x;
 	color: #6E6E6E;
 	font: bold 12px Arial, Verdana, Helvetica, sans-serif;
 	border: none;
@@ -965,16 +965,16 @@ input.addserviceitembtnmiddle {
 	width: 3px;
 }
 .rshipbblalrbox .tl {
-	background: url(/images/rshipbblalrt-tl.gif) no-repeat;
+	background: url(../images/rshipbblalrt-tl.gif) no-repeat;
 }
 .rshipbblalrbox .tr {
-	background: url(/images/rshipbblalrt-tr.gif) no-repeat;
+	background: url(../images/rshipbblalrt-tr.gif) no-repeat;
 }
 .rshipbblalrbox .bl {
-	background: url(/images/rshipbblalrt-bl.gif) no-repeat;
+	background: url(../images/rshipbblalrt-bl.gif) no-repeat;
 }
 .rshipbblalrbox .br {
-	background: url(/images/rshipbblalrt-br.gif) no-repeat;
+	background: url(../images/rshipbblalrt-br.gif) no-repeat;
 }
 .rshipbblalrbox .content {
 	height: auto;
@@ -987,7 +987,7 @@ input.addserviceitembtnmiddle {
 	margin-top: -21px;
 }
 html>body .rshipbblalrbox .ptr {
-	background: url(/images/rshipbblalrt-ptr.png) no-repeat;
+	background: url(../images/rshipbblalrt-ptr.png) no-repeat;
 }
 .rshipbblalrbox .or {
 	width:50px;
@@ -1031,20 +1031,20 @@ div.addservicebtn input {
 	color: #fff;
 	width: auto;
 	position: relative;
-	background: url(/images/addservicebtnmiddle.gif) repeat-x;
+	background: url(../images/addservicebtnmiddle.gif) repeat-x;
 	height: 20px;
 	border: none;
 }
 div.addservicebtn em {
 	position: absolute;
-	background: url(/images/addservicebtnleft.gif) no-repeat;
+	background: url(../images/addservicebtnleft.gif) no-repeat;
 	width: 4px;
 	height: 20px;
 	display: block;
 }
 div.addservicebtn i {
 	position: absolute;
-	background: url(/images/addservicebtnright.gif) no-repeat;
+	background: url(../images/addservicebtnright.gif) no-repeat;
 	width: 4px;
 	height: 20px;
 }
@@ -1057,20 +1057,20 @@ div.addserviceitembtn input {
 	color: #000;
 	width: auto;
 	position: relative;
-	background: url(/images/addserviceitembtnmiddle.gif) repeat-x;
+	background: url(../images/addserviceitembtnmiddle.gif) repeat-x;
 	height: 20px;
 	border: none;
 }
 div.addserviceitembtn em {
 	position: absolute;
-	background: url(/images/addserviceitembtnleft.gif) no-repeat;
+	background: url(../images/addserviceitembtnleft.gif) no-repeat;
 	width: 4px;
 	height: 20px;
 	display: block;
 }
 div.addserviceitembtn i {
 	position: absolute;
-	background: url(/images/addserviceitembtnright.gif) no-repeat;
+	background: url(../images/addserviceitembtnright.gif) no-repeat;
 	width: 4px;
 	height: 20px;
 }
@@ -1101,7 +1101,7 @@ work_viewshade .view_title strong {
 	height: 42px;
 }
 label.addrshipbtn {
-	background:url(/images/addrelnbtnleft.gif) no-repeat;
+	background:url(../images/addrelnbtnleft.gif) no-repeat;
 	display:inline-block;
 	margin:0;
 	padding:0;
@@ -1111,7 +1111,7 @@ label.addrshipbtn {
 	position:relative;
 }
 label.addrshipbtn a {
-	background:url(/images/addrelnbtnright.gif) no-repeat right top;
+	background:url(../images/addrelnbtnright.gif) no-repeat right top;
 	font: bold 11px/24px Verdana, Arial, Helvetica, sans-serif;
 	color: #000;
 	width:auto;
@@ -1157,13 +1157,13 @@ div.addrshipbtn em {
 	height: 24px;
 	display: block;
 	float: left;
-	background: url(/images/addrelnbtnl.gif) no-repeat;
+	background: url(../images/addrelnbtnl.gif) no-repeat;
 }
 div.addrshipbtn i {
 	width: 6px;
 	height: 24px;
 	float: left;
-	background: url(/images/addrelnbtnr.gif) no-repeat;
+	background: url(../images/addrelnbtnr.gif) no-repeat;
 }
 .rsnavswitch {
 	margin-top: 11px;
@@ -1212,13 +1212,13 @@ div.addrshipbtn span {
 	margin-left: 450px;
 }
 .graphactions .help {
-	background: url(/images/helptool-icon-thumb.png) no-repeat;
+	background: url(../images/helptool-icon-thumb.png) no-repeat;
 	text-decoration: none;
 	padding: 2px 0px 4px 22px;
 	float: left;
 }
 .graphactions .zoomin {
-	background: url(/images/zoominsmall.gif) no-repeat;
+	background: url(../images/zoominsmall.gif) no-repeat;
 	width: 16px;
 	height: 17px;
 	display: inline;
@@ -1226,7 +1226,7 @@ div.addrshipbtn span {
 	margin-right: 14px;
 }
 .graphactions .zoomout {
-	background: url(/images/zoomoutsmall.gif) no-repeat;
+	background: url(../images/zoomoutsmall.gif) no-repeat;
 	width: 16px;
 	height: 17px;
 	display: inline;
@@ -1234,7 +1234,7 @@ div.addrshipbtn span {
 	margin-right: 14px;
 }
 .graphactions .zoomfit {
-	background: url(/images/zoomfitsmall.gif) no-repeat;
+	background: url(../images/zoomfitsmall.gif) no-repeat;
 	width: 16px;
 	height: 17px;
 	display: inline;
@@ -1242,7 +1242,7 @@ div.addrshipbtn span {
 	margin-right: 14px;
 }
 .graphactions .print {
-	background: url(/images/printsmallicn.gif) no-repeat;
+	background: url(../images/printsmallicn.gif) no-repeat;
 	width: 16px;
 	height: 17px;
 	display: inline;
@@ -1262,7 +1262,7 @@ div.addrshipbtn span {
 	height: 17px;
 	font-weight: normal;
 	text-decoration: underline;
-	background: url(/images/actionsdroparwblu.gif) no-repeat right 5px;
+	background: url(../images/actionsdroparwblu.gif) no-repeat right 5px;
 	padding: 2px 20px 0px 0px;
 }
 .relmenubar #parent>a {
@@ -1270,7 +1270,7 @@ div.addrshipbtn span {
 }
 .relmenubar #parent a:hover {
 	color: #000;
-	background: url(/images/actionsdroparwblu.gif) no-repeat right 5px;
+	background: url(../images/actionsdroparwblu.gif) no-repeat right 5px;
 }
 #relactionsmenu ul {
 	list-style: none;
@@ -1292,7 +1292,7 @@ div.addrshipbtn span {
 }
 #relactionsmenu a:hover {
 	color: #f00;
-	background:  url(/images/actionsbg1.gif) no-repeat right top;
+	background:  url(../images/actionsbg1.gif) no-repeat right top;
 }
 #relactionsmenu li ul {
 	display: none;
@@ -1312,7 +1312,7 @@ div.addrshipbtn span {
 }
 #relactionsmenu li ul a {
 	display: block;
-	background: transparent url(/images/autocompleteitembullet.gif) no-repeat 7px 5px;
+	background: transparent url(../images/autocompleteitembullet.gif) no-repeat 7px 5px;
 	background-color: #fff;
 	border-top: 1px solid #ddd;
 	border-bottom: 1px solid #fff;
@@ -1328,7 +1328,7 @@ div.addrshipbtn span {
 	color: #000;
 	border-top: 1px solid #ccc;
 	border-bottom: 1px solid #eee;
-	background: transparent url(/images/autocompleteitembullet1.gif) no-repeat 8px 5px;
+	background: transparent url(../images/autocompleteitembullet1.gif) no-repeat 8px 5px;
 	background-color: #EFF4FA;
 	text-decoration: none;
 	border-left: 4px solid #3969AA;
@@ -1350,13 +1350,13 @@ div.addrshipbtn span {
 img.openNewWindow {
 	border-width: 0px; 
 	margin-top: 7px !important;
-	background: url(/images/new_window.png) no-repeat;
+	background: url(../images/new_window.png) no-repeat;
 	width:24px;
 }
 img.openNewWindowOver {
 	border-width: 0px; 
 	margin-top: 7px !important;
-	background: url(/images/new_window_hover.png) no-repeat;
+	background: url(../images/new_window_hover.png) no-repeat;
 	width:24px;
 }
 .astrshipdet {
@@ -1416,7 +1416,7 @@ table.assetrshiptable th b, b.astfntbld {
 	width: 100%;
 }
 #dropMnuBig ul li a.dropmenu {
-	background: url(/images/formshdw.gif) no-repeat -4px -4px;
+	background: url(../images/formshdw.gif) no-repeat -4px -4px;
 	height: 16px;
 	line-height: 16px;
 	display: block;
@@ -1435,7 +1435,7 @@ table.assetrshiptable th b, b.astfntbld {
 	color: #000;
 }
 #dropMnuBig ul li a.dropmenu i {
-	background: url(/images/def-drop-right.gif) no-repeat;
+	background: url(../images/def-drop-right.gif) no-repeat;
 	width: 17px;
 	height: 14px;
 	display: block;
@@ -1483,7 +1483,7 @@ table.assetrshiptable th b, b.astfntbld {
 	margin-left: -1px;
 }
 #dropMnuBig ul li ul.scrollContent li span.left {
-	background: url(/images/dropmnubigbrd.gif) right repeat-y;
+	background: url(../images/dropmnubigbrd.gif) right repeat-y;
 	border-left: 1px #fff solid;
 }
 #dropMnuBig ul li ul.scrollContent li.act span.left:hover {
@@ -1532,7 +1532,7 @@ table.assetrshiptable th b, b.astfntbld {
 	background: #dbe8f1;
 }
 #dropMnuBig ul li ul.scrollContent li span.left {
-	background: url(/images/dropmnubigbrd.gif) right repeat-y;
+	background: url(../images/dropmnubigbrd.gif) right repeat-y;
 	border-left: 1px #fff solid;
 }
 #dropMnuBig ul li ul.scrollContent li.act span.left:hover {
@@ -1575,7 +1575,7 @@ table.assetrshiptable th b, b.astfntbld {
 	width: 267px;
 }
 .cmdb-cirel-dropdown ul li a.dropmenu {
-	background: url(/images/cirelmenubarbgon.gif) repeat-x;
+	background: url(../images/cirelmenubarbgon.gif) repeat-x;
 	color: #000;
 	font-weight: normal;
 	text-decoration: none;
@@ -1599,7 +1599,7 @@ table.assetrshiptable th b, b.astfntbld {
 	margin-right: -3px;
 }
 .cmdb-cirel-dropdown ul li a.dropmenu i {
-	background: url(/images/cirelmenubarbgright.gif) no-repeat;
+	background: url(../images/cirelmenubarbgright.gif) no-repeat;
 	width: 19px;
 	height: 19px;
 	display: block;
@@ -1630,7 +1630,7 @@ table.assetrshiptable th b, b.astfntbld {
 	text-decoration: none;
 	display: block;
 	color: #7d7d7d;
-	background: #fff url(/images/cirelatnbltn.gif) no-repeat 10px 7px;
+	background: #fff url(../images/cirelatnbltn.gif) no-repeat 10px 7px;
 	line-height: 19px;
 	border-bottom: 1px #bbd1ff solid;
 	width: 100%;
@@ -1646,7 +1646,7 @@ table.assetrshiptable th b, b.astfntbld {
 }
 .cmdb-cirel-dropdown ul li .cmdb-cirel-dropdown-sub ul li a:hover {
 	color: #000;
-	background: #eff4fa url(/images/cirelatnblth.gif) no-repeat 10px 7px;
+	background: #eff4fa url(../images/cirelatnblth.gif) no-repeat 10px 7px;
 	display: block;
 	border-left: #4a7db9 4px solid;
 	border-right: #4a7db9 4px solid;
@@ -1676,7 +1676,7 @@ table.assetrshiptable th b, b.astfntbld {
 	font-size: 12px;
 }
 .viewshadehbg {
-	background: url(/images/bg_works_title_shade_new.gif) repeat-x;
+	background: url(../images/bg_works_title_shade_new.gif) repeat-x;
 	height: 51px;
 }
 .fnthr2 {
@@ -1705,7 +1705,7 @@ table.assetrshiptable th b, b.astfntbld {
 	height: 9px;
 }
 .right_arrow {
-	background:url(/images/right_arrow.png) no-repeat 50% 50%;
+	background:url(../images/right_arrow.png) no-repeat 50% 50%;
 	width:6px;
 	height:9px;
 }
@@ -1717,7 +1717,7 @@ table.assetrshiptable th b, b.astfntbld {
 .ci-desc-count a:hover { background:#e0e0e0; }
 .ci-desc-count a b { padding:3px 6px; background:#b1d5ff; }
 .ui-panel-buttonbg { 
-	background:#F5F5F5 url(/images/ui-panel-buttonbg.gif) repeat-x;
+	background:#F5F5F5 url(../images/ui-panel-buttonbg.gif) repeat-x;
 	-moz-border-radius: 0.2em;
 	-webkit-border-radius: 0.2em;
 	border-radius:0.2em; 
@@ -1733,7 +1733,7 @@ table.assetrshiptable th b, b.astfntbld {
 	box-shadow: #aaaaaa 0px 2px 2px;
 }
 .cinode-alert {
-	background:url(/images/cinode-alert.png) no-repeat right bottom;
+	background:url(../images/cinode-alert.png) no-repeat right bottom;
 	display:inline-block;
 	width:17px;
 	height:17px;
@@ -1743,12 +1743,12 @@ table.assetrshiptable th b, b.astfntbld {
 	z-index:100;
 }
 .cmdb-pop-tabright {
-	background:url(/images/cmdb-pop-tabright.gif) no-repeat;
+	background:url(../images/cmdb-pop-tabright.gif) no-repeat;
 	width:26px;
 	height:60px;	
 }
 .cmdb-pop-tableft {
-	background:url(/images/cmdb-pop-tableft.gif) no-repeat;
+	background:url(../images/cmdb-pop-tableft.gif) no-repeat;
 	width:26px;
 	height:60px;
 }
@@ -1771,7 +1771,7 @@ iframe.allCIdropdown {
 	left:-1px; 
 }
 .editicon1 {
-	background: url(/images/editicon.gif) no-repeat;
+	background: url(../images/editicon.gif) no-repeat;
 	width: 19px;
 	height: 13px;
 }
@@ -1825,7 +1825,7 @@ iframe.allCIdropdown {
 	margin-top:54px;	
 }
 .quickRelationLine{
-	background:url(/images/line.gif) center repeat-y;
+	background:url(../images/line.gif) center repeat-y;
 	width:50px;
 	white-space:nowrap;
 }
