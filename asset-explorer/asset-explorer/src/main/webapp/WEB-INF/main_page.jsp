@@ -28,7 +28,7 @@
 
 
 	<table border="0" cellpadding="0" cellspacing="0" width="100%">
-		<tbody>
+		
 			<tr>
 				<td valign="top"><iframe name="SDPHeaderFrame"
 						src="/framework/html/blank.html" style="display: none;"></iframe>
@@ -64,8 +64,7 @@
 						</span>&nbsp;&nbsp;[ <a href="javascript:closeAgentUpgradeMsg();"
 							style="text-decoration: underline">Close</a> ]
 					</div>
-					<table width="100%" cellpadding="0" cellspacing="0" border="0"
-						class="topheaderbg">
+					<table width="100%" cellpadding="0" cellspacing="0" border="0" class="topheaderbg">
 						<tr>
 							<td valign="top">
 								<%@ include file="page_header.jsp" %>
@@ -137,210 +136,15 @@
 											<td class="helptool-shadow-br">&nbsp;</td>
 										</tr>
 									</table>
-								</div> <script type="text/javascript">
-
-function showMenuAsDialog(holder, source) {
-	var reqX = findPosX(document.getElementById(holder));
-	var reqY = findPosY(document.getElementById(holder));
-	var offsetWidth = document.getElementById(holder).offsetHeight;
-		showDialog(document.getElementById(source).innerHTML,'position=absolute,closeButton=no,closeOnBodyClick=yes,srcElement=CreateNew_PH,left=' + (reqX-document.body.scrollLeft) + ',top=' + (reqY+ offsetWidth-document.body.scrollTop));
-}
-
-
-function showMenuAsDialogForQuickLink(holder, source) {
-	document.onmousemove = capturePosForQuickLink;
-
-	var reqX = findPosX(document.getElementById(holder))-540;
-	var reqY = findPosY(document.getElementById(holder))+12;
-	var offsetWidth = document.getElementById(holder).offsetHeight;
-	showDialog(document.getElementById(source).innerHTML,'position=absolute,closeButton=no,srcElement=CreateNew_PH,left=' + (reqX-document.body.scrollLeft) + ',top=' + (reqY+ offsetWidth-document.body.scrollTop));
-	setTimeout("closeMenusDialogForQuickLink('" + source + "')", 1000);
-}
-
-
-
-/*function showMenuAsDialogForDropLinks1(holder, source) {
-
-	var reqX = findPosX(document.getElementById(holder));
-	var reqY = findPosY(document.getElementById(holder));
-	var offsetWidth = document.getElementById(holder).offsetHeight
-		showDialog(document.getElementById(source).innerHTML,'position=absolute,closeButton=no,closeOnBodyClick=yes,srcElement=CreateNew_PH,left=' + (reqX-document.body.scrollLeft) + ',top=' + (reqY+ offsetWidth-document.body.scrollTop));
-}*/
-
-function showscanlist(ele) {
-	var mainanchor = jQuery(ele);
-	mainanchor.prop('class','scan-act');  // no i18n
-    var menulist = mainanchor.next();
-	//console.log(menulist.id);
-    menulist.show();
-	jQuery('.head_comp').mouseleave(function(){
-		menulist.hide();
-		mainanchor.removeAttr('class'); // no i18n
-	})
-}
-
-
-function showMenuAsDialogForDropLinks1(holder, source) {
-	document.onmousemove = capturePos;
-
-	var reqX = findPosX(document.getElementById(holder));
-	var reqY = findPosY(document.getElementById(holder));
-	var offsetHeight = document.getElementById(holder).offsetHeight;
-	var offsetWidth = document.getElementById(holder).offsetWidth;
-
-	var leftX = 0;
-
-	if( document.getElementById('tablemenus') != undefined )
-	{
-		if( document.getElementById('tablemenus').width != undefined )
-		{
-			leftX = document.getElementById('tablemenus').width;
-		}
-	}
-	if( leftX == 0 )
-	{
-		showDialog(document.getElementById(source).innerHTML,'position=absolute,closeButton=no,left=' + (reqX-document.body.scrollLeft) + ',top=' + (reqY+offsetHeight-document.body.scrollTop));//No I18N
-	}
-	else
-	{
-		showDialog(document.getElementById(source).innerHTML,'position=absolute,closeButton=no,left=' + (reqX + offsetWidth - document.body.scrollLeft - leftX) + ',top=' + (reqY+ offsetHeight-document.body.scrollTop));//No I18N
-	}
-	//setTimeout("closeMenusDialog('" + source + "')", 1000);//No I18N
-}
-
-
-
-function capturePos(e) {
-	if (window.ActiveXObject)
-	{
-		xposition = window.event.clientX;
-		yposition = window.event.clientY;
-	}	
-	else
-	{
-		xposition = e.pageX;	
-		yposition = e.pageY;	
-	}
-}
-
-
-
-function closeMenusDialog(source)
-{
-
-//	alert("xposition "+xposition+" yposition "+yposition);
-
-	var dialogElement = document.getElementById("_DIALOG_LAYER");
-	var reqX = findPosX(dialogElement);
-	var reqY = findPosY(dialogElement);
-	var offsetHeight = dialogElement.offsetHeight;
-	var offsetWidth = dialogElement.offsetWidth;
-	// the below check is done without proper understanding, just done on a trial and error basis.
-	if (window.ActiveXObject)
-	{
-		reqY = reqY - document.body.scrollTop;
-	}	
-
-	var reqEndX = reqX + offsetWidth;
-	var reqEndY = reqY + offsetHeight;
-
-	//alert("reqX "+dialogElement.style.left+" reqY "+dialogElement.style.top+ " reqEndX "+reqEndX+" reqEndY "+reqEndY);	
-
-	if(xposition < reqEndX && xposition > reqX && yposition < reqEndY && yposition > (reqY-20)) {
-	//	alert("Still In");
-		setTimeout("closeMenusDialog('" + source + "')", 1000);
-	}
-	else {
-	//	alert("Out of the menu");
-		closeDialog();
-	}
-	
-}
-
-
-var xpositionForQuickLink,ypositionForQuickLink;
-
-function capturePosForQuickLink(eForQuickLink) {
-	if (window.ActiveXObject)
-	{
-		xpositionForQuickLink = window.event.clientX;
-		ypositionForQuickLink = window.event.clientY;
-	}	
-	else
-	{
-		xpositionForQuickLink = eForQuickLink.pageX;	
-		ypositionForQuickLink = eForQuickLink.pageY;	
-	}
-}
-
-
-
-function closeMenusDialogForQuickLink(source)
-{
-
-	//alert("xposition "+xpositionForQuickLink+" yposition "+ypositionForQuickLink);
-
-	var dialogElement = document.getElementById("_DIALOG_LAYER");
-	
-	/* This is done on trial and error basis - Need to analyze the same later */
-	var reqX = findPosX(dialogElement) + 305;
-	var reqY = findPosY(dialogElement) - 20;
-	var offsetHeight = dialogElement.offsetHeight - 10 ;
-	var offsetWidth = dialogElement.offsetWidth - 325 ;
-	
-	//alert("offsetHeight" + offsetHeight + " offsetWidth" + offsetWidth);
-	//alert(" Src : " + dialogElement.innerHTML);
-	
-	// the below check is done without proper understanding, just done on a trial and error basis.
-	if (window.ActiveXObject)
-	{
-		//reqY = reqY - document.body.scrollTop;
-	}	
-
-	var reqEndX = reqX + offsetWidth;
-	var reqEndY = reqY + offsetHeight;
-
-	//alert("xpositionForQuickLink "+xpositionForQuickLink+" ypositionForQuickLink "+ypositionForQuickLink);	
-	//alert("reqX "+reqX+" reqY "+reqY+ " reqEndX "+reqEndX+" reqEndY "+reqEndY);	
-
-	if(xpositionForQuickLink < reqEndX && xpositionForQuickLink > reqX && ypositionForQuickLink < reqEndY && ypositionForQuickLink > (reqY-20)) 
-	{
-		//	alert("Still In");
-		setTimeout("closeMenusDialogForQuickLink('" + source + "')", 1000);
-	}
-	else 
-	{
-		//	alert("Out of the menu");
-		closeDialog();
-	}
-	
-}
-
-
-
-
-
-
-
-
-</script> <script>
-if(window.jQuery != null) {	
-				jQuery(document).ready(
-					function()
-					{
-						jQuery('#QuickLinksMenu').MultiDropMenu({animSpeed: 500});
-						jQuery('#CreateNewMenu').MultiDropMenu({animSpeed: 500});
-					}
-				);
-			}			
-</script> <!-- Header ends here -->
+								</div> 
 							</td>
+						</tr>
 						<tr>
 							<td>
 								<table border="0" cellpadding="0" cellspacing="0" width="100%">
-									<tbody>
+									
 										<tr>
-											<%@ include file="left_panel.jsp" %>
+											<td class="Lefttd" valign="top" align="center"><%@ include file="left_panel.jsp" %></td>
 											<td valign="top" width="99%" class="pad5">
 												<!--Start Contents-->
 												<table cellspacing="0" cellpadding="0" border="0"
@@ -626,7 +430,7 @@ function closeMenusDialog(source)
 						
 							<div class="inf">
 							<table cellpadding="0" cellspacing="0">
-							<tbody><tr>
+							<tr>
 								<td>
 								
 
@@ -637,7 +441,7 @@ function closeMenusDialog(source)
 
 									</td>
 													</tr>
-													</tbody></table>
+													</table>
 								</div>
 								<b class="cBox curveFix" style="position:relative; display:none; top:-5px;"><b class="cb4 color_vdb"></b><b class="cb3 color_vdb">
 							</b><b class="cb2 color_vdb"></b><b class="cb1"></b></b></div>
@@ -1134,11 +938,11 @@ if(window.jQuery != null) {
 
 											</td>
 										</tr>
-									</tbody>
+									
 								</table>
 							</td>
 						</tr>
-						</tbody>
+						
 					</table> <br> <br> <br> <script>
 function setMinLeftPanelHeight(){
 //      alert("Right - Section height : " + document.getElementById('Right-Section').clientHeight);

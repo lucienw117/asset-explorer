@@ -28,7 +28,7 @@
 
 
 	<table border="0" cellpadding="0" cellspacing="0" width="100%">
-		<tbody>
+		
 			<tr>
 				<td valign="top"><iframe name="SDPHeaderFrame"
 						src="/framework/html/blank.html" style="display: none;"></iframe>
@@ -64,278 +64,11 @@
 						</span>&nbsp;&nbsp;[ <a href="javascript:closeAgentUpgradeMsg();"
 							style="text-decoration: underline">Close</a> ]
 					</div>
-					<table width="100%" cellpadding="0" cellspacing="0" border="0"
-						class="topheaderbg">
+					<table width="100%" cellpadding="0" cellspacing="0" border="0" class="topheaderbg">
 						<tr>
 							<td valign="top">
-								<table cellpadding="0" id="topHeader" cellspacing="0" border="0"
-									width="100%">
-									<tr>
-										<td valign="top"><input type="hidden" name="loggedUserID"
-											value="2"> <input type="hidden" name="tabName"
-											value="Home"> <script>
-        signedIn();
-</script> <!--Start Header  -->
-											<div id="dropmenudiv" style="visibility: hidden;"
-												onMouseOver="clearhidemenu()"
-												onMouseOut="dynamichide(event)"></div> <!--link href="/style/CreamyBlue_new.css" rel="stylesheet" type="text/css"-->
-											<div id="timeToLoad" style="display: none;"></div> <!-- For fixing relogin issue start -->
-											<!-- For fixing relogin issue end-->
-
-
-											<table cellspacing="0" cellpadding="0" border="0"
-												class="top_links">
-												<tr>
-													<!-- Should not show the below table for registered and free license. Only for Traial version  -->
-													<td width="20" nowrap="nowrap"></td>
-													<td valign="top" class="ptop3"><a
-														href="javascript:NewWindow('../jsp/About.jsp','About','525','325','yes','center')"
-														class="pleft8 pright8">关于</a></td>
-													<td valign="top" class="ptop3" width="1"><img
-														width="1" hspace="3" height="18" class="toplink-sptr"
-														src="images/spacer.gif"></td>
-													<td valign="top" class="ptop3"><a
-														href="javascript:void(0)" onclick=""
-														class="pleft8 pright8">联系我们</a></td>
-													<td valign="top" class="ptop3" width="1"><img
-														width="1" hspace="3" height="18" class="toplink-sptr"
-														src="images/spacer.gif"></td>
-													<td valign="top" class="ptop3"><a
-														href="http://www.manageengine.com/products/asset-explorer/help/index.html"
-														class="pleft8 pright8" target="new">帮助</a></td>
-													<td valign="top" class="ptop3" width="1"><img
-														width="1" hspace="3" height="18" class="toplink-sptr"
-														src="images/spacer.gif"></td>
-													<td valign="top" class="ptop5" nowrap="nowrap"><nobr>
-															<a href="javascript: preLogout()" style="display: inline"
-																class="pleft8 pright8"><strong>退出</strong></a> [ Tim-Tian ]
-														</nobr></td>
-													<td width="20" nowrap="nowrap"></td>
-												</tr>
-											</table>
-
-											<div class="efx">
-												<table cellpadding="0" cellspacing="0" border="0"
-													width="500">
-													<tr>
-														<td valign="bottom">
-															<div class="logo">安全运行监管平台</div>
-														</td>
-														<td valign="bottom">
-
-
-															<table cellpadding="0" class="top_tabs" cellspacing="0"
-																border="0">
-																<tr>
-																	<td class="first-child"><a class="active" href="/AssetHomePage.do">首页</a></td>
-																	<!--checking for remote server-->
-																	<td><a href="/InventoryHome.do">资产</a></td>
-																	<!-- Software Tab -->
-                                                                    <!-- <td><a href="/SoftwareHome.do">软件</a></td> -->
-																	<td><a href="/PurchaseOrderList.do">运维</a></td>
-																	<td><a href="/ContractView.do">审计</a></td>
-																	<td><a href="/CMDBAction.do?mode=listView">安全</a></td>
-																	<td><a href="/AdminHome.do">告警</a></td>
-																	<td><a href="/CustomReportHandler.do">报表</a></td>
-																	<td><a href="/CustomReportHandler.do">文档</a></td>
-																	<td class="last-child"><a href="/Support.do">管理</a></td>
-
-																</tr>
-															</table>
-														</td>
-														<td></td>
-														<td>&nbsp;</td>
-													</tr>
-												</table>
-											</div>
-											<div id="SearchOptions" style="width: 180px; display: none;"
-												class="border-dark-gray">
-												<table border="0" cellspacing="0" cellpadding="0"
-													width="190px">
-													<tr>
-														<td class="searchlink" colspan="2"><a href="#"
-															onclick="changeSearchOption('Home')"><img
-																src="images/search_allresources_icon.gif" />All Assets</a>
-															<a href="#" onclick="changeSearchOption('Assets')"><img
-																src="images/search_workstation_icon.gif" />Workstation
-																/ Server</a> <a href="#"
-															onclick="changeSearchOption('Users')"><img
-																src="images/spacer.gif" class="usersicon" />Users</a> <a
-															href="#" onclick="changeSearchOption('Software')"><img
-																src="images/search_software_icon.gif" />Software</a> <a
-															href="#" onclick="changeSearchOption('Purchase')"><img
-																src="images/search_purchase_icon.gif" />Purchase</a> <a
-															href="#" onclick="changeSearchOption('Contracts')"><img
-																src="images/search_contact_icon.gif" />Contracts</a> <a
-															href="#" onclick="changeSearchOption('CMDB')"><img
-																src="images/spacer.gif" class="citype-defaulticn" />All
-																CIs</a></td>
-
-														<td width="6px">&nbsp;</td>
-													</tr>
-												</table>
-											</div></td>
-									</tr>
-								</table>
-								<div class="top-grayband">
-
-									<ul id="QuickLinksMenu" class="dropList">
-										<li class="f">
-											<table cellspacing="0" cellpadding="0" border="0">
-												<tr>
-													<td><em></em></td>
-													<td><b class='mact'>快速链接</b></td>
-													<td><i></i></td>
-												</tr>
-											</table> <iframe width="205" height="220" frameborder="0"
-												src="/framework/html/blank.html" style="display: none;"
-												class="dLf1"></iframe>
-											<ul style="display: none;">
-												<li><a href="/WorkstationListView.do" class="fontBlack"
-													title="Click to view all workstations">All Workstations</a></li>
-												<li><a
-													href="/WorkstationListView.do?AssetType=In Store"
-													class="fontBlack"
-													title="Click to view the workstation(s) In Store">Workstations
-														In Store</a></li>
-												<li><a href="/FailedWsListView.do" class="fontBlack"
-													title="Click to view the Un-audited workstations.">Un-audited
-														Workstations</a></li>
-												<li><a
-													href="/SoftwareListView.do?softwareManufacturer=-1&site=-1&swType=2&swComplianceType=0&showZeroCount=false"
-													class="fontBlack"
-													title="Click to view all Managed Software in the system.">Managed
-														Software</a></li>
-												<li><a
-													href="/SoftwareListView.do?softwareManufacturer=-1&site=-1&swType=4&swComplianceType=0&fromSoftwareHome=true&showZeroCount=false"
-													class="fontBlack"
-													title="Click to view all Prohibited Software in the system">Prohibited
-														Software</a></li>
-
-												<li><a href="/ManageGroups.do" class="fontBlack"
-													title="Click to manage Asset Groups">Manage Groups</a></li>
-
-												<li><a href="/GroupResourcesDef.do" class="fontBlack"
-													title="Click to create New Asset Group">Create Group</a></li>
-
-												<li><a href="/SetUpWizard.do?forwardTo=notification"
-													class="fontBlack" title="Notification Rules">Notification
-														Rules</a></li>
-
-												<li><a
-													href="/CMDBAction.do?mode=listView&allRelationships=true"
-													class="fontBlack" title="All Relationships">All
-														Relationships</a></li>
-
-											</ul>
-										</li>
-									</ul>
-
-
-									<ul id="CreateNewMenu" class="dropList">
-										<li class="f">
-											<table cellspacing="0" cellpadding="0" border="0">
-												<tr>
-													<td><em></em></td>
-													<td><b class='mact'>创建新的</b></td>
-													<td><i></i></td>
-												</tr>
-											</table> <iframe width="205" height="260" frameborder="0"
-												src="/framework/html/blank.html" style="display: none;"
-												class="dLf1"></iframe>
-											<ul style="display: none;">
-
-
-												<li><a href="javascript:void(0)"
-													onClick="showURLInDialog('/AddCI.do?mode=showDialog','closeButton=no,position=absolute,top=100,height=500,overflow=visible,left=350,modal=yes')"
-													class="fontBlack" title="Add New CI">CI</a></li>
-
-												<li><a href="javascript:void(0)"
-													onclick="showURLInDialog('/AddCI.do?mode=showAssetDialog&filter=allassetproducts','closeButton=no,position=absolute,top=100,height=500,overflow=visible,left=350,modal=yes')"
-													class="fontBlack"
-													title="Click to create a new Asset/Component">Asset/Component</a></li>
-												<li><a href="/ManualNodeAddition.do" class="fontBlack"
-													title="Click to create a new workstation">Workstation</a></li>
-												<li><a href="/ManualNodeAddition.do?isServer=true"
-													class="fontBlack" title="Click to create a New Server">Server</a></li>
-
-												<li><a href="/SoftwareLicense.do?operation=new"
-													class="fontBlack"
-													title="Click to create New Software License">Software
-														License</a></li>
-												<li><a
-													href="/LicenseAgreement.do?operation=newagreement"
-													class="fontBlack"
-													title="Click to create a New License Agreement">License
-														Agreement</a></li>
-
-												<li><a href="/PurchaseOrder.do?module=newPO"
-													class="fontBlack"
-													title="Click to create a New Purchase Order.">Purchase
-														Order</a></li>
-
-												<li><a href="/ContractDef.do" class="fontBlack"
-													title="Click to create a new Contract">Contract</a></li>
-
-												<li><a href="/RequesterDef.do?toShowView=addForm"
-													class="fontBlack" title="Click to create a New User">User</a></li>
-												<li><a href="/ProductDef.do?toShowView=addForm"
-													class="fontBlack" title="Click to create New Product">Product</a></li>
-												<li><a href="/VendorDef.do?toShowView=addForm"
-													class="fontBlack" title="Click to create a New Vendor">Vendor</a></li>
-
-											</ul>
-										</li>
-									</ul>
-									<div class="searchsection">
-										<form name="SearchNForm" method="post" action="/SearchN.do">
-											<input type="hidden" name="selectName" value="" id="selName">
-											<table cellpadding="0" cellspacing="0" border="0">
-												<tr>
-													<td class="search" valign="top"><a id="Search_Button"
-														href="javascript:showMenuAsDialog('Search_Button','SearchOptions');"
-														class="search_filter" href="#">&nbsp; <img
-															src="images/search_allresources_icon.gif"
-															id="searchImage" /> <script>document.getElementById('selName').value=getMessageForKey("sdp.common.search.allresources")</script>
-													</a></td>
-													<td><input type="text" name="searchText" value="搜索资产"
-														onblur="checkField(this)" onfocus="checkField(this)"
-														class="" id="searchText"> <script>
-					function checkField(source)
-					{
-						if(source.value == 'Search' || source.value == getMessageForKey( "sdp.leftpanel.search.title" ) || source.value == getMessageForKey( "ae.header.search.allAssets" ) || source.value == getMessageForKey( "ae.header.search.wsAndServer" ) || source.value == getMessageForKey( "ae.header.search.users" ) || source.value == getMessageForKey( "ae.header.search.software" ) || source.value == getMessageForKey( "ae.header.search.purchase" ) || source.value == getMessageForKey( "ae.header.search.contracts" ) || source.value == getMessageForKey( "ae.header.search.allCIs" ))
-						{ 
-							source.value = '';
-						}
-						else if(source.value == '')
-						{
-							if(optionSearchText == '')
-							{ 
-								source.value = 'Search Assets';
-							}
-							else
-							{
-								source.value = optionSearchText;
-							}
-						} 
-					}
-				</script></td>
-													<td valign="top">
-														<!--<input type="submit" name="submitbutton" value="Go" onclick="return validateSearchValue(this.form)" class="button" title="Go">-->
-														<input type="submit" name="submitbutton" value="&nbsp;"
-														onclick="return validateSearchValue(this.form)"
-														class="button" title="Go"> <!--a href="#" class="go_button">GO</a-->
-
-
-													</td>
-												</tr>
-											</table>
-										</form>
-
-
-									</div>
-								</div>
-
+								<%@ include file="page_header.jsp" %>
+								<%@ include file="tools_bar.jsp" %>
 								<div id="Scan" style="display: none;">
 									<table border="0" cellspacing="0" cellpadding="0" width="180px">
 										<tr>
@@ -403,1260 +136,1708 @@
 											<td class="helptool-shadow-br">&nbsp;</td>
 										</tr>
 									</table>
-								</div> <script type="text/javascript">
-
-function showMenuAsDialog(holder, source) {
-	var reqX = findPosX(document.getElementById(holder));
-	var reqY = findPosY(document.getElementById(holder));
-	var offsetWidth = document.getElementById(holder).offsetHeight;
-		showDialog(document.getElementById(source).innerHTML,'position=absolute,closeButton=no,closeOnBodyClick=yes,srcElement=CreateNew_PH,left=' + (reqX-document.body.scrollLeft) + ',top=' + (reqY+ offsetWidth-document.body.scrollTop));
-}
-
-
-function showMenuAsDialogForQuickLink(holder, source) {
-	document.onmousemove = capturePosForQuickLink;
-
-	var reqX = findPosX(document.getElementById(holder))-540;
-	var reqY = findPosY(document.getElementById(holder))+12;
-	var offsetWidth = document.getElementById(holder).offsetHeight;
-	showDialog(document.getElementById(source).innerHTML,'position=absolute,closeButton=no,srcElement=CreateNew_PH,left=' + (reqX-document.body.scrollLeft) + ',top=' + (reqY+ offsetWidth-document.body.scrollTop));
-	setTimeout("closeMenusDialogForQuickLink('" + source + "')", 1000);
-}
-
-
-
-/*function showMenuAsDialogForDropLinks1(holder, source) {
-
-	var reqX = findPosX(document.getElementById(holder));
-	var reqY = findPosY(document.getElementById(holder));
-	var offsetWidth = document.getElementById(holder).offsetHeight
-		showDialog(document.getElementById(source).innerHTML,'position=absolute,closeButton=no,closeOnBodyClick=yes,srcElement=CreateNew_PH,left=' + (reqX-document.body.scrollLeft) + ',top=' + (reqY+ offsetWidth-document.body.scrollTop));
-}*/
-
-function showscanlist(ele) {
-	var mainanchor = jQuery(ele);
-	mainanchor.prop('class','scan-act');  // no i18n
-    var menulist = mainanchor.next();
-	//console.log(menulist.id);
-    menulist.show();
-	jQuery('.head_comp').mouseleave(function(){
-		menulist.hide();
-		mainanchor.removeAttr('class'); // no i18n
-	})
-}
-
-
-function showMenuAsDialogForDropLinks1(holder, source) {
-	document.onmousemove = capturePos;
-
-	var reqX = findPosX(document.getElementById(holder));
-	var reqY = findPosY(document.getElementById(holder));
-	var offsetHeight = document.getElementById(holder).offsetHeight;
-	var offsetWidth = document.getElementById(holder).offsetWidth;
-
-	var leftX = 0;
-
-	if( document.getElementById('tablemenus') != undefined )
-	{
-		if( document.getElementById('tablemenus').width != undefined )
-		{
-			leftX = document.getElementById('tablemenus').width;
-		}
-	}
-	if( leftX == 0 )
-	{
-		showDialog(document.getElementById(source).innerHTML,'position=absolute,closeButton=no,left=' + (reqX-document.body.scrollLeft) + ',top=' + (reqY+offsetHeight-document.body.scrollTop));//No I18N
-	}
-	else
-	{
-		showDialog(document.getElementById(source).innerHTML,'position=absolute,closeButton=no,left=' + (reqX + offsetWidth - document.body.scrollLeft - leftX) + ',top=' + (reqY+ offsetHeight-document.body.scrollTop));//No I18N
-	}
-	//setTimeout("closeMenusDialog('" + source + "')", 1000);//No I18N
-}
-
-
-
-function capturePos(e) {
-	if (window.ActiveXObject)
-	{
-		xposition = window.event.clientX;
-		yposition = window.event.clientY;
-	}	
-	else
-	{
-		xposition = e.pageX;	
-		yposition = e.pageY;	
-	}
-}
-
-
-
-function closeMenusDialog(source)
-{
-
-//	alert("xposition "+xposition+" yposition "+yposition);
-
-	var dialogElement = document.getElementById("_DIALOG_LAYER");
-	var reqX = findPosX(dialogElement);
-	var reqY = findPosY(dialogElement);
-	var offsetHeight = dialogElement.offsetHeight;
-	var offsetWidth = dialogElement.offsetWidth;
-	// the below check is done without proper understanding, just done on a trial and error basis.
-	if (window.ActiveXObject)
-	{
-		reqY = reqY - document.body.scrollTop;
-	}	
-
-	var reqEndX = reqX + offsetWidth;
-	var reqEndY = reqY + offsetHeight;
-
-	//alert("reqX "+dialogElement.style.left+" reqY "+dialogElement.style.top+ " reqEndX "+reqEndX+" reqEndY "+reqEndY);	
-
-	if(xposition < reqEndX && xposition > reqX && yposition < reqEndY && yposition > (reqY-20)) {
-	//	alert("Still In");
-		setTimeout("closeMenusDialog('" + source + "')", 1000);
-	}
-	else {
-	//	alert("Out of the menu");
-		closeDialog();
-	}
-	
-}
-
-
-var xpositionForQuickLink,ypositionForQuickLink;
-
-function capturePosForQuickLink(eForQuickLink) {
-	if (window.ActiveXObject)
-	{
-		xpositionForQuickLink = window.event.clientX;
-		ypositionForQuickLink = window.event.clientY;
-	}	
-	else
-	{
-		xpositionForQuickLink = eForQuickLink.pageX;	
-		ypositionForQuickLink = eForQuickLink.pageY;	
-	}
-}
-
-
-
-function closeMenusDialogForQuickLink(source)
-{
-
-	//alert("xposition "+xpositionForQuickLink+" yposition "+ypositionForQuickLink);
-
-	var dialogElement = document.getElementById("_DIALOG_LAYER");
-	
-	/* This is done on trial and error basis - Need to analyze the same later */
-	var reqX = findPosX(dialogElement) + 305;
-	var reqY = findPosY(dialogElement) - 20;
-	var offsetHeight = dialogElement.offsetHeight - 10 ;
-	var offsetWidth = dialogElement.offsetWidth - 325 ;
-	
-	//alert("offsetHeight" + offsetHeight + " offsetWidth" + offsetWidth);
-	//alert(" Src : " + dialogElement.innerHTML);
-	
-	// the below check is done without proper understanding, just done on a trial and error basis.
-	if (window.ActiveXObject)
-	{
-		//reqY = reqY - document.body.scrollTop;
-	}	
-
-	var reqEndX = reqX + offsetWidth;
-	var reqEndY = reqY + offsetHeight;
-
-	//alert("xpositionForQuickLink "+xpositionForQuickLink+" ypositionForQuickLink "+ypositionForQuickLink);	
-	//alert("reqX "+reqX+" reqY "+reqY+ " reqEndX "+reqEndX+" reqEndY "+reqEndY);	
-
-	if(xpositionForQuickLink < reqEndX && xpositionForQuickLink > reqX && ypositionForQuickLink < reqEndY && ypositionForQuickLink > (reqY-20)) 
-	{
-		//	alert("Still In");
-		setTimeout("closeMenusDialogForQuickLink('" + source + "')", 1000);
-	}
-	else 
-	{
-		//	alert("Out of the menu");
-		closeDialog();
-	}
-	
-}
-
-
-
-
-
-
-
-
-</script> <script>
-if(window.jQuery != null) {	
-				jQuery(document).ready(
-					function()
-					{
-						jQuery('#QuickLinksMenu').MultiDropMenu({animSpeed: 500});
-						jQuery('#CreateNewMenu').MultiDropMenu({animSpeed: 500});
-					}
-				);
-			}			
-</script> <!-- Header ends here -->
+								</div> 
 							</td>
+						</tr>
 						<tr>
 							<td>
 								<table border="0" cellpadding="0" cellspacing="0" width="100%">
-									<tbody>
+									
 										<tr>
-											<!--  Left Panel Start -->
-											<td align="center" valign="top" class="Lefttd">
+											<td class="Lefttd" valign="top" align="center"><%@ include file="left_panel.jsp" %></td>
+											<td width="99%" valign="top" id="Right-Section">
 
-												<table id="Left-Section" cellspacing="0" cellpadding="0"
-													border="0"
-													style="height: 100%; width: 100%; display: block;"
-													class='floatRight'>
-													<tr>
-														<td colspan="3" class="lnavtm alignRight"><img
-															class="lnavtr" src="images/spacer.gif"></td>
-													</tr>
-													<tr>
-														<td valign="top"><img src="images/spacer.gif"
-															width="10" height=506 border="0" /></td>
-														<td valign='top' height="100%"
-															class='content pad10pxrtlft alignLeft'><br> <SCRIPT
-																src="/scripts/common.js?6100" type="text/javascript"></SCRIPT>
-															<script>
-var css_browser_selector = function() {
-	var ua=navigator.userAgent.toLowerCase();
-	var is=function(t){ return ua.indexOf(t) != -1; };
-	var h=document.getElementsByTagName('html')[0];
-	var b=(!(/opera|webtv/i.test(ua))&&/msie (\d)/.test(ua))?('ie ie'+RegExp.$1):is('gecko/')? 'gecko':is('opera/9')?'opera opera9':/opera (\d)/.test(ua)?'opera opera'+RegExp.$1:is('konqueror')?'konqueror':is('applewebkit/')?'webkit safari':is('mozilla/')?'gecko':'';
-	var os=(is('x11')||is('linux'))?' linux':is('mac')?' mac':is('win')?' win':'';
-	var c=b+os+' js';
-	h.className += h.className?' '+c:c;
-}();
-//this method is for remote server case
-//function ShowAndHideRemote(divId1,divId2)
-//{
-//	alert("HI"+divId1+divId1);
-//}
-	
-</script>
+			  			<!-- display block starts here -->
+	<table width="100%" cellspacing="0" cellpadding="0" border="0">
+                <tbody><tr> 
+                <td valign="top" height="0"> 
+                  <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                    <tbody><tr> 
+                      <td class="fontBlack"><a class="fontBlack" href="InventoryHome.do">资产</a>&nbsp;&gt;
+                        <span class="fontBlackBold"></span>Resources<br>
+                        </td>
+			<td valign="middle" class="fontBlackBold alignright">[ <a title="点击从CSV文件导入资产" class="fontBlackBold" href="/ImportCIs.do?from=assetImport&amp;ciTypeId=21">从CSV文件导入</a> ]</td>
+                            
+                    </tr>
+                  </tbody></table></td>
+              </tr>
 
-															<table class="LeftTable" width='100%' border="0"
-																cellspacing="0" cellpadding="0">
-																<tr class="DashboardTableColor">
-																	<td width="100%" class="leftnavstrip"><a
-																		href="javascript:void(0)" class="leftnavheading"><img
-																			src="images/spacer.gif" class="leftnavitems_expand"
-																			border="0" id="bulletResourcelinks">资产</a></td>
-																</tr>
-																<tr>
-																	<td valign='top' class='RightItemBorder'>
-																		<div id="Resourcelinks">
-																			<div id="subHeader" class="accordionTabTitleBar">
-																				<a id="ITAssets" href="javascript:void(0)" onClick="">工作站</a>
-																			</div>
-																			<div id="subHeader" class="accordionTabTitleBar">
-																				<a href="javascript:void(0)" onClick="">服务器</a>
-																			</div>
-																			<div id="subHeader" class="accordionTabTitleBar">
-																				<a href="javascript:void(0)" onClick="">网络设备</a>
-																			</div>
-																			<div id="subHeader" class="accordionTabTitleBar">
-																				<a href="javascript:void(0)" onClick="">网络链路</a>
-																			</div>
-																			<div id="subHeader" class="accordionTabTitleBar">
-																				<a href="javascript:void(0)" onClick="">安全设备</a>
-																			</div>
-																			<div id="subHeader" class="accordionTabTitleBar">
-																				<a href="javascript:void(0)" onClick="">存储</a>
-																			</div>
-																			<div id="subHeader" class="accordionTabTitleBar">
-																				<a href="javascript:void(0)" onClick="">操作系统</a>
-																			</div>
-																			<div id="subHeader" class="accordionTabTitleBar">
-																				<a href="javascript:void(0)" onClick="">中间件</a>
-																			</div>
-																			<div id="subHeader" class="accordionTabTitleBar">
-																				<a href="javascript:void(0)" onClick="">数据库</a>
-																			</div>
-																			<div id="subHeader" class="accordionTabTitleBar">
-																				<a href="javascript:void(0)" onClick="">应用软件</a>
-																			</div>
-																		</div>
+        <tr>
+          <td valign="top"><img width="1" height="5" src="images/spacer.gif"></td>
+        </tr>
 
-																	</td>
-																</tr>
-															</table> <br>
-															<table width="210" border="0" cellspacing="0"
-																cellpadding="0">
-																<tr>
-																	<td>
-																		<table width="100%" border="0" cellspacing="0"
-																			cellpadding="0">
-																			<tr>
-																				<td colspan="2"><b class="ptop"> <b
-																						class="cb1 DashboardTableColor"> </b> <b
-																						class="cb2 DashboardTableColor"> </b> <b
-																						class="cb3 DashboardTableColor"> </b> <b
-																						class="cb4 DashboardTableColor"> </b>
-																				</b></td>
-																			</tr>
-																			<tr class="DashboardTableColor">
-
-																				<td class="leftnavstrip"><a
-																					href="javascript:void(0)" class="leftnavheading"><img
-																						src="images/spacer.gif"
-																						class="leftnavitems_expand" hspace="1" vspace="0"
-																						border="0" id="bulletrecentitems">可用性巡检 </a></td>
-
-																			</tr>
-																		</table>
-																	</td>
-																</tr>
-																<tr>
-																	<td valign="top" class="RightItemBorder">
-
-
-																		<div id="recentitems">
-																			<table width="95%" border="0" cellspacing="0"
-																				cellpadding="4">
-
-																				<tr>
-																					<td width="8" class="RIbottomBorder" nowrap
-																						class="fontBlack"><img
-																						src="images/ri_asset_icon.gif"
-																						title="pa01-nb-think.workgroup" width="16"
-																						height="16" hspace="0" vspace="0"
-																						id='recentItemImg'></td>
-																					<td class="RIbottomBorder"><a
-																						href="ViewWSDetails.do?wsId=5409"
-																						class="FontBlackLink"
-																						title="pa01-nb-think.workgroup"
-																						style="width: 100%">连通性检测</a></td>
-																				</tr>
-
-																				<tr>
-																					<td width="8" class="RIbottomBorder" nowrap
-																						class="fontBlack"><img
-																						src="images/ri_asset_icon.gif"
-																						title="acc12-nb-think.workgroup" width="16"
-																						height="16" hspace="0" vspace="0"
-																						id='recentItemImg'></td>
-																					<td class="RIbottomBorder"><a
-																						href="ViewWSDetails.do?wsId=5408"
-																						class="FontBlackLink"
-																						title="acc12-nb-think.workgroup"
-																						style="width: 100%">数据接口检测</a></td>
-																				</tr>
-
-																				<tr>
-																					<td width="8" class="RIbottomBorder" nowrap
-																						class="fontBlack"><img
-																						src="images/ri_asset_icon.gif"
-																						title="ca06-pc.workgroup" width="16" height="16"
-																						hspace="0" vspace="0" id='recentItemImg'></td>
-																					<td class="RIbottomBorder"><a
-																						href="ViewWSDetails.do?wsId=5407"
-																						class="FontBlackLink" title="ca06-pc.workgroup"
-																						style="width: 100%">可用性检测</a></td>
-																				</tr>
-
-																				<tr>
-																					<td width="8" class="RIbottomBorder" nowrap
-																						class="fontBlack"><img
-																						src="images/ri_asset_icon.gif"
-																						title="Hp Computers" width="16" height="16"
-																						hspace="0" vspace="0" id='recentItemImg'></td>
-																					<td class="RIbottomBorder"><a
-																						href="ViewWSDetails.do?wsId=3301"
-																						class="FontBlackLink" title="Hp Computers"
-																						style="width: 100%">可用性分析</a></td>
-																				</tr>
-																			</table>
-																		</div>
-
-																	</td>
-																</tr>
-															</table> <br></td>
-														<!--script language="javascript">
-    matchHeight=function(){
-         var divs,contDivs,maxHeight,divHeight,d;
-         // get all <div> elements in the document
-         divs=document.getElementsByTagName('td');
-         contDivs=[];
-         // initialize maximum height value
-         maxHeight=0;
-         // iterate over all <div> elements in the document
-         for(var i=0;i<divs.length;i++){
-              // make collection with <div> elements with class attribute 'container'
-              if(/\bdivHolder\b/.test(divs[i].className)){
-                    d=divs[i];
-                    contDivs[contDivs.length]=d;
-                    // determine height for <div> element
-                    if(d.offsetHeight){
-                         divHeight=d.offsetHeight;
-                    }
-                    else if(d.style.pixelHeight){
-                         divHeight=d.style.pixelHeight;
-                    }
-                    // calculate maximum height
-                    maxHeight=Math.max(maxHeight,divHeight);
-              }
-         }
-         // assign maximum height value to all of container <div> elements
-         for(var i=0;i<contDivs.length;i++){
-              contDivs[i].style.height=maxHeight;
-         }
-    }
-    // execute function when page loads
-    window.onload=function(){
-         if(document.getElementsByTagName){
-
-              matchHeight();
-         }
-    }
-
-
-</script-->
-
-														<td class="divHolder centerclosebg" id="divHolder"
-															valign="top"><span style="height: 450px;"><img
-																src="images/spacer.gif" width="10"
-																style='min-height: 450px; height: 450px;' border="0"
-																id="LeftIndicatorClosed" /></span></td>
-													</tr>
-													<tr height="13">
-														<td colspan="3" class="lnavbm alignRight"><img
-															class="lnavbr" src="images/spacer.gif"></td>
-													</tr>
-												</table>
-												<table cellspacing="0" cellpadding="0" border="0"
-													height="100%" width="20" id="LeftOpen"
-													style="display: none;">
-													<tr height="13">
-														<td class="lnavtm alignRight"><img class="lnavhtr"
-															src="images/spacer.gif"></td>
-													</tr>
-													<tr>
-														<td valign="top" class="centerclosebg"><a
-															href="javascript:showLeftNav('Open')"
-															class="leftnavshowarrow" style="height: 450px;"><img
-																src="images/spacer.gif" width="10" border="0"
-																height="450px" id="LeftIndicator"
-																style='min-height: 450px; height: 450px;'
-																class="leftnavshowarrow" /></a></td>
-													</tr>
-													<tr height="13">
-														<td class="lnavbm alignRight"><img class="lnavhbr"
-															src="images/spacer.gif"></td>
-													</tr>
-												</table>
-
-											</td>
-											<!--  Left Panel End -->
-											<td valign="top" width="99%" class="pad5">
-												<!--Start Contents-->
+				  <!-- For success or error message in client -->
+	  <tr align="center"><td>
+			  <div id="oper_stat"><div id="message"><table>
 
 
 
+ 
+<!--script language="javascript" type="text/javascript" src="/scripts/common.js?6100"></script-->
+<!-- For success message - start -->
+
+<!--/logic:present-->
+<!-- For success message - end -->
+
+<!-- For error message - start -->
+
+<!--/logic:present-->
+<!-- For error message - end -->
+
+<!-- For info message - start -->
+
+<!--/logic:present-->
+<!-- For info message - end -->
+
+<!-- For simple success message - start -->
+
+<!--/logic:present-->
+<!-- For simple success message - end -->
+
+<!-- For simple success message - start -->
+
+<!--/logic:present-->
+<!-- For simple success message - end -->
+
+<!-- For simple success message - start -->
 
 
-												<table cellspacing="0" cellpadding="0" border="0"
-													width="100%">
-													<tr>
-														<td colspan="2">
-															<table cellspacing="0" cellpadding="0" border="0"
-																width="100%">
-																<tr>
-																	<td class="whitebgBorder">
+<!-- For info message - start -->
 
-																		<table cellspacing="0" id="Right-Section"
-																			class="pad0px" cellpadding="0" border="0"
-																			width="100%" style="padding: 0px;">
-																			<tr>
-																				<td class="lcnagreehrbg">控制面板</td>
-																			</tr>
-																			<tr>
-																				<td class="pad10">
-																					<div id="Dashboard">
-																						<div class="content">
-																							<!-- Insert Content Here -->
-
-
-
-
-
-
-
-
-
-
-																							<div class='hide'
-																								id="sdp.inventory.lhsViews.asset">Asset
-																								Summary</div>
-
-																							<script>
-function displayGraphInDialog(frame)
-{
-	var titleDivId = "More";//No I18N
-	if(frame == 'first') {
-		titleDivId = titleDivId+"1_PH";//No I18N
-	}
-	else if(frame == 'second') {
-		titleDivId = titleDivId+"2_PH";//No I18N
-	}
-	else if(frame == 'third') {
-		titleDivId = titleDivId+"3_PH";//No I18N
-	}
-	else if(frame == 'fourth') {
-		titleDivId = titleDivId+"4_PH";//No I18N
-	}
-		var eid = document.getElementById(titleDivId);
-	//alert("frame is : " + frame);
-	if (eid != null)
-	{
-		title = eid.innerHTML;
-		width=600;
-	}
-	else
-	{
-		title = getMessageForKey("sdp.inventory.lhsViews.asset");
-		width=460;
-	}
-        showURLInDialog('/AssetHomePage.do?frame='+frame,'position=relative,closeButton=yes,width='+width+',height=275,title='+title); // No I18N
-}
-
-var displayin = null;
-function displayGraph(graphName,dispin)
-{
-        displayin = dispin;
-        var elem=document.getElementById(displayin+"Graph");
-        var loadingElem=document.getElementById("loading");
-	closeDialog();
-        elem.innerHTML = loadingElem.innerHTML;
-
-        getHtml('/AssetHomePage.do?requiredGraph='+graphName+'&layoutPosition='+displayin,'fillGraph');
-}
-
-function fillGraph(htmlele)
-{
-        var elem=document.getElementById("dummy");
-        elem.innerHTML=htmlele
-	var head = displayin+"Heading";
-        var filledHeadingElement = document.getElementById("heading");
-	if (filledHeadingElement != null)
-	{
-		filledHeadingElement.id=displayin+"Heading";
-	}
-        var graphElement = document.getElementById(displayin+"Graph");
-        var filledGraphElement = document.getElementById("graph");
-
-        graphElement.innerHTML = filledGraphElement.innerHTML;	
-}
-
-var rq = new Array();
-var paramsArr = new Array();
-function getHtml(url, fn, paramsObj, formElem) {
-        var xmlObject = null;
-        if( window.XMLHttpRequest ) {
-                xmlObject = getXmlObj(true);
-        } else if( !navigator.__ice_version && window.ActiveXObject ) {
-                xmlObject = getXmlObj(true);
-        } else {
-                return false;
-        }
-
-        rt = rq.length
-        rq[rt] = xmlObject;
-        var paramsLen = paramsArr.length;
-        paramsArr[paramsLen] = paramsObj;
-        if (xmlObject) {
-            rq[rt].onreadystatechange = new Function(' if (rq[' + rt +'].readyState==4) {' + fn + '(rq[' + rt +'].responseText, paramsArr[' + paramsLen + '])}');
-                if(formElem) {
-                        handleForm(rq[rt], url, formElem);
-                } else {
-                    rq[rt].open('GET', url, true);
-                    rq[rt].setRequestHeader("Content-type","text/html");
-                    rq[rt].setRequestHeader("Content-length", 0);
-                    rq[rt].send(null);
-                }
-        }
-        return true;
-
-}
-
-function getXmlObj(formElem) {
-        var xmlObject = null;
-        if(document.all) {
-                var xmlObject = null;
-                if(!formElem) {
-                        try {
-                                xmlObject = new ActiveXObject('Microsoft.XMLDOM');
-                        } catch(e) {}
-                }
-                if(xmlObject == null) {
-                        try {
-                                xmlObject = new ActiveXObject('Msxml2.XMLHTTP');
-                        } catch(e) {}
-                }
-                if(xmlObject == null) {
-                        try {
-                                xmlObject = new ActiveXObject('Microsoft.XMLHTTP');
-                        } catch(e) {
-                                throw new Exception('Browser not supported');
-                        }
-                }
-        } else {
-                xmlObject = new XMLHttpRequest();
-        }
-        return xmlObject;
-}
-
-function showMenuAsDialog1(holder, source) {
-		document.onmousemove = capturePos;
-
-        var reqX = findPosX(document.getElementById(holder));
-        var reqY = findPosY(document.getElementById(holder));
-        var offsetHeight = document.getElementById(holder).offsetHeight;
-	var offsetWidth = document.getElementById(holder).offsetWidth;
-	//this variable finds the window scrolled left offset. 
-	var scrollLeftOffset = document.body.scrollLeft;
-	showDialog(document.getElementById(source).innerHTML,'position=absolute,closeButton=no,width=160,left=' + (reqX+offsetWidth-160-scrollLeftOffset) + ',top=' + (reqY+ offsetHeight-document.body.scrollTop));
-	setTimeout("closeMenusDialog('" + source + "')", 1000);
-}
-
-
-	var xposition,yposition;
-
-function capturePos(e) {
-	if (window.ActiveXObject)
-	{
-		xposition = window.event.clientX;
-		yposition = window.event.clientY;
-	}	
-	else
-	{
-		xposition = e.pageX;	
-		yposition = e.pageY;	
-	}
-}
-
-function closeMenusDialog(source)
-{
-
-	var dialogElement = document.getElementById("_DIALOG_LAYER");
-	var reqX = findPosX(dialogElement);
-	var reqY = findPosY(dialogElement);
-	var offsetHeight = dialogElement.offsetHeight;
-	var offsetWidth = dialogElement.offsetWidth;
-	// the below check is done without proper understanding, just done on a trial and error basis.
-	if (window.ActiveXObject)
-	{
-		reqY = reqY - document.body.scrollTop;
-		reqX = reqX - document.body.scrollLeft;
-	}	
-
-	var reqEndX = reqX + offsetWidth;
-	var reqEndY = reqY + offsetHeight;
-
-	if(xposition < reqEndX && xposition > reqX && yposition < reqEndY && yposition > (reqY-20)) {
-		setTimeout("closeMenusDialog('" + source + "')", 1000);
-	}
-	else {
-		closeDialog();
-	}
-	
-}
-</script>
+<!--/logic:present-->
+<!-- For info message - end -->
 
 
 
-																							<table width="100%" cellspacing="0"
-																								cellpadding="5">
-																								<tr valign="top">
-																									<td>
-
-																										<table width="100%" border="0" cellspacing="0"
-																											cellpadding="0" class="container23">
-																											<tr>
-																												<td valign="top">
-																													<div class="component23">
-																														<div class="conh1">
-																															<em></em> <b class="hdr">资产</b> <i></i>
-																														</div>
-
-																														<div class="control23">
-																															<!--a href="javascript:displayGraphInDialog('first')" class="bt_dashboard_max23" >View All</a-->
-																															<a
-																																href="javascript:displayGraphInDialog('first')"
-																																class="bt_dashboard_max23"></a> <span>
-																																<a href="javascript:void(0)"
-																																id="More1_PH" class="moredrop">不同状态的资产</a>
-																															</span>
-																															<div id="More1">
-																																<iframe width="160" height="90"
-																																	frameborder="0"
-																																	src="/framework/html/blank.html"
-																																	style="display: none;" class="dLf1"></iframe>
-																																<ul class="assetDBMenus"
-																																	style="display: none;">
-																																	<li><a
-																																		href="javascript:document.getElementById('More1_PH').innerHTML='Assets By Site';displayGraph('ResourcesBySite','first')">Assets
-																																			By Site</a></li>
-
-																																	<li><a
-																																		href="javascript:document.getElementById('More1_PH').innerHTML='Assets By Region';displayGraph('ResourcesByRegion','first')">Assets
-																																			By Region</a></li>
-
-																																	<li><a
-																																		href="javascript:document.getElementById('More1_PH').innerHTML='Assets By State';displayGraph('ResourcesByState','first')">Assets
-																																			By State</a></li>
-																																	<li><a
-																																		href="javascript:document.getElementById('More1_PH').innerHTML='Asset Summary';displayGraph('AssetSummary','first')">Asset
-																																			Summary</a></li>
-																																</ul>
-																															</div>
-																														</div>
+</table></div></div>
+        </td></tr>
 
 
-
-																														<div id="firstGraph"
-																															style="display: block">
-																															
-												<div class="content23 ">
-                                                <div class="spc"></div>
-                                                <div class="graph" align="center">
-                                                
+                    <tr> 
+                      <td valign="top">
+                      
+                        <table width="100%" cellspacing="0" cellpadding="0" border="0" class="whitebgBorder1">
+<tbody><tr>
+            <td valign="middle" class="listViewTableHeader tableHead"><span class="tableHeadtxt">
+				
+               Resources
+               
+            </span></td>
+          </tr>
+                          
+                          <tr> 
+                            <td valign="top"> 
+                              <table width="100%" cellspacing="0" cellpadding="0" border="0">
+								<tbody><tr>
+                                	<td class="wo-view-bg wo-view-bg-sep-btm">
+                                    <form action="/AssetListView.do" method="post" name="AssetListView">
+                                        <table cellspacing="0" cellpadding="0" border="0">
+                                                                                                    <tbody><tr> 
+                                                                                                      <td width="10" nowrap="nowrap"></td>
+                                                                                                      <td nowrap="" class="fontBlackBold"> 
+                                                                                                        过滤器&nbsp;</td>
+                                                        
+                                                                                                      <td valign="middle" nowrap="" class="fontBlack alignright"> 
+                                                                                                        显示&nbsp;:&nbsp;</td>
+                                                                                                      <td valign="middle" nowrap="" class="fontBlack"> 
+                                                                                  
+                                                                                                    <input type="hidden" value="Resources" name="type">
+                                                                                                
+                                                                                                          <input type="hidden" value="AssetView" name="viewName">
+                                                                                                          <input type="hidden" id="viewName" value="AssetView">
+                                                                                                              
+                                                                                                                        <select class="formstyle" onchange="this.form.submit()" name="assetType"><option value="0">全部</option>
+                                                                
+                                                                        
+                                                                
+                                                                
+                                                                
+                                                                    <option value="1">未指派的</option>
+                                                                
+                                                                        
+                                                                
+                                                                
+                                                                
+                                                                    <option value="2">不在合同中的</option>
+                                                                
+                                                                        
+                                                                
+                                                                
+                                                                
+                                                                    <option value="3">租借的资产</option>
+                                                                
+                                                                        
+                                                                
+                                                                
+                                                                
+                                                                    <option value="4">在库的资产</option>
+                                                                
+                                                                        
+                                                                
+                                                                
+                                                                
+                                                                    <option selected="selected" value="5">在用的资产</option>
+                                                                
+                                                                        
+                                                                
+                                                                
+                                                                
+                                                                    <option value="6">在修的资产</option>
+                                                                
+                                                                        
+                                                                
+                                                                
+                                                                
+                                                                    <option value="7">期满的资产</option>
+                                                                
+                                                                        
+                                                                
+                                                                
+                                                                
+                                                                    <option value="8">处置的资产</option>
+                                                                
+                                                                        
+                                                            
+                                                                <optgroup style="background-color:#E2E9F6;font-weight:bold;" label="折旧"></optgroup>
+                                                                            <option title="计算的资产" value="depreciation_calculated">计算的资产</option>
+                                                                             <option title="未计算的资产" value="depreciation_notcalculated">未计算的资产</option></select>
+                                                                             
+                                                                             <script>
+                                                                                     document.AssetListView.assetType.value='5';
+                                                                             </script>
+                                                                     
+                                                                
+                                                                                                       </td>
+                                                        <td width="10" nowrap="nowrap"></td>
+                                                        
+                                                                                                      <td valign="middle" nowrap="" class="fontBlack"> 
+                                                                                                                        <select class="formstyle" onchange="this.form.submit()" name="componentType"><option selected="selected" value="0">--AllResources--</option>
+                                                                        
+                                                                
+                                                                
+                                                                <option value="602">6824KAL</option>
+                                                                        
+                                                                
+                                                                
+                                                                <option value="904">6824LAE</option>
+                                                                        
+                                                                
+                                                                
+                                                                <option value="2754">Adobe Acrobat 10 Pro</option>
+                                                                        
+                                                                
+                                                                
+                                                                <option value="2755">Adobe Acrobat 11 Pro</option>
+                                                                        
+                                                                
+                                                                
+                                                                <option value="2729">Adobe Acrobat 6 Pro</option>
+                                                                        
+                                                                
+                                                                
+                                                                <option value="2730">Adobe Acrobat 7 Pro</option>
+                                                                        
+                                                                
+                                                                
+                                                                <option value="2731">Adobe Acrobat 8 Pro</option>
+                                                                        
+                                                                
+                                                                
+                                                                <option value="2753">Adobe Acrobat 9 Pro</option>
+                                                                        
+                                                                
+                                                                
+                                                                <option value="2743">Adobe Acrobat Connect CS3</option>
+                                                                        
+                                                                
+                                                                
+                                                                <option value="2710">Adobe Acrobat Professional CS2</option>
+                                                                        
+                                                                
+                                                                
+                                                                <option value="2737">Adobe After Effects CS3 Professional</option>
+                                                                        
+                                                                
+                                                                
+                                                                <option value="2761">Adobe After Effects CS4</option>
+                                                                        
+                                                                
+                                                                
+                                                                <option value="2715">Adobe After Effects Professional CSPS</option>
+                                                                        
+                                                                
+                                                                
+                                                                <option value="2723">Adobe After Effects Standard CSPS</option>
+                                                                        
+                                                                
+                                                                
+                                                                <option value="917">Adobe AIR  1</option>
+                                                                        
+                                                                
+                                                                
+                                                                <option value="2716">Adobe Audition CSPS</option>
+                                                                        
+                                                                
+                                                                
+                                                                <option value="2701">Adobe Bridge CS2</option>
+                                                                        
+                                                                
+                                                                
+                                                                <option value="2740">Adobe Bridge CS3</option>
+                                                                        
+                                                                
+                                                                
+                                                                <option value="2765">Adobe Bridge CS4</option>
+                                                                        
+                                                                
+                                                                
+                                                                <option value="2717">Adobe Bridge CSPS</option>
+                                                                        
+                                                                
+                                                                
+                                                                <option value="2769">Adobe CAL Software</option>
+                                                                        
+                                                                
+                                                                
+                                                                <option value="2735">Adobe Contribute CS3</option>
+                                                                        
+                                                                
+                                                                
+                                                                <option value="2759">Adobe Contribute CS4</option>
+                                                                        
+                                                                
+                                                                
+                                                                <option value="2712">Adobe Creative Suite 1</option>
+                                                                        
+                                                                
+                                                                
+                                                                <option value="2713">Adobe Creative Suite 2</option>
+                                                                        
+                                                                
+                                                                
+                                                                <option value="2724">Adobe Creative Suite 3</option>
+                                                                        
+                                                                
+                                                                
+                                                                <option value="2748">Adobe Creative Suite 4</option>
+                                                                        
+                                                                
+                                                                
+                                                                <option value="2714">Adobe Creative Suite Production Studio</option>
+                                                                        
+                                                                
+                                                                
+                                                                <option value="2742">Adobe Device Central CS3</option>
+                                                                        
+                                                                
+                                                                
+                                                                <option value="2766">Adobe Device Central CS4</option>
+                                                                        
+                                                                
+                                                                
+                                                                <option value="2711">Adobe Dreamweaver CS2</option>
+                                                                        
+                                                                
+                                                                
+                                                                <option value="2733">Adobe Dreamweaver CS3</option>
+                                                                        
+                                                                
+                                                                
+                                                                <option value="2757">Adobe Dreamweaver CS4</option>
+                                                                        
+                                                                
+                                                                
+                                                                <option value="2745">Adobe Dynamic Link CS3</option>
+                                                                        
+                                                                
+                                                                
+                                                                <option value="2768">Adobe Dynamic Link CS4</option>
+                                                                        
+                                                                
+                                                                
+                                                                <option value="2722">Adobe Dynamic Link CSPS</option>
+                                                                        
+                                                                
+                                                                
+                                                                <option value="2739">Adobe Encore CS3</option>
+                                                                        
+                                                                
+                                                                
+                                                                <option value="2764">Adobe Encore CS4</option>
+                                                                        
+                                                                
+                                                                
+                                                                <option value="2718">Adobe Encore DVD CSPS</option>
+                                                                        
+                                                                
+                                                                
+                                                                <option value="2734">Adobe Fireworks CS3</option>
+                                                                        
+                                                                
+                                                                
+                                                                <option value="2758">Adobe Fireworks CS4</option>
+                                                                        
+                                                                
+                                                                
+                                                                <option value="2732">Adobe Flash CS3 Professional</option>
+                                                                        
+                                                                
+                                                                
+                                                                <option value="2756">Adobe Flash CS4 Professional</option>
+                                                                        
+                                                                
+                                                                
+                                                                <option value="2702">Adobe Illustrator CS1</option>
+                                                                        
+                                                                
+                                                                
+                                                                <option value="2703">Adobe Illustrator CS2</option>
+                                                                        
+                                                                
+                                                                
+                                                                <option value="2727">Adobe Illustrator CS3</option>
+                                                                        
+                                                                
+                                                                
+                                                                <option value="2751">Adobe Illustrator CS4</option>
+                                                                        
+                                                                
+                                                                
+                                                                <option value="2721">Adobe Illustrator CSPS</option>
+                                                                        
+                                                                
+                                                                
+                                                                <option value="2704">Adobe InDesign CS1</option>
+                                                                        
+                                                                
+                                                                
+                                                                <option value="2705">Adobe InDesign CS2</option>
+                                                                        
+                                                                
+                                                                
+                                                                <option value="2728">Adobe InDesign CS3</option>
+                                                                        
+                                                                
+                                                                
+                                                                <option value="2752">Adobe InDesign CS4</option>
+                                                                        
+                                                                
+                                                                
+                                                                <option value="2746">Adobe OnLocation CS3</option>
+                                                                        
+                                                                
+                                                                
+                                                                <option value="2763">Adobe OnLocation CS4</option>
+                                                                        
+                                                                
+                                                                
+                                                                <option value="2706">Adobe Photoshop CS1</option>
+                                                                        
+                                                                
+                                                                
+                                                                <option value="2707">Adobe Photoshop CS2</option>
+                                                                        
+                                                                
+                                                                
+                                                                <option value="2725">Adobe Photoshop CS3</option>
+                                                                        
+                                                                
+                                                                
+                                                                <option value="2726">Adobe Photoshop CS3 Extended</option>
+                                                                        
+                                                                
+                                                                
+                                                                <option value="2749">Adobe Photoshop CS4</option>
+                                                                        
+                                                                
+                                                                
+                                                                <option value="2750">Adobe Photoshop CS4 Extended</option>
+                                                                        
+                                                                
+                                                                
+                                                                <option value="2720">Adobe Photoshop CSPS</option>
+                                                                        
+                                                                
+                                                                
+                                                                <option value="2738">Adobe Premiere Pro CS3</option>
+                                                                        
+                                                                
+                                                                
+                                                                <option value="2762">Adobe Premiere Pro CS4</option>
+                                                                        
+                                                                
+                                                                
+                                                                <option value="2719">Adobe Premiere Pro CSPS</option>
+                                                                        
+                                                                
+                                                                
+                                                                <option value="2736">Adobe Soundbooth CS3</option>
+                                                                        
+                                                                
+                                                                
+                                                                <option value="2760">Adobe Soundbooth CS4</option>
+                                                                        
+                                                                
+                                                                
+                                                                <option value="2744">Adobe Stock Photos CS3</option>
+                                                                        
+                                                                
+                                                                
+                                                                <option value="2747">Adobe Ultra CS3</option>
+                                                                        
+                                                                
+                                                                
+                                                                <option value="2708">Adobe Version Cue CS1</option>
+                                                                        
+                                                                
+                                                                
+                                                                <option value="2709">Adobe Version Cue CS2</option>
+                                                                        
+                                                                
+                                                                
+                                                                <option value="2741">Adobe Version Cue CS3</option>
+                                                                        
+                                                                
+                                                                
+                                                                <option value="2767">Adobe Version Cue CS4</option>
+                                                                        
+                                                                
+                                                                
+                                                                <option value="2102">asd</option>
+                                                                        
+                                                                
+                                                                
+                                                                <option value="909">Cisco 2811</option>
+                                                                        
+                                                                
+                                                                
+                                                                <option value="2401">clim1</option>
+                                                                        
+                                                                
+                                                                
+                                                                <option value="1201">DbVisualizer 6.0.11</option>
+                                                                        
+                                                                
+                                                                
+                                                                <option value="912">Dell Hg Server 222</option>
+                                                                        
+                                                                
+                                                                
+                                                                <option value="906">DSDT</option>
+                                                                        
+                                                                
+                                                                
+                                                                <option value="1501">gggz%hhh</option>
+                                                                        
+                                                                
+                                                                
+                                                                <option value="908">HP ProCurve Switch 2524</option>
+                                                                        
+                                                                
+                                                                
+                                                                <option value="911">HP Projector</option>
+                                                                        
+                                                                
+                                                                
+                                                                <option value="907">HP-Printer</option>
+                                                                        
+                                                                
+                                                                
+                                                                <option value="2101">isp</option>
+                                                                        
+                                                                
+                                                                
+                                                                <option value="901">Latitude D400</option>
+                                                                        
+                                                                
+                                                                
+                                                                <option value="902">Latitude D610</option>
+                                                                        
+                                                                
+                                                                
+                                                                <option value="301">Latitude D620</option>
+                                                                        
+                                                                
+                                                                
+                                                                <option value="910">Latitude D620 Laptop</option>
+                                                                        
+                                                                
+                                                                
+                                                                <option value="2">Latitude D630C</option>
+                                                                        
+                                                                
+                                                                
+                                                                <option value="1801">ManageEngine Desktop Central 7 - Agent</option>
+                                                                        
+                                                                
+                                                                
+                                                                <option value="913">Microsoft .NET Compact Framework 1.0 SP3 Developer</option>
+                                                                        
+                                                                
+                                                                
+                                                                <option value="914">Microsoft Office Basic 2007</option>
+                                                                        
+                                                                
+                                                                
+                                                                <option value="2103">microtik 750</option>
+                                                                        
+                                                                
+                                                                
+                                                                <option value="916">Nortel Switch 123</option>
+                                                                        
+                                                                
+                                                                
+                                                                <option value="903">OptiPlex 755</option>
+                                                                        
+                                                                
+                                                                
+                                                                <option value="601">OptiPlex 780</option>
+                                                                        
+                                                                
+                                                                
+                                                                <option value="302">OptiPlex GX260</option>
+                                                                        
+                                                                
+                                                                
+                                                                <option value="915">TightVNC 1.3.10</option>
+                                                                        
+                                                                
+                                                                
+                                                                <option value="1">Unknown Server</option>
+                                                                        
+                                                                
+                                                                
+                                                                <option value="905">Unknown Workstation</option></select>
+                                                                                                       </td>
+                                             
+                                                        
+                                                                                                    </tr>
+                                                                                                  </tbody></table>
+                                                                                               </form>
+                                    </td>
+                                </tr>
+ 
+										<tr>
+											<td valign="top">
+											<!-- Actions Row start -->
+												<form onsubmit="return updateFormValues('AssetView', this)" action="/AssetListViewAction.do" method="post" name="AssetListViewAction">
+												<table width="100%" cellspacing="0" cellpadding="0">
+												<tbody><tr>
+													<td valign="top">
+														<table width="100%" cellspacing="0" cellpadding="0">
+														<tbody><tr> 
+										  <td width="100%" height="34" class="wo-view-bg wo-view-bg-sep-top">   
+										  
+										  <table cellspacing="0" cellpadding="0">
+											  
+									  
+													<input type="hidden" value="Resources" name="type">
+												
+						 
+							
+										  <tbody><tr>
+                                           <td width="10" nowrap="nowrap"></td>
+											<td valign="middle" nowrap="" align="center" style="background:none" class="fontBlack menubar2">
+			
+						<ul class="actionscombo" id="nav-actions">																<li class="first">																			<a class="parent" href="javascript:void(0)">动作</a>
+																											<ul style="display: none;">
+																												<li>
+						
+																												<a title="添加资产到组中" class="FontBlackLink" href="javascript:confirmAddToGroup(document.AssetListViewAction)">添加到组</a>
+																												<a title="配置折旧" class="FontBlackLink" href="javascript:addDepreciation(document.AssetListViewAction)">配置折旧</a>   
 		
-						
-                                                <map id="ResourcesByStateChart" name="ResourcesByStateChart">
-<area shape="poly" coords="130,43,154,40,180,39,180,71,180,71" title="In Use = 8" alt="" href="/AssetListView.do?Type=Resources&amp;isFirst=true&amp;AssetType=In Use">
-<area shape="poly" coords="180,39,215,41,244,47,266,56,273,61,277,66,277,72,275,78,269,83,261,88,237,96,205,101,169,102,136,99,108,92,97,88,89,83,84,77,81,71,83,66,87,60,94,55,103,51,130,43,180,71,180,71" title="In Store = 88" alt="" href="/AssetListView.do?Type=Resources&amp;isFirst=true&amp;AssetType=In Store">
-</map>
-                                                <img src="images/ResourcesByState_386_1399895100652.png" usemap="#ResourcesByStateChart" border="0">
-                                           
-                                                </div>
-
-                                                	
-									<div class="doubleL">
-								<b style="display:none" class="cIn"><b class="cb4 graph"></b><b class="cb3 graph">
-							</b><b class="cb2 graph"></b><b class="cb1"></b></b>	
-						
-							<div class="inf">
-							<table cellpadding="0" cellspacing="0">
-							<tbody><tr>
-								<td>
+				
+		
+										</li>
+																															</ul>
+																								</li>
+																						</ul>
+																			 
+											
+															</td>
+                                                            <td width="10" nowrap="nowrap"></td>
+														 
+													  <td align="center">
+														  
+															</td>
+		
+															
+		
+        <td width="10" nowrap="nowrap"></td>
+        <td valign="middle" class="fontBlack">
+		<input type="button" title="添加资产" class="formStylebutton" style="width:auto;height:19px" onclick="showURLInDialog('/AddCI.do?mode=showAssetDialog&amp;filter=allassetproducts','closeButton=no,position=absolute,top=100,height=500,overflow=visible,left=350,modal=yes')" value="新建" name="newAsset">
+                                                            </td>
 								
+                                                                 <td width="10" nowrap="nowrap"></td>
+        <td valign="middle" class="fontBlack">
+																	 <input type="button" title="删除所选资产" class="formStylebutton" style="width:auto;height:19px" onclick="javascript:disableForDemo()" value="删除" name="delete">
+                                                                    </td>
+		
+																
+														 
+									 
+														
+														<td width="10" nowrap="nowrap"></td>
+                                                        
+							<td id="AssetView_NAV" class="alignright">
 
-									<b class="field-color-indicator"><em class="em" style="background:#a6ce39;"></em><i>In Use = 8</i></b>									
+
+<script type="text/javascript" src="/scripts/ajax.js"></script>
+
+	
+		<table cellspacing="0" cellpadding="0">
+	<tbody><tr>
+		
+		<td nowrap="" align="left" class="fontBlack">&nbsp;<span id="startPageIndex">1</span> - <span id="endPageIndex">8</span> /&nbsp;<span id="totalRecordsCount">8</span>&nbsp;</td>
+		 
+		<td nowrap="" class="fontBlack"><span class="seph">|</span>  
+			
+					<a href="javascript:void(0);" class="ui-listnavh"><img hspace="2" border="0" align="ABSMIDDLE" title="首先" alt="首先" class="pagenav-first-off" src="images/spacer.gif"></a>
+					<a href="javascript:void(0);" class="ui-listnav-before1-dis"><img hspace="2" border="0" align="ABSMIDDLE" title="向前" alt="向前" class="pagenav-previous-off" src="images/spacer.gif"></a>
+				
+					<a class="ui-listnav-after1-dis" href="javascript:void(0);"><img hspace="2" border="0" align="ABSMIDDLE" title="向后" alt="向后" class="pagenav-next-off" src="images/spacer.gif"></a>
+					<a class="ui-listnavh" href="javascript:void(0);"><img hspace="2" border="0" align="ABSMIDDLE" title="最后" alt="最后" class="pagenav-lastpage-off" src="images/spacer.gif"></a>
+				 <span class="seph">|</span> 
+		</td>
+		
+			<td nowrap="" class="fontBlack">&nbsp;
+
+			 
+			<span class="fontGray57">
+				每页 	
+			</span>
+ 
+				<select style="width:50" class="formStyle" onchange="return showRangeForLength('AssetView', this.value)" name="pageLength">
+            	<option value="25"> 25</option><option value="50"> 50</option><option value="100"> 100</option><option value="150"> 150</option><option value="200"> 200</option><option value="300"> 300</option><option value="500"> 500</option><option selected="" value="1000"> 1000</option>
+				</select>
+			   
+           
+           	
+			</td>
+            <td nowrap="nowrap">
+            	<span class="ui-countfilter-label">
+					&nbsp;条
+                </span>
+            </td>
+			
+	</tr>
+</tbody></table>
+		
 
 
-									<b class="field-color-indicator"><em class="em" style="background:#7d9cca;"></em><i>In Store = 88</i></b>									
 
-									</td>
-													</tr>
-													</tbody></table>
-								</div>
-								<b class="cBox curveFix" style="position:relative; display:none; top:-5px;"><b class="cb4 color_vdb"></b><b class="cb3 color_vdb">
-							</b><b class="cb2 color_vdb"></b><b class="cb1"></b></b></div>
+</td>
+										  </tr>
+										  
+										  </tbody></table>
+										  </td>
+										 </tr>
+														</tbody></table>
+													</td>
+												</tr>
+												<tr>
+													<td valign="top">
+														
+<link type="text/css" rel="stylesheet" href="/themes/sd/styles/style.css">
+<script type="text/javascript" src="/framework/javascript/IncludeJS.js"></script>
+<script type="text/javascript">includeMainScripts('');</script>
+<script type="text/javascript">_GEN_ISUSER_CREDENTIAL_PRESENT=true</script>
+<title>ManageEngine AssetExplorer</title>
 
-                                        </div>
-										<!-- Inline Botttom Line -->
-										<!--b class="astbtc mtp">
-													<b class="astbtc4 col"></b><b class="astbtc3 col"></b><b class="astbtc2 col"></b><b class="astbtc1"></b>
-												</b-->
-  
-																														</div>
-																														<b class="assetborder"></b>
-																													</div>
-																												</td>
-																											</tr>
-																										</table>
-																										<div id="dummy" style="display: none"></div>
-																										<div id="loading"
-																											class="content graph lgbdrboxastnone"
-																											style="display: none; position: relative; z-index: 2;">
-																											<div>
-																												<div class="noL">
-																													<table>
-																														<tr height="200px">
-																															<td align="center" valign="middle">
 
-																																<img src="images/cogwheel.gif">
-																															</td>
-																														</tr>
-																													</table>
-																												</div>
-																											</div>
-																										</div> <script>
-if(window.jQuery != null){
-		jQuery(document).ready(function() {
-});
+
+<iframe width="0" scrolling="no" height="0" frameborder="0" style="position:absolute" id="_CUSTOMALERTFRAME" name="_CUSTOMALERTFRAME" src="/framework/html/blank.html" class="hide"></iframe>
+
+<iframe onload="parent.handleResponse()" name="AssetView_RESPONSEFRAME" src="/framework/html/blank.html" class="responseframe"></iframe>
+<script language="Javascript">parent.initializeMainView(window,"AssetView","","/themes/sd");</script>
+<div id="AssetView_CT" class="uicomponent"><script>V34=parent.createView(window,"AssetView","AssetView","ciTypeId=null&amp;fromTab=assetTab&amp;",null,null,"34","1399982217546");parent.V34=V34;</script>
+
+
+<script>document.onclick = parent.hideCustomizationMenu;</script>
+
+
+
+
+
+
+<div class="hide" id="AssetView_Navig">
+
+
+<script type="text/javascript" src="/scripts/ajax.js"></script>
+
+	
+		<table cellspacing="0" cellpadding="0">
+	<tbody><tr>
+		
+		<td nowrap="" align="left" class="fontBlack">&nbsp;<span id="startPageIndex">1</span> - <span id="endPageIndex">8</span> /&nbsp;<span id="totalRecordsCount">8</span>&nbsp;</td>
+		 
+		<td nowrap="" class="fontBlack"><span class="seph">|</span>  
+			
+					<a href="javascript:void(0);" class="ui-listnavh"><img hspace="2" border="0" align="ABSMIDDLE" title="首先" alt="首先" class="pagenav-first-off" src="images/spacer.gif"></a>
+					<a href="javascript:void(0);" class="ui-listnav-before1-dis"><img hspace="2" border="0" align="ABSMIDDLE" title="向前" alt="向前" class="pagenav-previous-off" src="images/spacer.gif"></a>
+				
+					<a class="ui-listnav-after1-dis" href="javascript:void(0);"><img hspace="2" border="0" align="ABSMIDDLE" title="向后" alt="向后" class="pagenav-next-off" src="images/spacer.gif"></a>
+					<a class="ui-listnavh" href="javascript:void(0);"><img hspace="2" border="0" align="ABSMIDDLE" title="最后" alt="最后" class="pagenav-lastpage-off" src="images/spacer.gif"></a>
+				 <span class="seph">|</span> 
+		</td>
+		
+			<td nowrap="" class="fontBlack">&nbsp;
+
+			 
+			<span class="fontGray57">
+				每页 	
+			</span>
+ 
+				<select style="width:50" class="formStyle" onchange="return showRangeForLength('AssetView', this.value)" name="pageLength">
+            	<option value="25"> 25</option><option value="50"> 50</option><option value="100"> 100</option><option value="150"> 150</option><option value="200"> 200</option><option value="300"> 300</option><option value="500"> 500</option><option selected="" value="1000"> 1000</option>
+				</select>
+			   
+           
+           	
+			</td>
+            <td nowrap="nowrap">
+            	<span class="ui-countfilter-label">
+					&nbsp;条
+                </span>
+            </td>
+			
+	</tr>
+</tbody></table>
+		
+
+
+
+</div>
+	<input type="submit" class="hide" value="Hide Me" name="Submit"><table cellspacing="1" cellpadding="0" border="0" align="center" class="tableComponent" id="AssetView_TABLE">
+		
+      		
+
+
+	
+		
+	
+
+	
+		
+	
+
+	
+		
+	
+
+	
+		
+	
+
+	
+		
+	
+
+	
+		
+	
+
+	
+		
+	
+
+	
+		
+	
+
+	
+		
+	
+
+	
+		
+	
+
+	
+		
+	
+
+	
+		
+	
+
+
+<tbody><tr height="23" id="34_MainRow"><th class="tableHeader" id="AssetView_CheckBox"><input type="checkbox" ;="" onclick="selectAll(this.form,'checkbox')" name="checkbox23"></th><th class="tableHeader" id="AssetView_VIEWRELATIONSHIPS"><img width="16" height="1" src="images/spacer.gif"></th><th class="tableHeader" id="AssetView_CINAME"><a href="javascript:sortData('34', 'CINAME')">名称</a>&nbsp;&nbsp;<input type="button" onclick="return sortData('34', 'CINAME')" class="sortButtonASC"></th><th class="tableHeader" id="AssetView_TYPENAME"><a href="javascript:sortData('34', 'TYPENAME')">配置项类型</a>&nbsp;&nbsp;<input type="button" onclick="return sortData('34', 'TYPENAME')" class="sortButtonASC"></th><th class="tableHeader" id="AssetView_IsLeased"><a href="javascript:sortData('34', 'IsLeased')">是否租借</a>&nbsp;&nbsp;<input type="button" onclick="return sortData('34', 'IsLeased')" class="sortButtonASC"></th><th class="tableHeader" id="AssetView_LeaseEnd"><a href="javascript:sortData('34', 'LeaseEnd')">租借期限</a>&nbsp;&nbsp;<input type="button" onclick="return sortData('34', 'LeaseEnd')" class="sortButtonASC"></th><th class="tableHeader" id="AssetView_ProductName"><a href="javascript:sortData('34', 'ProductName')">产品</a>&nbsp;&nbsp;<input type="button" onclick="return sortData('34', 'ProductName')" class="sortButtonASC"></th><th class="tableHeader" id="AssetView_AssetState"><a href="javascript:sortData('34', 'AssetState')">资产状态</a>&nbsp;&nbsp;<input type="button" onclick="return sortData('34', 'AssetState')" class="sortButtonASC"></th><th class="tableHeader" id="AssetView_AssociatedTo"><a href="javascript:sortData('34', 'AssociatedTo')">关联到</a>&nbsp;&nbsp;<input type="button" onclick="return sortData('34', 'AssociatedTo')" class="sortButtonASC"></th><th class="tableHeader" id="AssetView_User"><a href="javascript:sortData('34', 'User')">用户</a>&nbsp;&nbsp;<input type="button" onclick="return sortData('34', 'User')" class="sortButtonASC"></th><th class="tableHeader" id="AssetView_Department"><a href="javascript:sortData('34', 'Department')">部门</a>&nbsp;&nbsp;<input type="button" onclick="return sortData('34', 'Department')" class="sortButtonASC"></th><th class="tableHeader" id="AssetView_AssetSerialNumber"><table width="100%" cellspacing="0" cellpadding="0" valign="top"><tbody><tr><td nowrap=""><a href="javascript:sortData('34', 'AssetSerialNumber')">序列号</a>&nbsp;&nbsp;<input type="button" onclick="return sortData('34', 'AssetSerialNumber')" class="sortButtonASC"></td><td width="5px" valign="top" nowrap="" align="right"><input type="button" onclick="return openSearch('34_SearchRow', this.form,34)" class="tableSearchButton" id="34_OS"><input type="button" onclick="return closeSearch('34_SearchRow', this.form,34)" class="hide" id="34_CS"></td><td width="5px" valign="top" nowrap="" align="right"><input type="button" onclick="invokeAction(CCListInline,'AssetView',null,'viewName=AssetView&amp;UNIQUEID=AssetView')" class="columnEditButton" id="AssetView_CCBtn"></td></tr></tbody></table></th></tr>
+<tr class="searchRow hide" id="34_SearchRow"><th 'class="tableHeader" id="AssetView_CheckBox">&nbsp;</th><th 'class="tableHeader" id="AssetView_VIEWRELATIONSHIPS">&nbsp;</th><th 'class="tableHeader" id="AssetView_CINAME"><input type="text" id="CINAME" value="" name="CINAME" class="tableSpotSearch"></th><th 'class="tableHeader" id="AssetView_TYPENAME"><input type="text" id="TYPENAME" value="" name="TYPENAME" class="tableSpotSearch"></th><th 'class="tableHeader" id="AssetView_IsLeased">&nbsp;</th><th 'class="tableHeader" id="AssetView_LeaseEnd">&nbsp;</th><th 'class="tableHeader" id="AssetView_ProductName"><input type="text" id="ProductName" value="" name="ProductName" class="tableSpotSearch"></th><th 'class="tableHeader" id="AssetView_AssetState"><input type="text" id="AssetState" value="" name="AssetState" class="tableSpotSearch"></th><th 'class="tableHeader" id="AssetView_AssociatedTo"><input type="text" id="AssociatedTo" value="" name="AssociatedTo" class="tableSpotSearch"></th><th 'class="tableHeader" id="AssetView_User"><input type="text" id="User" value="" name="User" class="tableSpotSearch"></th><th 'class="tableHeader" id="AssetView_Department"><input type="text" id="Department" value="" name="Department" class="tableSpotSearch"></th><th 'class="tableHeader" id="AssetView_AssetSerialNumber"><table width="100%"><tbody><tr><td width="90%"><input type="text" id="AssetSerialNumber" value="" name="AssetSerialNumber" class="tableSpotSearch"></td><td align="right"><input type="submit" value="搜索" class="tableSearchGoButton" name="searchSubmit" title="搜索"></td></tr></tbody></table></th></tr>
+
+
+		
+
+
+	<tr onmouseout="styleSwap(this, 'normal', 'hover', 'rowHiliten');" onmouseover="styleSwap(this, 'hover', 'normal', 'rowHiliten');" class="hover">
+		
+			
+			  
+			  <td class="headercheckbox evenRow">
+
+<input type="checkbox" value="904" name="checkbox">&nbsp;
+</td>
+			
+		
+			
+			  
+			  <td class="width18 evenRow">
+
+<img align="absmiddle" src="images/cmdb-rship-icon.gif" title="查看关系图" onclick="javascript:showMap('/RelationshipMap.do?ciId=904','RelationshipMap_WS');" style="cursor:pointer">
+</td>
+			
+		
+			
+			  
+			  <td class=" evenRow">
+
+<a target="_self" href="ViewCIDetails.do?ciId=904&amp;"> aetest-xp.helpdesk-test.com</a>
+</td>
+			
+		
+			
+			  
+			  <td class=" evenRow">
+
+Windows Workstation
+</td>
+			
+		
+			
+			  
+			  <td class=" evenRow">
+
+No
+</td>
+			
+		
+			
+			  
+			  <td class=" evenRow">
+
+-
+</td>
+			
+		
+			
+			  
+			  <td class=" evenRow">
+
+6824LAE
+</td>
+			
+		
+			
+			  
+			  <td class=" evenRow">
+
+<a href="javascript:showURLInDialog('AssignOwnerToWS.do?resourceId=904&amp;&amp;time=1399982217556','closeButton=yes,title=指派/关联,width=420')"> In Use</a>
+</td>
+			
+		
+			
+			  
+			  <td class=" evenRow">
+
+-
+</td>
+			
+		
+			
+			  
+			  <td class=" evenRow">
+
+Administrator
+</td>
+			
+		
+			
+			  
+			  <td class=" evenRow">
+
+-
+</td>
+			
+		
+			
+			  
+			  <td class=" evenRow">
+
+-
+</td>
+			
+		
+	</tr>
+
+	<tr onmouseout="styleSwap(this, 'normal', 'hover', 'rowHiliten');" onmouseover="styleSwap(this, 'hover', 'normal', 'rowHiliten');" class="hover">
+		
+			
+			  
+			  <td class="headercheckbox oddRow">
+
+<input type="checkbox" value="303" name="checkbox">&nbsp;
+</td>
+			
+		
+			
+			  
+			  <td class="width18 oddRow">
+
+<img align="absmiddle" src="images/cmdb-rship-icon.gif" title="查看关系图" onclick="javascript:showMap('/RelationshipMap.do?ciId=303','RelationshipMap_WS');" style="cursor:pointer">
+</td>
+			
+		
+			
+			  
+			  <td class=" oddRow">
+
+<a target="_self" href="ViewCIDetails.do?ciId=303&amp;"> assetexplorer.zohocorpin.com</a>
+</td>
+			
+		
+			
+			  
+			  <td class=" oddRow">
+
+Windows Server
+</td>
+			
+		
+			
+			  
+			  <td class=" oddRow">
+
+No
+</td>
+			
+		
+			
+			  
+			  <td class=" oddRow">
+
+-
+</td>
+			
+		
+			
+			  
+			  <td class=" oddRow">
+
+OptiPlex GX260
+</td>
+			
+		
+			
+			  
+			  <td class=" oddRow">
+
+<a href="javascript:showURLInDialog('AssignOwnerToWS.do?resourceId=303&amp;&amp;time=1399982217557','closeButton=yes,title=指派/关联,width=420')"> In Use</a>
+</td>
+			
+		
+			
+			  
+			  <td class=" oddRow">
+
+-
+</td>
+			
+		
+			
+			  
+			  <td class=" oddRow">
+
+Administrator
+</td>
+			
+		
+			
+			  
+			  <td class=" oddRow">
+
+-
+</td>
+			
+		
+			
+			  
+			  <td class=" oddRow">
+
+-
+</td>
+			
+		
+	</tr>
+
+	<tr onmouseout="styleSwap(this, 'normal', 'hover', 'rowHiliten');" onmouseover="styleSwap(this, 'hover', 'normal', 'rowHiliten');" class="hover">
+		
+			
+			  
+			  <td class="headercheckbox evenRow">
+
+<input type="checkbox" value="6711" name="checkbox">&nbsp;
+</td>
+			
+		
+			
+			  
+			  <td class="width18 evenRow">
+
+<img align="absmiddle" src="images/cmdb-rship-icon.gif" title="查看关系图" onclick="javascript:showMap('/RelationshipMap.do?ciId=6711','RelationshipMap_WS');" style="cursor:pointer">
+</td>
+			
+		
+			
+			  
+			  <td class=" evenRow">
+
+<a target="_self" href="ViewCIDetails.do?ciId=6711&amp;"> clim cave</a>
+</td>
+			
+		
+			
+			  
+			  <td class=" evenRow">
+
+clim
+</td>
+			
+		
+			
+			  
+			  <td class=" evenRow">
+
+No
+</td>
+			
+		
+			
+			  
+			  <td class=" evenRow">
+
+-
+</td>
+			
+		
+			
+			  
+			  <td class=" evenRow">
+
+clim1
+</td>
+			
+		
+			
+			  
+			  <td class=" evenRow">
+
+<a href="javascript:showURLInDialog('AssignOwnerToWS.do?resourceId=3001&amp;&amp;time=1399982217558','closeButton=yes,title=指派/关联,width=420')"> In Use</a>
+</td>
+			
+		
+			
+			  
+			  <td class=" evenRow">
+
+-
+</td>
+			
+		
+			
+			  
+			  <td class=" evenRow">
+
+-
+</td>
+			
+		
+			
+			  
+			  <td class=" evenRow">
+
+-
+</td>
+			
+		
+			
+			  
+			  <td class=" evenRow">
+
+56111762
+</td>
+			
+		
+	</tr>
+
+	<tr onmouseout="styleSwap(this, 'normal', 'hover', 'rowHiliten');" onmouseover="styleSwap(this, 'hover', 'normal', 'rowHiliten');" class="hover">
+		
+			
+			  
+			  <td class="headercheckbox oddRow">
+
+<input type="checkbox" value="913" name="checkbox">&nbsp;
+</td>
+			
+		
+			
+			  
+			  <td class="width18 oddRow">
+
+<img align="absmiddle" src="images/cmdb-rship-icon.gif" title="查看关系图" onclick="javascript:showMap('/RelationshipMap.do?ciId=913','RelationshipMap_WS');" style="cursor:pointer">
+</td>
+			
+		
+			
+			  
+			  <td class=" oddRow">
+
+<a target="_self" href="ViewCIDetails.do?ciId=913&amp;"> helpdesk-test1.zohocorpin.com</a>
+</td>
+			
+		
+			
+			  
+			  <td class=" oddRow">
+
+Windows Workstation
+</td>
+			
+		
+			
+			  
+			  <td class=" oddRow">
+
+No
+</td>
+			
+		
+			
+			  
+			  <td class=" oddRow">
+
+-
+</td>
+			
+		
+			
+			  
+			  <td class=" oddRow">
+
+DSDT
+</td>
+			
+		
+			
+			  
+			  <td class=" oddRow">
+
+<a href="javascript:showURLInDialog('AssignOwnerToWS.do?resourceId=913&amp;&amp;time=1399982217559','closeButton=yes,title=指派/关联,width=420')"> In Use</a>
+</td>
+			
+		
+			
+			  
+			  <td class=" oddRow">
+
+-
+</td>
+			
+		
+			
+			  
+			  <td class=" oddRow">
+
+Administrator
+</td>
+			
+		
+			
+			  
+			  <td class=" oddRow">
+
+-
+</td>
+			
+		
+			
+			  
+			  <td class=" oddRow">
+
+-
+</td>
+			
+		
+	</tr>
+
+	<tr onmouseout="styleSwap(this, 'normal', 'hover', 'rowHiliten');" onmouseover="styleSwap(this, 'hover', 'normal', 'rowHiliten');" class="hover">
+		
+			
+			  
+			  <td class="headercheckbox evenRow">
+
+<input type="checkbox" value="929" name="checkbox">&nbsp;
+</td>
+			
+		
+			
+			  
+			  <td class="width18 evenRow">
+
+<img align="absmiddle" src="images/cmdb-rship-icon.gif" title="查看关系图" onclick="javascript:showMap('/RelationshipMap.do?ciId=929','RelationshipMap_WS');" style="cursor:pointer">
+</td>
+			
+		
+			
+			  
+			  <td class=" evenRow">
+
+<a target="_self" href="ViewCIDetails.do?ciId=929&amp;"> Latitude D620 Laptop - PO# 1[3]</a>
+</td>
+			
+		
+			
+			  
+			  <td class=" evenRow">
+
+Workstation
+</td>
+			
+		
+			
+			  
+			  <td class=" evenRow">
+
+No
+</td>
+			
+		
+			
+			  
+			  <td class=" evenRow">
+
+-
+</td>
+			
+		
+			
+			  
+			  <td class=" evenRow">
+
+Latitude D620 Laptop
+</td>
+			
+		
+			
+			  
+			  <td class=" evenRow">
+
+<a href="javascript:showURLInDialog('AssignOwnerToWS.do?resourceId=929&amp;&amp;time=1399982217560','closeButton=yes,title=指派/关联,width=420')"> In Use</a>
+</td>
+			
+		
+			
+			  
+			  <td class=" evenRow">
+
+-
+</td>
+			
+		
+			
+			  
+			  <td class=" evenRow">
+
+-
+</td>
+			
+		
+			
+			  
+			  <td class=" evenRow">
+
+IT Services
+</td>
+			
+		
+			
+			  
+			  <td class=" evenRow">
+
+-
+</td>
+			
+		
+	</tr>
+
+	<tr onmouseout="styleSwap(this, 'normal', 'hover', 'rowHiliten');" onmouseover="styleSwap(this, 'hover', 'normal', 'rowHiliten');" class="hover">
+		
+			
+			  
+			  <td class="headercheckbox oddRow">
+
+<input type="checkbox" value="903" name="checkbox">&nbsp;
+</td>
+			
+		
+			
+			  
+			  <td class="width18 oddRow">
+
+<img align="absmiddle" src="images/cmdb-rship-icon.gif" title="查看关系图" onclick="javascript:showMap('/RelationshipMap.do?ciId=903','RelationshipMap_WS');" style="cursor:pointer">
+</td>
+			
+		
+			
+			  
+			  <td class=" oddRow">
+
+<a target="_self" href="ViewCIDetails.do?ciId=903&amp;"> me-windows7.helpdesk-test.com</a>
+</td>
+			
+		
+			
+			  
+			  <td class=" oddRow">
+
+Windows Workstation
+</td>
+			
+		
+			
+			  
+			  <td class=" oddRow">
+
+No
+</td>
+			
+		
+			
+			  
+			  <td class=" oddRow">
+
+-
+</td>
+			
+		
+			
+			  
+			  <td class=" oddRow">
+
+OptiPlex 755
+</td>
+			
+		
+			
+			  
+			  <td class=" oddRow">
+
+<a href="javascript:showURLInDialog('AssignOwnerToWS.do?resourceId=903&amp;&amp;time=1399982217561','closeButton=yes,title=指派/关联,width=420')"> In Use</a>
+</td>
+			
+		
+			
+			  
+			  <td class=" oddRow">
+
+-
+</td>
+			
+		
+			
+			  
+			  <td class=" oddRow">
+
+Administrator
+</td>
+			
+		
+			
+			  
+			  <td class=" oddRow">
+
+-
+</td>
+			
+		
+			
+			  
+			  <td class=" oddRow">
+
+-
+</td>
+			
+		
+	</tr>
+
+	<tr onmouseout="styleSwap(this, 'normal', 'hover', 'rowHiliten');" onmouseover="styleSwap(this, 'hover', 'normal', 'rowHiliten');" class="hover">
+		
+			
+			  
+			  <td class="headercheckbox evenRow">
+
+<input type="checkbox" value="910" name="checkbox">&nbsp;
+</td>
+			
+		
+			
+			  
+			  <td class="width18 evenRow">
+
+<img align="absmiddle" src="images/cmdb-rship-icon.gif" title="查看关系图" onclick="javascript:showMap('/RelationshipMap.do?ciId=910','RelationshipMap_WS');" style="cursor:pointer">
+</td>
+			
+		
+			
+			  
+			  <td class=" evenRow">
+
+<a target="_self" href="ViewCIDetails.do?ciId=910&amp;"> sdp-test1.zohocorpin.com.</a>
+</td>
+			
+		
+			
+			  
+			  <td class=" evenRow">
+
+Windows Workstation
+</td>
+			
+		
+			
+			  
+			  <td class=" evenRow">
+
+No
+</td>
+			
+		
+			
+			  
+			  <td class=" evenRow">
+
+-
+</td>
+			
+		
+			
+			  
+			  <td class=" evenRow">
+
+DSDT
+</td>
+			
+		
+			
+			  
+			  <td class=" evenRow">
+
+<a href="javascript:showURLInDialog('AssignOwnerToWS.do?resourceId=910&amp;&amp;time=1399982217562','closeButton=yes,title=指派/关联,width=420')"> In Use</a>
+</td>
+			
+		
+			
+			  
+			  <td class=" evenRow">
+
+-
+</td>
+			
+		
+			
+			  
+			  <td class=" evenRow">
+
+Administrator
+</td>
+			
+		
+			
+			  
+			  <td class=" evenRow">
+
+-
+</td>
+			
+		
+			
+			  
+			  <td class=" evenRow">
+
+-
+</td>
+			
+		
+	</tr>
+
+	<tr onmouseout="styleSwap(this, 'normal', 'hover', 'rowHiliten');" onmouseover="styleSwap(this, 'hover', 'normal', 'rowHiliten');" class="hover">
+		
+			
+			  
+			  <td class="headercheckbox oddRow">
+
+<input type="checkbox" value="603" name="checkbox">&nbsp;
+</td>
+			
+		
+			
+			  
+			  <td class="width18 oddRow">
+
+<img align="absmiddle" src="images/cmdb-rship-icon.gif" title="查看关系图" onclick="javascript:showMap('/RelationshipMap.do?ciId=603','RelationshipMap_WS');" style="cursor:pointer">
+</td>
+			
+		
+			
+			  
+			  <td class=" oddRow">
+
+<a target="_self" href="ViewCIDetails.do?ciId=603&amp;"> sdpdemo-xp2.helpdesk-test.com</a>
+</td>
+			
+		
+			
+			  
+			  <td class=" oddRow">
+
+Windows Workstation
+</td>
+			
+		
+			
+			  
+			  <td class=" oddRow">
+
+No
+</td>
+			
+		
+			
+			  
+			  <td class=" oddRow">
+
+-
+</td>
+			
+		
+			
+			  
+			  <td class=" oddRow">
+
+OptiPlex 780
+</td>
+			
+		
+			
+			  
+			  <td class=" oddRow">
+
+<a href="javascript:showURLInDialog('AssignOwnerToWS.do?resourceId=603&amp;&amp;time=1399982217563','closeButton=yes,title=指派/关联,width=420')"> In Use</a>
+</td>
+			
+		
+			
+			  
+			  <td class=" oddRow">
+
+-
+</td>
+			
+		
+			
+			  
+			  <td class=" oddRow">
+
+Administrator
+</td>
+			
+		
+			
+			  
+			  <td class=" oddRow">
+
+-
+</td>
+			
+		
+			
+			  
+			  <td class=" oddRow">
+
+-
+</td>
+			
+		
+	</tr>
+
+
+
+	</tbody></table>
+<span><div id="ACT_BTN_AssetView" class="hide"><div id="Div1"><input type="submit" value="搜索" class="tableSearchGoButton" name="searchSubmit" title="搜索"></div><div id="Div2"><input type="button" onclick="return openSearch('34_SearchRow', this.form,34)" class="tableSearchButton" id="34_OS"><input type="button" onclick="return closeSearch('34_SearchRow', this.form,34)" class="hide" id="34_CS"></div>
+<script language="Javascript">parent.CCListInline = new Object();
+parent.setMenuItemProperties(parent.CCListInline,new Array('CCListInline','List Type','/images/columnedit.gif',null,'ChooserListTypeInline.cc',null,'_CUSTOMALERTFRAME','height=300,width=450,scrollbars=0,resizable=1','invokeAction',-1));
+parent.setMenuDescription(parent.CCListInline,'This action can be used to change the columns displayed for a table.')
+</script><div id="Div3"><input type="button" onclick="invokeAction(CCListInline,'AssetView',null,'viewName=AssetView&amp;UNIQUEID=AssetView')" class="columnEditButton" id="AssetView_CCBtn"></div></div></span>
+<script>
+	
+var views = parent["ViewNames"];
+if(views == null) {
+	views = new Object();
 }
+views["AssetView"] = '34';
+parent["ViewNames"] = views;
+
+
+parent.addToOnLoadScripts("parent.loadMCNavigator('AssetView', 8)", window);
+parent.addToOnLoadScripts("parent.createMCSearchRow('34', 'AssetView')", window);
+parent.addToOnLoadScripts("setSearchTitle(getMessageForKey('sdp.leftpanel.search.title'), getMessageForKey('sdp.leftpanel.search.go'))", window);
 </script>
 
-																									</td>
-																									<td width="49%">
+<div class="hide" id="sdp.leftpanel.search.title">搜索</div>
+<div class="hide" id="sdp.leftpanel.search.go">搜索</div>
+<script>
 
-
-
-																										<table width="100%" border="0" cellspacing="0"
-																											cellpadding="0" class="container23">
-																											<tr>
-																												<td width="50%" valign="top"
-																													class="paddingLeft">
-																													<div class="component23">
-																														<div class="conh1">
-																															<em></em> <b class="hdr">运维事件</b>
-																															<i></i>
-																														</div>
-																														<div class="control23">
-																															<!--a href="javascript:displayGraphInDialog('third')" class="bt_dashboard_max23" >View All</a-->
-																															<a
-																																href="javascript:displayGraphInDialog('third')"
-																																class="bt_dashboard_max23"></a> <span>
-																																<a href="javascript:void(0)"
-																																id="More3_PH" class="moredrop">不同阶段的运维事件</a>
-																															</span>
-																															<div id="More3">
-																																<iframe width="160" height="200"
-																																	frameborder="0"
-																																	src="/framework/html/blank.html"
-																																	style="display: none;" class="dLf1"></iframe>
-																																<ul class="assetDBMenus"
-																																	style="display: none;">
-																																	<li><a
-																																		href="javascript:document.getElementById('More3_PH').innerHTML='Workstations by OS';displayGraph('WSByOS','third')">Workstations
-																																			by OS</a></li>
-																																	<li><a
-																																		href="javascript:document.getElementById('More3_PH').innerHTML='Workstations by Domain';displayGraph('WSByDomain','third')">Workstations
-																																			by Domain</a></li>
-																																	<li><a
-																																		href="javascript:document.getElementById('More3_PH').innerHTML='Workstations by Manufacturer';displayGraph('WSByManufacturer','third')">Workstations
-																																			by Manufacturer</a></li>
-																																	<li><a
-																																		href="javascript:document.getElementById('More3_PH').innerHTML='Workstations By Processor Type';displayGraph('WSByProcessorType','third')">Workstations
-																																			By Processor Type</a></li>
-																																	<li><a
-																																		href="javascript:document.getElementById('More3_PH').innerHTML='Workstations By Department';displayGraph('WSByDepartment','third')">Workstations
-																																			By Department</a></li>
-																																	<li><a
-																																		href="javascript:document.getElementById('More3_PH').innerHTML='Workstations By Site';displayGraph('WSBySite','third')">Workstations
-																																			By Site</a></li>
-																																	<li><a
-																																		href="javascript:document.getElementById('More3_PH').innerHTML='Workstations By Region';displayGraph('WSByRegion','third')">Workstations
-																																			By Region</a></li>
-																																	<li><a
-																																		href="javascript:document.getElementById('More3_PH').innerHTML='Unaudited Workstations';displayGraph('WSUnaudited','third')">Unaudited
-																																			Workstations</a></li>
-
-																																	<li><a
-																																		href="javascript:document.getElementById('More3_PH').innerHTML='Workstations By State';displayGraph('WSByStates','third')">Workstations
-																																			By State</a></li>
-																																</ul>
-																															</div>
-																														</div>
-																														<div id="thirdGraph"
-																															style="display: block">
-																															<div class="content23 grydash"
-																																align="center">
-																																<!--h4 id="thirdHeading">Workstations by OS</h4-->
-																																<div class="spc"></div>
-
-																																<map id="thirdDisplayChart"
-																																	name="thirdDisplayChart">
-																																	<area shape="poly"
-																																		coords="282,108,282,18,290,10,307,10,307,100,299,108,299,108"
-																																		title="Not Known = 11" alt=""
-																																		href="/WorkstationListViewForGraph.do?criteria=OSNotKnown" />
-																																	<area shape="poly"
-																																		coords="230,108,230,100,238,92,255,92,255,100,247,108,247,108"
-																																		title="Microsoft Windows 7 Home Premium = 1"
-																																		alt=""
-																																		href="/WSDrillDownListView.do?columnNames=OS&columnValues=Microsoft+Windows+7+Home+Premium" />
-																																	<area shape="poly"
-																																		coords="178,108,178,100,186,92,202,92,202,100,194,108,194,108"
-																																		title="Microsoft(R) Windows(R) Server 2003 Enterprise x64 Edition = 1"
-																																		alt=""
-																																		href="/WSDrillDownListView.do?columnNames=OS&columnValues=Microsoft%28R%29+Windows%28R%29+Server+2003+Enterprise+x64+Edition" />
-																																	<area shape="poly"
-																																		coords="126,108,126,67,134,59,150,59,150,100,142,108,142,108"
-																																		title="Microsoft Windows XP Professional = 5"
-																																		alt=""
-																																		href="/WSDrillDownListView.do?columnNames=OS&columnValues=Microsoft+Windows+XP+Professional" />
-																																	<area shape="poly"
-																																		coords="73,108,73,67,81,59,98,59,98,100,90,108,90,108"
-																																		title="Microsoft Windows 7 Professional = 5"
-																																		alt=""
-																																		href="/WSDrillDownListView.do?columnNames=OS&columnValues=Microsoft+Windows+7+Professional" />
-																																</map>
-
-																																<img
-																																	src="images/thirdDisplay_386_1399871662978.jpg"
-																																	border="0" usemap="#thirdDisplayChart" />
-
-
-
-
-																																<div class="noL">
-																																	<b style="display: none" class="cIn"><b
-																																		class="cb4 graph"></b><b
-																																		class="cb3 graph"> </b><b
-																																		class="cb2 graph"></b><b class="cb1"></b></b>
-
-																																	<span class="info_graph color_vdb">
-																																	</span>
-
-
-																																</div>
-
-																															</div>
-																														</div>
-																														<b class="assetborder"></b>
-																													</div>
-																												</td>
-																											</tr>
-																										</table>
-																										<div id="dummy" style="display: none"></div>
-
-																										<div id="loading"
-																											class="content graph lgbdrboxastnone"
-																											style="display: none; position: relative; z-index: 2;">
-																											<div class="content23 grydash">
-																												<div class="noL">
-																													<table width="100%">
-																														<tr height="200px">
-																															<td align="center" valign="middle">
-
-																																<img src="images/cogwheel.gif">
-																															</td>
-																														</tr>
-																													</table>
-																												</div>
-																											</div>
-																										</div> <script>
-if(window.jQuery != null){
-    jQuery(document).ready(function() {
-});
-}
+	
+	
+	// set the custom_listview Properties in the request parameter and then use the same for invoking some js..
+	parent.addToOnLoadScripts('executeCustomPropScripts("AssetView",null)',window)
 </script>
+<script>curObj=V34;curObj["Type"]="Resources";curObj["AssetType"]="5";curObj["_PL"]="1000";curObj["_FI"]="1";curObj["ComponentType"]="0";curObj["ciTypeId"]="null";curObj["_TI"]="8";curObj["_SO"]="A";curObj["_PN"]="1";curObj["_TL"]="8";</script></div>
+
+<script>parent.document.title='ManageEngine AssetExplorer';</script>
 
 
-																									</td>
-																								</tr>
-																								<tr height="10">
-																									<td colspan="2"></td>
-																								</tr>
-																								<tr height="50" valign="top">
-																									<td width="49%" class="alignLeft">
-																										<table width="100%" border="0" cellspacing="0"
-																											cellpadding="0" class="container23">
-																											<tr>
-																												<td valign="top">
-																													<div class="component23">
-																														<div class="conh1">
-																															<em></em> <b class="hdr">审计事件</b> <i></i>
-																														</div>
-																														<div class="control23">
-																															<!--a href="javascript:displayGraphInDialog('fourth')" class="bt_dashboard_max23" >View All</a-->
-																															<a
-																																href="javascript:displayGraphInDialog('fourth')"
-																																class="bt_dashboard_max23"></a> <span>
-																																<a href="javascript:void(0)"
-																																id="More4_PH" class="moredrop">不同要求的审计事件</a>
-																															</span>
+<script type="text/javascript">parent.execOnLoadScripts(window);</script>
 
-																															<div id="More4">
-																																<iframe width="160" height="90"
-																																	frameborder="0"
-																																	src="/framework/html/blank.html"
-																																	style="display: none;" class="dLf1"></iframe>
-																																<ul class="assetDBMenus"
-																																	style="display: none;">
-																																	<li><a
-																																		href="javascript:document.getElementById('More4_PH').innerHTML='Software Vendors By Volume';displayGraph('SWVendorsByVolume','fourth')">Software
-																																			Vendors By Volume</a></li>
-																																	<li><a
-																																		href="javascript:document.getElementById('More4_PH').innerHTML='Microsoft Software License Compliance';displayGraph('MicrosoftCompliance','fourth')">Microsoft
-																																			Software License Compliance</a></li>
-																																	<li><a
-																																		href="javascript:document.getElementById('More4_PH').innerHTML='Software Licensing Status';displayGraph('AllSWCompliance','fourth')">Software
-																																			Licensing Status</a></li>
-																																	<li><a
-																																		href="javascript:document.getElementById('More4_PH').innerHTML='Software Rarely Used';displayGraph('SWRarelyUsed','fourth')">Software
-																																			Rarely Used</a></li>
-																																	<li><a
-																																		href="javascript:document.getElementById('More4_PH').innerHTML='Software By Category';displayGraph('SWByCategory','fourth')">Software
-																																			By Category</a></li>
-																																	<li><a
-																																		href="javascript:document.getElementById('More4_PH').innerHTML='Software Vendors - Non-compliance';displayGraph('SWVendorNC','fourth')">Software
-																																			Vendors - Non-compliance</a></li>
-																																</ul>
-																															</div>
-																														</div>
-																														<div id="fourthGraph"
-																															style="display: block">
-																															<div class="content23 grydash"
-																																align="center">
-																																<!--h4 id="fourthHeading">Software Vendors - Non-compliance</h4-->
-																																<div class="spc"></div>
-
-																																<map id="fourthDisplayChart"
-																																	name="fourthDisplayChart">
-																																	<area shape="rect"
-																																		coords="277,121,293,125"
-																																		title="Under Licensed = 1" alt=""
-																																		href="/SoftwareListView.do?softwareManufacturer=6&site=-1&swType=2&swComplianceType=2&fromSoftwareHome=true&showZeroCount=false" />
-																																	<area shape="rect"
-																																		coords="211,121,227,125"
-																																		title="Under Licensed = 1" alt=""
-																																		href="/SoftwareListView.do?softwareManufacturer=601&site=-1&swType=2&swComplianceType=2&fromSoftwareHome=true&showZeroCount=false" />
-																																	<area shape="rect"
-																																		coords="145,108,161,125"
-																																		title="Under Licensed = 4" alt=""
-																																		href="/SoftwareListView.do?softwareManufacturer=2&site=-1&swType=2&swComplianceType=2&fromSoftwareHome=true&showZeroCount=false" />
-																																	<area shape="rect"
-																																		coords="78,19,94,125"
-																																		title="Under Licensed = 24" alt=""
-																																		href="/SoftwareListView.do?softwareManufacturer=1&site=-1&swType=2&swComplianceType=2&fromSoftwareHome=true&showZeroCount=false" />
-																																</map>
-																																<img
-																																	src="images/fourthDisplay_386_1399871663029.jpg"
-																																	border="0" usemap="#fourthDisplayChart" />
-
-
-
-																																<div class="noL">
-																																	<b style="display: none" class="cIn"><b
-																																		class="cb4 graph"></b><b
-																																		class="cb3 graph"> </b><b
-																																		class="cb2 graph"></b><b class="cb1"></b></b>
-																																	<span class="info_graph color_vdb">
-																																	</span> <b style="display: none"
-																																		class="cBox curveFix"> <b
-																																		class="cb4 color_vdb lbcurve"></b><b
-																																		class="cb3 color_vdb lbcurve"> </b><b
-																																		class="cb2 color_vdb lbcurve"></b><b
-																																		class="cb1"></b></b>
-
-																																</div>
-
-
-																															</div>
-																														</div>
-																														<b class="assetborder"></b>
-
-																													</div>
-																												</td>
-																											</tr>
-																										</table>
-
-																										<div id="dummy" style="display: none"></div>
-
-																										<div id="loading"
-																											class="content graph lgbdrboxastnone"
-																											style="display: none; position: relative; z-index: 2;">
-																											<div class="content23 grydash">
-																												<div class="noL">
-																													<table width="100%">
-																														<tr height="200px">
-																															<td align="center" valign="middle">
-																																<img src="images/cogwheel.gif">
-																															</td>
-																														</tr>
-																													</table>
-																												</div>
-																											</div>
-																										</div> <script>
-if(window.jQuery != null){
-	jQuery(document).ready(function() {	
-});
-}
-</script>
-
-																									</td>
-																									<td width="49%" class="alignLeft">
-
-																										<table width="100%" border="0" cellspacing="0"
-																											cellpadding="0" class="container23">
-																											<tr>
-																												<td valign="top" class="paddingLeft">
-																													<div class="component23">
-																														<div class="conh1">
-																															<em></em> <b class="hdr">安全事件</b> <i></i>
-																														</div>
-																														<div class="control23">
-																															<!--a href="javascript:displayGraphInDialog('second')" class="bt_dashboard_max23" >View All</a-->
-																															<a
-																																href="javascript:displayGraphInDialog('second')"
-																																class="bt_dashboard_max23"></a> <span>
-																																<a href="javascript:void(0)"
-																																id="More2_PH" class="moredrop">不同级别的安全事情</a>
-																															</span>
-
-																															<div id="More2">
-																																<iframe width="160" height="80"
-																																	frameborder="0"
-																																	src="/framework/html/blank.html"
-																																	style="display: none;" class="dLf1"></iframe>
-																																<ul class="assetDBMenus"
-																																	style="display: none;">
-
-																																	<li><a
-																																		href="javascript:document.getElementById('More2_PH').innerHTML='Purchase Order Summary';displayGraph('POSummary','second')">Purchase
-																																			Order Summary</a></li>
-
-																																	<li><a
-																																		href="javascript:document.getElementById('More2_PH').innerHTML='Contract Summary';displayGraph('ContractSummary','second')">Contract
-																																			Summary</a></li>
-
-																																</ul>
-																															</div>
-
-																														</div>
-																														<div id="secondGraph"
-																															style="display: block">
-																															<div class="content23 grydash"
-																																align="center">
-																																<!--h4 id="secondHeading">Purchase Order Summary</h4-->
-																																<div class="spc"></div>
-
-																																<map id="secondDisplayChart"
-																																	name="secondDisplayChart">
-																																	<area shape="poly"
-																																		coords="81,117,81,18,89,10,106,10,106,109,98,117,98,117"
-																																		title="Overdue POs = 2" alt=""
-																																		href="/PurchaseOrderList.do?status=OverduePOs" />
-																																</map>
-																																<img
-																																	src="images/secondDisplay_386_1399871662938.jpg"
-																																	border="0" usemap="#secondDisplayChart" />
-
-																															</div>
-
-																															<div class="noL">
-																																<b style="display: none" class="cIn "><b
-																																	class="cb4 graph"></b><b
-																																	class="cb3 graph"> </b><b
-																																	class="cb2 graph"></b><b class="cb1"></b></b>
-																																<span class="info_graph color_vdb">
-																																</span> <b style="display: none"
-																																	class="cBox curveFix lbcurve"> <b
-																																	class="cb4 color_vdb lbcurve"></b><b
-																																	class="cb3 color_vdb lbcurve"> </b><b
-																																	class="cb2 color_vdb lbcurve"></b><b
-																																	class="cb1"></b></b>
-																															</div>
-
-																														</div>
-																														<b class="assetborder"></b>
-																													</div>
-
-																												</td>
-																											</tr>
-																										</table>
-																										<div id="dummy" style="display: none"></div>
-																										<div id="loading"
-																											class="content graph lgbdrboxastnone"
-																											style="display: none; position: relative; z-index: 2;">
-																											<div class="content23 grydash">
-																												<div class="noL">
-																													<table width="100%">
-																														<tr height="200px">
-																															<td align="center" valign="middle">
-																																<img src="images/cogwheel.gif">
-																															</td>
-																														</tr>
-																													</table>
-																												</div>
-																											</div>
-																										</div>
-
-																										<div class=hide id="More2">
-																											<table id="tablemenus" style="width: 160px;"
-																												class="dbborder pad0px" cellspacing=0
-																												border=0>
-																												<tr>
-																													<td><a
-																														href="javascript:document.getElementById('More2_PH').innerHTML='Purchase Order Summary';displayGraph('POSummary','second')">Purchase
-																															Order Summary</a> <a
-																														href="javascript:document.getElementById('More2_PH').innerHTML='Contract Summary';displayGraph('ContractSummary','second')">Contract
-																															Summary</a></td>
-																												</tr>
-																											</table>
-																										</div> <script>
-if(window.jQuery != null){
-		jQuery(document).ready(function() {
-});
-}
-</script>
-
-
-																									</td>
-																								</tr>
-																							</table>
-																							<div id="dashboard-mdiv">
-
-
-
-
-																								<table width="100%" border="0" cellpadding="10"
-																									class="floatLeft">
-
-																									<tr>
-
-																									</tr>
-
-																								</table>
-
-
-
-																							</div>
-
-																							<script>
-if(window.jQuery != null) {	
-				jQuery(document).ready(
-					function()
-					{
-						var config = {	animSpeed		: 500, 
-										selectorMethod 	: function(className, obj){
-															return (jQuery(obj).prev());
-														  }
-									  };
-						jQuery('#More1, #More2, #More3, #More4').SingleDropDown(config);
-					}
-				);
-			}			
-</script>
-																							<br />
-
-																						</div>
-																					</div>
-																				</td>
-																			</tr>
-																		</table>
-																	</td>
-																</tr>
-															</table>
-														</td>
-														<td width="5" valign="top" class="lceagr-mr"><img
-															border="0" class="lceagr-tr" src="images/spacer.gif" /></td>
-													</tr>
-													<tr>
-														<td height="6" width="5"><img border="0"
-															class="lceagr-bl" src="images/spacer.gif" /></td>
-														<td width="99%" class="lceagr-bm" />
-														<td height="6" width="5" class="lceagr-br" />
-													</tr>
-												</table>
-
+													</td>
+												</tr>
+												</tbody></table>
+												</form>	
+											<!-- Actions Row start -->									
 											</td>
 										</tr>
-									</tbody>
+										<tr>
+											<td height="10"></td>
+										</tr>
+										<tr> 
+											<td class="headligreenBg"></td>
+									 	</tr>
+								</tbody></table>
+								</td>
+                                </tr>
+								 
+									  
+                              </tbody></table></td>
+                            </tr>
+
+                          
+
+                          </tbody></table></td>
+										</tr>
+									
 								</table>
 							</td>
 						</tr>
-						</tbody>
+						
 					</table> <br> <br> <br> <script>
 function setMinLeftPanelHeight(){
 //      alert("Right - Section height : " + document.getElementById('Right-Section').clientHeight);
