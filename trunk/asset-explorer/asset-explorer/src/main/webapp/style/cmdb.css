@@ -722,7 +722,7 @@ ul.cmdblist-redarrow li span {
 .citype-defaulticn {
 	width: 19px;
 	height: 17px;
-	background: url(/images/CItype_default.png) no-repeat;
+	background: url(../images/CItype_default.png) no-repeat;
 }
 .citype-dropmenu ul {
 	margin: 0px;
