@@ -157,15 +157,15 @@
 			  <td>
 			    <table width="100%" cellspacing="0" cellpadding="0" border="0">
 			      <tbody><tr> 
-				<td height="30" class="fontBlack">
+				<td height="30" class="trailBar">
 		  
 				  
 
-	<a class="fontBlack" href="InventoryHome.do">资产清单</a>
+	<a class="trailBar" href="main_page.action">资产清单</a>
 
-	&nbsp;&gt; &nbsp;<a class="fontBlack" href="AssetListView.do?TypeID=3&amp;Type=Router&amp;isFirst=true">Router</a>
+	&nbsp;&gt; &nbsp;<a class="trailBar" href="asset_list.action">Router</a>
 
-&nbsp;&gt; &nbsp;<span class="fontBlackBold" id="attachResourceName">192.168.118.39</span>
+&nbsp;&gt; &nbsp;<span class="trailBar" id="attachResourceName">aetest-xp.helpdesk-test.com</span>
 								
 		  
 				</td>
@@ -456,18 +456,14 @@ window['date_format']='YYYY-MM-DD'; //NO I18N
 <td width="55%" class="pleft6"><h1>
 
 		
-		<b dir="ltr">192.168.118.39</b>&nbsp;[&nbsp;192.168.118.39&nbsp;]
+		<b dir="ltr">aetest-xp.helpdesk-test.com</b>&nbsp;[&nbsp;192.168.118.39&nbsp;]
 		
 		
-		 &nbsp;&nbsp;&nbsp;<img align="absmiddle" style="cursor: pointer;" onclick="javascript:showMap('/RelationshipMap.do?ciId=919','RelationshipMap_WS');" title="查看关系图" src="images/cmdb-rship-icon.gif">
+		 &nbsp;&nbsp;&nbsp;<img align="absmiddle" style="cursor: pointer;" onclick="javascript:showMap('/RelationshipMap.do?ciId=919','RelationshipMap_WS');" title="查看关系图" src="images/cmdb-rship-icon.gif" />
 		 
 		<br>
-
-
-		<span>
-			Cisco 2811
-		</span>
-
+		<br>
+			<span>Cisco 2811</span>
 		<br>
 
 
