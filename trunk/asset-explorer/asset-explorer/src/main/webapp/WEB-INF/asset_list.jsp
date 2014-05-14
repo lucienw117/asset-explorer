@@ -7,6 +7,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=GB2312">
 <title>ManageEngine AssetExplorer</title>
 <link rel="stylesheet" href="style/style.css" type="text/css">
+<script src="js/jquery-1.11.1.js"></script>
+<script src="js/asset_list.js"></script>
 </head>
 
 <body leftmargin="0" topmargin="0" onLoad="loadme();init();loadTip();"
@@ -153,7 +155,7 @@
                 <td valign="top" height="0"> 
                   <table width="100%" cellspacing="0" cellpadding="0" border="0">
                     <tbody><tr> 
-                      <td class="trailBar"><a class="trailBar" href="InventoryHome.do">资产</a>&nbsp;&gt;
+                      <td class="trailBar"><a class="trailBar" href="main_page.action">资产</a>&nbsp;&gt;
                         <span class="trailBar">Resources</span><br>
                         </td>
 			<td valign="middle" class="fontBlackBold alignright">[ <a title="点击从CSV文件导入资产" class="fontBlackBold" href="/ImportCIs.do?from=assetImport&amp;ciTypeId=21">从CSV文件导入</a> ]</td>
@@ -739,12 +741,16 @@
                                            <td width="10" nowrap="nowrap"></td>
 											<td valign="middle" nowrap="" align="center" style="background:none" class="fontBlack menubar2">
 			
-						<ul class="actionscombo" id="nav-actions">																<li class="first">																			<a class="parent" href="javascript:void(0);">操作</a>
-																											<ul style="display: none;">
+						<ul class="actionscombo" id="nav-actions">																<li class="first">																			<a id="actions_btn" class="parent" href="javascript:void(0);">操作</a>
+																											<ul id="action_menu" style="display: none;">
 																												<li>
 						
-																												<a title="添加资产到组中" class="FontBlackLink" href="javascript:confirmAddToGroup(document.AssetListViewAction)">添加到组</a>
-																												<a title="配置折旧" class="FontBlackLink" href="javascript:addDepreciation(document.AssetListViewAction)">配置折旧</a>   
+																												<a title="指派部门" class="FontBlackLink" href="javascript:confirmAddToGroup(document.AssetListViewAction)">指派部门</a>
+																												<a title="指派地点" class="FontBlackLink" href="javascript:addDepreciation(document.AssetListViewAction)">指派地点</a>   
+																												<a title="修改类型" class="FontBlackLink" href="javascript:addDepreciation(document.AssetListViewAction)">修改类型</a>
+																												<a title="修改状态" class="FontBlackLink" href="javascript:addDepreciation(document.AssetListViewAction)">修改状态</a>
+																												<a title="设备折旧" class="FontBlackLink" href="javascript:addDepreciation(document.AssetListViewAction)">设备折旧</a>
+																												<a title="设备报废" class="FontBlackLink" href="javascript:addDepreciation(document.AssetListViewAction)">设备报废</a>
 		
 				
 		
@@ -1131,7 +1137,7 @@ OptiPlex GX260
 			  
 			  <td class=" oddRow">
 
-<a href="javascript:showURLInDialog('AssignOwnerToWS.do?resourceId=303&amp;&amp;time=1399982217557','closeButton=yes,title=指派/关联,width=420')"> In Use</a>
+<a href="javascript:showURLInDialog('AssignOwnerToWS.do?resourceId=303&amp;&amp;time=1399982217557','closeButton=yes,title=指派/关联,width=420')">In Store</a>
 </td>
 			
 		
@@ -1838,39 +1844,414 @@ parent.addToOnLoadScripts("setSearchTitle(getMessageForKey('sdp.leftpanel.search
 							</td>
 						</tr>
 						
-					</table> <br> <br> <br> <script>
-function setMinLeftPanelHeight(){
-//      alert("Right - Section height : " + document.getElementById('Right-Section').clientHeight);
-//      alert("Right - Section : " + document.getElementById('Right-Section').height);
-//      alert("Left - Section height : " + document.getElementById('Left-Section').clientHeight);
-//      alert("Left - Section : " + document.getElementById('Left-Section').height);
-	if( document.getElementById("Right-Section") != null && document.getElementById("Left-Section") != null) {
-                if(document.getElementById('Right-Section').clientHeight > document.getElementById('Left-Section').clientHeight)
-                {
-			document.getElementById('Left-Section').style.height = document.getElementById('Right-Section').clientHeight;			
-                        document.getElementById('LeftIndicator').style.height =((document.getElementById('Right-Section').clientHeight)-26+'px');
-                        document.getElementById('LeftIndicatorClosed').style.height = ((document.getElementById('Right-Section').clientHeight)-26+'px');
-			//alert('Left:' + document.getElementById('Left-Section').style.height);
-			//alert('Right:' + document.getElementById('Right-Section').clientHeight);
-       }
-                else{
-			document.getElementById('Right-Section').style.height = document.getElementById('Left-Section').clientHeight;
-                        //document.getElementById('LeftIndicator').style.height =(document.getElementById('Left-Section').clientHeight);
-                        //document.getElementById('LeftIndicatorClosed').style.height = (document.getElementById('Left-Section').clientHeight);
-			//alert('Left:' + document.getElementById('Left-Section').clientHeight);
-			//alert('Right:' + document.getElementById('Right-Section').style.height);
-                }
-        }
-}
-
-//Event.observe(window,'load',setMinLeftPanelHeight);
-
-//if(!window.postInvokeScripts) {
-//      window.postInvokeScripts=new Array();
-//}
-//addToOnLoadScripts("setMinLeftPanelHeight()", window);
-//execOnLoadScripts(window);
-</script>
+					</table> <br> <br> <br>
 	</table>
+	<div id="_DIALOG_LAYER" style="visibility: visible; position: absolute; left: 405px; top: 337px; z-index: 100;"><table cellspacing="0" cellpadding="0" style="width: 420px;"><tbody><tr><td height="100%" style="display:block"><table cellspacing="0" cellpadding="0" border="0" class="DialogBox"><tbody><tr><td class="boxTL"><img width="24" height="1" src="images/spacer.gif"></td><td onmousedown="captureDialog(event)" class="boxHeader drag">修改状态</td><td class="boxCtrlButtonPane"><input type="button" onclick="closeDialog()" class="closeButton"></td><td class="boxTR"><img width="24" height="1" src="images/spacer.gif"></td></tr><tr><td class="boxML"><img width="1" height="1" src="images/spacer.gif"></td><td class="boxContent" colspan="2"><div id="_DIALOG_CONTENT" style="width: 420px; overflow: auto;">
+<table width="100%" height="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#FFFFFF">
+  <tbody><tr>
+    <td valign="top"> 
+	<table width="100%" height="100%" cellspacing="0" cellpadding="0" border="0">
+        <tbody><tr> 
+          <td valign="top" height="0">
+	<form target="assignOwnerFrame" action="/ModifyState.do" method="post" name="ModifyState">
+	 <table width="100%" height="100%" cellspacing="0" cellpadding="2" border="0">
+
+		<input type="hidden" value="" name="name">
+		<input type="hidden" value="" name="workstationId">
+		<input type="hidden" value="" name="resourcePage">
+		<input type="hidden" value="2" name="activeStateId">
+		<input type="hidden" value="true" name="isStateChange">
+		<input type="hidden" value="" name="resourceIds">
+              <tbody><tr> 
+                <td valign="top" height="100%"><table width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#FFFFFF">
+
+		<tbody><tr><td width="100%" valign="top" height="30">
+			<table width="100%" cellspacing="0" cellpadding="0" border="0">
+			<tbody><tr>
+				<td>修改状态 : </td>
+				<td>
+				<select class="formstyle" style="width:200" onchange="displayAssignTo(this.form)" name="resourceState"><option value="1">In Store</option>
+                                        
+                                        
+                                        <option value="2">In Use</option>
+                                        
+                                        
+                                        <option value="3">In Repair</option>
+                                        
+                                        
+                                        <option value="4">Expired</option>
+                                        
+                                        
+                                        <option value="5">Disposed</option></select>
+				</td>
+			</tr>
+			<tr><td colspan="2"><br></td></tr>
+			<tr id="mainComment" style="display: none;">
+				<td class="alignleft">备注 </td>
+				<td id="mainText"><script>showCommentBox('mainComment','mainText');</script></td>	
+			</tr>	
+			</tbody></table>
+		</td></tr>
+
+
+
+
+
+		<tr><td>
+		<table width="100%" cellspacing="0" cellpadding="0" border="0" id="assign" style="">
+
+		<tbody><tr><td>
+		<table width="100%" cellspacing="0" cellpadding="0" border="0">
+                    <tbody><tr> 
+                      <td valign="top" class="bluedark-borderbottom-2px-56">
+
+
+
+
+
+
+
+
+
+		<table width="100%" cellspacing="0" cellpadding="0" border="0">
+                          <tbody><tr>                             
+                            <td width="100%" valign="top" height="120" class="scanSchonbg"> 
+                                <table width="100%" cellspacing="0" cellpadding="6" border="0" id="Monthlyscan">
+                                  <tbody><tr valign="top"> 
+                                    <td nowrap="" colspan="2"><strong>
+
+                                    
+                                    指派用户或部门
+                                    </strong></td>
+                                  </tr>
+                                  <tr valign="middle"> 
+                                    <td nowrap="nowrap">选择用户 
+                                    </td>
+                                  
+                                    
+                                        <td align="center"><span class="fontBlack">
+			<select class="formstyle" style="width:200" onchange="util.fetchUserDepartment();" name="user"><option value="0">-- 不，只选择部门 --</option>
+                        
+                        
+                        
+                        <option value="320">abracadabra c.</option>
+                        
+                        
+                        <option value="321">admin</option>
+                        
+                        
+                        <option value="2">Administrator</option>
+                        
+                        
+                        <option value="332">andrewj</option>
+                        
+                        
+                        <option value="314">Arul Mani</option>
+                        
+                        
+                        <option value="315">Babu</option>
+                        
+                        
+                        <option value="336">bhaskar</option>
+                        
+                        
+                        <option value="310">Bob</option>
+                        
+                        
+                        <option value="308">brinda</option>
+                        
+                        
+                        <option value="386">demo</option>
+                        
+                        
+                        <option value="309">gayathri</option>
+                        
+                        
+                        <option value="344">gowri</option>
+                        
+                        
+                        <option value="345">Guest</option>
+                        
+                        
+                        <option value="304">Heather Graham</option>
+                        
+                        
+                        <option value="346">helpdesk</option>
+                        
+                        
+                        <option value="303">Jack</option>
+                        
+                        
+                        <option value="311">ldapuser1</option>
+                        
+                        
+                        <option value="312">ldapuser2</option>
+                        
+                        
+                        <option value="313">ldapuser3</option>
+                        
+                        
+                        <option value="348">moto</option>
+                        
+                        
+                        <option value="349">n.shankar</option>
+                        
+                        
+                        <option value="306">rjsmith</option>
+                        
+                        
+                        <option value="356">SDP-TEMP$</option>
+                        
+                        
+                        <option value="358">senthil</option>
+                        
+                        
+                        <option value="357">senthilkumar</option>
+                        
+                        
+                        <option value="305">Shawn Adams</option>
+                        
+                        
+                        <option value="359">sivakumarp</option>
+                        
+                        
+                        <option value="340">System Administrator</option>
+                        
+                        
+                        <option value="368">thomas</option>
+                        
+                        
+                        <option value="369">tvs</option>
+                        
+                        
+                        <option value="370">user</option>
+                        
+                        
+                        <option value="371">user1 [SDP]</option>
+                        
+                        
+                        <option value="372">user2</option>
+                        
+                        
+                        <option value="373">user3</option>
+                        
+                        
+                        <option value="374">user4</option>
+                        
+                        
+                        <option value="375">user5</option>
+                        
+                        
+                        <option value="376">user6</option>
+                        
+                        
+                        <option value="377">user7</option>
+                        
+                        
+                        <option value="307">Usha Mathan</option>
+                        
+                        
+                        <option value="378">Vadivel Murugan</option>
+                        
+                        
+                        <option value="379">vm1310</option>
+                        
+                        
+                        <option value="381">zoho1</option>
+                        
+                        
+                        <option value="382">zoho2</option>
+                        
+                        
+                        <option value="383">zoho3</option></select>
+                                          <br>
+                                         </span></td>
+                                  </tr>
+                               
+                                  <tr valign="top"> 
+                                    <td nowrap="nowrap">选择部门</td>
+
+                                    
+                                     
+				    <td align="center"><span class="fontBlack">
+						
+			<select class="formstyle" style="width:200" onchange="util.fetchUsers();" name="department"><option value="0">-- 不，只选择用户 --</option>
+                   
+                        
+                        
+                        
+                        <option value="310">Admin</option>
+                        
+                        
+                        <option value="1">Administration, Pleasanton,CA</option>
+                        
+                        
+                        <option value="303">CART</option>
+                        
+                        
+                        <option value="2">Engineering, Pleasanton,CA</option>
+                        
+                        
+                        <option value="4">Finance, Pleasanton,CA</option>
+                        
+                        
+                        <option value="302">Human Resources</option>
+                        
+                        
+                        <option value="5">IT Services, Pleasanton,CA</option>
+                        
+                        
+                        <option value="312">kjnjln</option>
+                        
+                        
+                        <option value="313">movie</option>
+                        
+                        
+                        <option value="301">people</option>
+                        
+                        
+                        <option value="3">Sales, Pleasanton,CA</option>
+                        
+                        
+                        <option value="309">SDP</option>
+                        
+                        
+                        <option value="304">subou1</option>
+                        
+                        
+                        <option value="305">subou2</option>
+                        
+                        
+                        <option value="306">subou3</option>
+                        
+                        
+                        <option value="307">subou4</option>
+                        
+                        
+                        <option value="308">subou5</option>
+                        
+                        
+                        <option value="311">test1</option>
+                        
+                        
+                        <option value="314">testdept1</option></select>
+                                          </span></td>
+                                    
+                                  </tr>
+
+				<tr>
+					<td valign="top" nowrap="nowrap">选择地点</td>
+					<td align="center">
+						<span class="fontBlack">
+						
+							<select id="allsites" class="formstyle" style="width:200px" name="site"><option style="color:black" value="-1">不在任何地点</option>
+							
+
+						
+							
+							<option style="color:black" value="904">Bombay</option>
+						
+							
+							<option style="color:black" value="902">Chennai</option>
+						
+							
+							<option style="color:black" value="903">Delhi</option>
+						
+							
+							<option style="color:black" value="2">Pleasanton,CA</option></select>
+						
+					</span>
+					</td>
+				  </tr>
+
+	                    <tr>
+	                      <td colspan="3"><input type="checkbox" onclick="javascript:ShowHide('leased')" value="on" name="isLeased"> 资产被租借</td>
+                    	   </tr>
+
+
+			                        <tr>
+                      <td colspan="3"><div style="display:none " id="leased">
+                        <table cellspacing="0" cellpadding="3" border="0">
+                          <tbody>
+                            <tr>
+                              <td>从</td>
+			      <td>
+				      <span style="width:150px" class="enclosedDatePicker"> 
+					      <label class="dateformatLabel">YYYY-MM-DD</label>
+					      <input type="text" title="日期" id="leaseStart" class="formstyle datePicker" onclick="showCalendar('leaseStart',false,'%Y-%m-%d')" value="" name="leaseStart" maxlength="10" autocomplete="off">
+						      <!--a href="javascript: resetDateField('leaseStart');" class="cal_openLink" onClick="resetDateField('leaseStart')">
+						      X
+						      </a-->
+						      <span class="date_help_baloon">YYYY-MM-DD</span>
+					      </span>
+
+				      </td>
+                              <td>
+
+                                </td>
+                              <td><img width="3" height="8" src="images/spacer.gif"></td>
+                              <td>到</td>
+			      <td>
+				      <span style="width:150px" class="enclosedDatePicker"> 
+					      <label class="dateformatLabel">YYYY-MM-DD</label>
+					      <input type="text" title="日期" id="leaseEnd" class="formstyle datePicker" onclick="showCalendar('leaseEnd',false,'%Y-%m-%d')" value="" name="leaseEnd" maxlength="10" autocomplete="off">
+						      <!--a href="javascript: resetDateField('leaseEnd');" class="cal_openLink" onClick="resetDateField('leaseEnd')">
+						      X
+						      </a-->
+						      <span class="date_help_baloon">YYYY-MM-DD</span>
+					      </span>
+
+				      </td>
+                              <td>
+
+
+                                </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div></td>
+                    </tr>
+			<tr align="center" style="" id="ownerComment">
+				<td class="alignleft">备注 </td>
+				<td align="center" id="ownerText"><textarea name="changeComment" id="changeComment" class="formStyle" style="width:225px" rows="2"></textarea></td>	
+			</tr>
+                                </tbody></table>
+                              </td>
+                          </tr>
+                        </tbody></table>
+			</td>
+                    </tr>
+		</tbody></table>
+		</td></tr></tbody></table>
+			</td></tr>
+            <tr><td>&nbsp;</td></tr>
+            <tr id="assignOwnerSaveButton" class="formSubmitBG">
+                      <td align="center" colspan="2"> 
+                           <input type="submit" title="保存" class="formStylebuttonAct" style="width:auto;" onclick="return(userSelected(this.form))" value="保存" name="setOwner">&nbsp;&nbsp;&nbsp;                            
+			    <input type="button" onclick="javascript:closeDialog()" value="取消" title="取消" style="width:auto" id="reset2224" class="formStylebutton" name="Cancel">
+
+                           </td>
+                    </tr>
+                  </tbody></table></td>
+              </tr>
+    <tr id="assignOwnerLoadButton" style="display:none">
+	    <td width="100%" align="center" colspan="2">
+		    <table width="100%" cellspacing="1" cellpadding="0" border="0">
+			    <tbody><tr>
+				    <td align="right" class="fontBlackBold"><img border="0" src="images/select2-spinner.gif"></td>
+				    <td style="color:#FF0000">&nbsp;&nbsp;正在用最新的扫描数据更新</td>
+			    </tr>
+	    	    </tbody></table>
+	    </td>
+    </tr>
+            </tbody></table>
+		</form>
+	</td>
+        </tr>
+      </tbody></table>
+</td>
+  </tr>
+</tbody></table>
+</div></td><td class="boxMR"><img width="1" height="1" src="images/spacer.gif"></td></tr><tr><td class="boxBL"><img width="1" height="1" src="images/spacer.gif"></td><td colspan="2" class="boxBC"><img width="1" height="1" src="images/spacer.gif"></td><td class="boxBR"><img width="1" height="1" src="images/spacer.gif"></td></tr></tbody></table></td></tr></tbody></table></div>
 </body>
 </html>
