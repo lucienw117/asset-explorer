@@ -40,7 +40,7 @@
 						<td valign="bottom">
 							<table>
 								<tr>
-									<td><div class="logo1"><img src="images/logo.png" height="40px"></img></div></td><td><div class="logo2">安全运行监管平台</div></td>
+									<td><div class="logo1"><img src="images/logo.png" height="40px"></img></div></td><td><div class="logo2">电子政务安全运行监管平台</div></td>
 								</tr>
 							</table>
 						</td>
