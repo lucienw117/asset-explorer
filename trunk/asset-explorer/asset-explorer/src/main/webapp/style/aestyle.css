@@ -7141,7 +7141,14 @@ table tr td>#topHeader .efx {
 	padding-top: 7px;
 	margin-top: 0px;
 }
-div.logo {
+div.logo1 {
+    font-size: 21px;
+    font-weight: bold;
+    height: 37px;
+    margin: 0 10px;
+    width: 90px;
+}
+div.logo2 {
 	font-family: KaiTi_GB2312;
     font-size: 21px;
     font-weight: bold;
