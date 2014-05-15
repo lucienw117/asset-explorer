@@ -1037,7 +1037,7 @@ No
 			  
 			  <td class=" evenRow">
 
-<a href="javascript:showURLInDialog('AssignOwnerToWS.do?resourceId=904&amp;&amp;time=1399982217556','closeButton=yes,title=指派/关联,width=420')"> In Use</a>
+<a href="javascript:show_inuse_dialog();"> In Use</a>
 </td>
 			
 		
@@ -1137,7 +1137,7 @@ OptiPlex GX260
 			  
 			  <td class=" oddRow">
 
-<a href="javascript:showURLInDialog('AssignOwnerToWS.do?resourceId=303&amp;&amp;time=1399982217557','closeButton=yes,title=指派/关联,width=420')">In Store</a>
+<a href="javascript:show_instore_dialog();">In Store</a>
 </td>
 			
 		
@@ -1846,7 +1846,7 @@ parent.addToOnLoadScripts("setSearchTitle(getMessageForKey('sdp.leftpanel.search
 						
 					</table> <br> <br> <br>
 	</table>
-<div id="_DIALOG_LAYER_1" style="visibility:visible; position:absolute; left:410px; top:200px; z-index:100; display:none;"><table cellspacing="0" cellpadding="0" style="width: 420px;"><tbody><tr><td height="100%" style="display:block"><table cellspacing="0" cellpadding="0" border="0" class="DialogBox"><tbody><tr><td class="boxTL"><img width="24" height="1" src="/images/spacer.gif"></td><td onmousedown="captureDialog(event)" class="boxHeader drag">修改状态</td><td class="boxCtrlButtonPane"><input type="button" onclick="closeDialog()" class="closeButton"></td><td class="boxTR"><img width="24" height="1" src="/images/spacer.gif"></td></tr><tr><td class="boxML"><img width="1" height="1" src="/images/spacer.gif"></td><td class="boxContent" colspan="2"><div id="_DIALOG_CONTENT" style="width: 420px; overflow: auto;">
+<div id="_DIALOG_LAYER_1" style="visibility:visible; position:absolute; left:410px; top:200px; z-index:100; display:none;"><table cellspacing="0" cellpadding="0" style="width: 420px;"><tbody><tr><td height="100%" style="display:block"><table cellspacing="0" cellpadding="0" border="0" class="DialogBox"><tbody><tr><td class="boxTL"><img width="24" height="1" src="images/spacer.gif"></td><td onmousedown="captureDialog(event)" class="boxHeader drag">修改状态</td><td class="boxCtrlButtonPane"><input type="button" onclick="closeDialog()" class="closeButton"></td><td class="boxTR"><img width="24" height="1" src="images/spacer.gif"></td></tr><tr><td class="boxML"><img width="1" height="1" src="images/spacer.gif"></td><td class="boxContent" colspan="2"><div id="_DIALOG_CONTENT" style="width: 420px; overflow: auto;">
 
 <!-- ############## Tags for JavaScript Error ################## -->
 <div id="sdp.inventory.common.jserrorProblem" class="hide">问题</div>
@@ -2204,7 +2204,7 @@ parent.addToOnLoadScripts("setSearchTitle(getMessageForKey('sdp.leftpanel.search
                               <td>
 
                                 </td>
-                              <td><img width="3" height="8" src="/images/spacer.gif"></td>
+                              <td><img width="3" height="8" src="images/spacer.gif"></td>
                               <td>到</td>
 			      <td>
 				      <span style="width:150px" class="enclosedDatePicker"> 
@@ -2253,7 +2253,7 @@ parent.addToOnLoadScripts("setSearchTitle(getMessageForKey('sdp.leftpanel.search
 	    <td width="100%" align="center" colspan="2">
 		    <table width="100%" cellspacing="1" cellpadding="0" border="0">
 			    <tbody><tr>
-				    <td align="right" class="fontBlackBold"><img border="0" src="/images/select2-spinner.gif"></td>
+				    <td align="right" class="fontBlackBold"><img border="0" src="images/select2-spinner.gif"></td>
 				    <td style="color:#FF0000">&nbsp;&nbsp;正在用最新的扫描数据更新</td>
 			    </tr>
 	    	    </tbody></table>
@@ -2267,7 +2267,7 @@ parent.addToOnLoadScripts("setSearchTitle(getMessageForKey('sdp.leftpanel.search
 </td>
   </tr>
 </tbody></table>
-</div></td><td class="boxMR"><img width="1" height="1" src="/images/spacer.gif"></td></tr><tr><td class="boxBL"><img width="1" height="1" src="/images/spacer.gif"></td><td colspan="2" class="boxBC"><img width="1" height="1" src="/images/spacer.gif"></td><td class="boxBR"><img width="1" height="1" src="/images/spacer.gif"></td></tr></tbody></table></td></tr></tbody></table></div>
+</div></td><td class="boxMR"><img width="1" height="1" src="images/spacer.gif"></td></tr><tr><td class="boxBL"><img width="1" height="1" src="images/spacer.gif"></td><td colspan="2" class="boxBC"><img width="1" height="1" src="images/spacer.gif"></td><td class="boxBR"><img width="1" height="1" src="images/spacer.gif"></td></tr></tbody></table></td></tr></tbody></table></div>
 	<div id="_DIALOG_LAYER_2" style="visibility:visible; position:absolute; left:410px; top:200px; z-index:100; display:none;"><table cellspacing="0" cellpadding="0" style="width: 420px;"><tbody><tr><td height="100%" style="display:block"><table cellspacing="0" cellpadding="0" border="0" class="DialogBox"><tbody><tr><td class="boxTL"><img width="24" height="1" src="images/spacer.gif"></td><td onmousedown="captureDialog(event)" class="boxHeader drag">修改状态</td><td class="boxCtrlButtonPane"><input type="button" onclick="closeDialog()" class="closeButton"></td><td class="boxTR"><img width="24" height="1" src="images/spacer.gif"></td></tr><tr><td class="boxML"><img width="1" height="1" src="images/spacer.gif"></td><td class="boxContent" colspan="2"><div id="_DIALOG_CONTENT" style="width: 420px; overflow: auto;">
 <table width="100%" height="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#FFFFFF">
   <tbody><tr>
