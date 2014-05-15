@@ -502,7 +502,7 @@ if(window.jQuery != null){
 																																href="javascript:displayGraphInDialog('third')"
 																																class="bt_dashboard_max23"></a> <span>
 																																<a href="javascript:void(0)"
-																																id="More3_PH" class="moredrop">不同阶段的运维事件</a>
+																																id="More3_PH" class="moredrop">事件影响程度</a>
 																															</span>
 																															<div id="More3">
 																																<iframe width="160" height="200"
@@ -649,7 +649,7 @@ if(window.jQuery != null){
 																																href="javascript:displayGraphInDialog('fourth')"
 																																class="bt_dashboard_max23"></a> <span>
 																																<a href="javascript:void(0)"
-																																id="More4_PH" class="moredrop">不同要求的审计事件</a>
+																																id="More4_PH" class="moredrop">审计过程跟踪</a>
 																															</span>
 
 																															<div id="More4">
@@ -777,7 +777,7 @@ if(window.jQuery != null){
 																																href="javascript:displayGraphInDialog('second')"
 																																class="bt_dashboard_max23"></a> <span>
 																																<a href="javascript:void(0)"
-																																id="More2_PH" class="moredrop">不同级别的安全事情</a>
+																																id="More2_PH" class="moredrop">安全事件类别</a>
 																															</span>
 
 																															<div id="More2">
