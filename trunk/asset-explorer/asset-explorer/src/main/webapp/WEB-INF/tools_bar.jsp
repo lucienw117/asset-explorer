@@ -8,7 +8,7 @@
 			<table cellspacing="0" cellpadding="0" border="0">
 				<tr>
 					<td><em></em></td>
-					<td><b class='mact'>快速链接</b></td>
+					<td><b class='mact'>最近访问链接</b></td>
 					<td><i></i></td>
 				</tr>
 			</table> 

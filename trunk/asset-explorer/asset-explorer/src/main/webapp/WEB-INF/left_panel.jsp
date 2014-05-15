@@ -17,16 +17,16 @@
 				<tr>
 					<td valign="top" class="RightItemBorder">
 						<div id="Resourcelinks">
-							<div class="accordionTabTitleBar" id="subHeader"><a onclick="" href="javascript:void(0);" id="ITAssets">工作站</a></div>
-							<div class="accordionTabTitleBar" id="subHeader"><a onclick="" href="javascript:void(0);">服务器</a></div>
-							<div class="accordionTabTitleBar" id="subHeader"><a onclick="" href="javascript:void(0);">网络设备</a></div>
-							<div class="accordionTabTitleBar" id="subHeader"><a onclick="" href="javascript:void(0);">网络链路</a></div>
-							<div class="accordionTabTitleBar" id="subHeader"><a onclick="" href="javascript:void(0);" id="assetGroups">安全设备</a></div>
-							<div class="accordionTabTitleBar" id="subHeader"><a onclick="" href="javascript:void(0);">存储</a></div>
-							<div class="accordionTabTitleBar" id="subHeader"><a onclick="" href="javascript:void(0);">操作系统</a></div>
-							<div class="accordionTabTitleBar" id="subHeader"><a onclick="" href="javascript:void(0);">中间件</a></div>
-							<div class="accordionTabTitleBar" id="subHeader"><a onclick="" href="javascript:void(0);">数据库</a></div>
-							<div class="accordionTabTitleBar" id="subHeader"><a onclick="" href="javascript:void(0);">应用软件</a></div>
+							<div class="accordionTabTitleBar" id="subHeader"><a onclick="" href="asset_list.action" id="ITAssets">工作站</a></div>
+							<div class="accordionTabTitleBar" id="subHeader"><a onclick="" href="asset_list.action">服务器</a></div>
+							<div class="accordionTabTitleBar" id="subHeader"><a onclick="" href="asset_list.action">网络设备</a></div>
+							<div class="accordionTabTitleBar" id="subHeader"><a onclick="" href="asset_list.action">网络链路</a></div>
+							<div class="accordionTabTitleBar" id="subHeader"><a onclick="" href="asset_list.action" id="assetGroups">安全设备</a></div>
+							<div class="accordionTabTitleBar" id="subHeader"><a onclick="" href="asset_list.action">存储</a></div>
+							<div class="accordionTabTitleBar" id="subHeader"><a onclick="" href="asset_list.action">操作系统</a></div>
+							<div class="accordionTabTitleBar" id="subHeader"><a onclick="" href="asset_list.action">中间件</a></div>
+							<div class="accordionTabTitleBar" id="subHeader"><a onclick="" href="asset_list.action">数据库</a></div>
+							<div class="accordionTabTitleBar" id="subHeader"><a onclick="" href="asset_list.action">应用软件</a></div>
 						</div>
 					</td>
 				</tr>
@@ -48,7 +48,7 @@
 							</tr>
 							<tr class="DashboardTableColor"> 
 								<td class="leftnavstrip">
-									<a class="leftnavheading" href="javascript:void(0);"><img vspace="0" hspace="1" border="0" id="bulletrecentitems" class="leftnavitems_expand" src="images/spacer.gif">最近访问链接</a>
+									<a class="leftnavheading" href="javascript:void(0);"><img vspace="0" hspace="1" border="0" id="bulletrecentitems" class="leftnavitems_expand" src="images/spacer.gif">可用性巡检</a>
 								</td>
 							</tr>
 						</table>
