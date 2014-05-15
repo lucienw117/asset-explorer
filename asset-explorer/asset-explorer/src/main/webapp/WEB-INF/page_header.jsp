@@ -38,7 +38,11 @@
 				<table cellpadding="0" cellspacing="0" border="0" width="500">
 					<tr>
 						<td valign="bottom">
-							<div class="logo">安全运行监管平台</div>
+							<table>
+								<tr>
+									<td><div class="logo1"><img src="images/logo.png" height="40px"></img></div></td><td><div class="logo2">安全运行监管平台</div></td>
+								</tr>
+							</table>
 						</td>
 						<td valign="bottom">
 							<table cellpadding="0" class="top_tabs" cellspacing="0" border="0">
