@@ -7,6 +7,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=GB2312">
 <title>ManageEngine AssetExplorer</title>
 <link rel="stylesheet" href="style/style.css" type="text/css">
+<script src="js/jquery-1.11.1.js"></script>
+<script src="js/asset_details.js"></script>
 </head>
 
 <body leftmargin="0" topmargin="0" onLoad="loadme();init();loadTip();"
@@ -583,7 +585,7 @@ window['date_format']='YYYY-MM-DD'; //NO I18N
 <!-- ##### Resource Tab #####  -->
 
 
-										<td class="subtabon">
+										<td id="subTab_config" class="subtabon">
 												<div>配置项的信息</div> 
 										</td>
 
@@ -592,8 +594,8 @@ window['date_format']='YYYY-MM-DD'; //NO I18N
 											<a title="关系信息" href="AssetListViewForWS.do?wsId=919&amp;opmanager=false">关系</a>
 										</td>	
 
-										<td class="subtaboff">
-											<a title="历史" href="ViewWSAuditDetails.do?wsId=919&amp;opmanager=false">
+										<td id="subTab_history" class="subtaboff">
+											<a title="历史" href="javascript:historyClick();">
 												历史
 											</a>
 										</td>	
@@ -632,7 +634,7 @@ window['date_format']='YYYY-MM-DD'; //NO I18N
 				    </tr>
 			    	    
 				    
-				    <tr id="ciDetails">
+				    <tr id="ciDetails_configInfo">
 					
 
 
@@ -1187,6 +1189,538 @@ window['date_format']='YYYY-MM-DD'; //NO I18N
 		</tbody></table>
 
 				    </td></tr>	    
+				    <tr id="ciDetails_history" style="display:none;">
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>var weekStartDay = 1</script>
+
+
+  <script>var isMSP = false; </script>
+
+
+<script>var isCMDB = 'true';</script>
+
+<script>
+parent["OFFSET"] = -25200000;
+parent["SERVER_OFFSET"] = -25200000;
+window['date_format']='YYYY-MM-DD'; //NO I18N
+</script>
+
+	<script src="/scripts/dcIntegrationUtils.js?build=6100" type="text/javascript"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+<script type="text/JavaScript" language="JavaScript">
+
+
+</script>
+
+<!--<td valign="top" class='work_viewshade workviewshade-blue-bdr' style='bottom: 0px; padding-bottom: 0px;' > -->
+<td class="details-tab-cnt">
+  <table width="100%" cellspacing="0" cellpadding="0" border="0">
+
+      
+  
+	<tbody><tr>
+
+	<td valign="top">
+    <div class="details-tab-header">
+
+      <img alt="Resource Details" src="images/Workstation_Scan_History.gif">
+
+      <strong>
+	<div id="AUDIT_HISTORY">
+	  工作站扫描历史
+	</div>
+      </strong>	
+
+      
+      <span>
+
+	[
+
+	<a onclick="javascript:new Effect.ScrollTo('STATE_HISTORY');" href="javascript:void(0)">
+	  转到所有者的历史
+	</a> 
+
+	]
+
+	&nbsp;&nbsp;&nbsp;&nbsp;
+	<br>
+	&nbsp;				
+
+
+      </span>
+	
+    </div>	   
+
+
+    <!-- ########################################################################## -->	
+	<table width="100%" cellspacing="0" cellpadding="0" border="0">
+
+      <tbody><tr>
+
+	<td>
+	  
+
+
+
+<table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+
+	
+	<tbody><tr> 
+ 		<td valign="top" class="alignRight">
+							
+		</td><td>	
+   	</td></tr>
+
+
+
+
+
+
+
+	<tr> 
+ 		<td valign="top" align="center">
+ 			<table width="99%" cellspacing="2" cellpadding="2" border="0" class="Historyitems">
+            	<tbody><tr> 
+                	<td id="date">
+                	
+                		
+                		 
+                		<table width="100%" cellspacing="0" cellpadding="0" border="0" onclick="javascript:historyShowhideAsset('S', '904');">
+                        	<tbody><tr> 
+
+                            	<td width="35" id="SHT_904"><img src="images/threadcollapse.gif"></td>
+
+                            	<td>
+                            		
+                            		<table width="100%" cellspacing="0" cellpadding="0" border="0">
+										<tbody><tr>
+                            				<td width="50%">
+		                            			扫描时间
+        		                    			<strong> Mar 11, 2010 09:15 PM </strong>
+                            				</td>
+
+                            				<td width="3%">
+		                            			<strong> &nbsp;|&nbsp; </strong>
+                            				</td>
+
+	                           				<td>
+    		                        			扫描状态 :  
+                    		        			<strong>成功</strong> 
+                            					(没有变化)
+                            				</td>
+                            			</tr>
+                            		</tbody></table>
+                            			
+                            	</td>
+                            	
+
+                          	</tr>
+						</tbody></table>
+					</td>
+				</tr>
+
+				<tr>
+					<td height="0">
+					
+						<table width="99%" cellspacing="0" cellpadding="0" border="0" class="show" id="SHIST_904">
+
+
+							<tbody><tr> 
+								<td width="20">
+								  &nbsp;	
+								</td>
+
+ 								<td valign="top" class="fontGray">
+		        	 				本次扫描没有发现变化。
+								</td>
+							</tr>
+
+						</tbody></table>
+					
+					</td>
+				</tr>		
+
+			</tbody></table>
+		</td>
+	</tr>
+
+
+
+<script>
+historyShowhideAsset('S', '904');//No I18N
+parent.closeDialog();
+</script>
+
+
+
+</tbody></table>
+
+
+
+<div id="auditHistory_15"></div>
+
+
+	</td>
+      </tr>
+    </tbody></table>
+
+    <!-- ########################################################################## -->
+
+
+
+    <br>
+
+    &nbsp;
+  </td>
+</tr>
+<tr>
+  <td style="height:60px"></td>
+</tr>
+
+
+
+<tr> 
+
+  <td valign="top"> 
+
+    <div class="details-tab-header">
+
+      <img alt="Resource Details" src="images/Resource_Ownership_History.gif">
+
+      <strong>
+	<div id="STATE_HISTORY"> 
+	  资产所有关系历史
+	</div>
+      </strong>	
+
+
+
+      											
+
+      <span>
+
+	[
+
+	<a onclick="javascript:new Effect.ScrollTo('AUDIT_HISTORY');" href="javascript:void(0)">
+	  审计历史
+	</a> 
+
+	]
+
+	&nbsp;&nbsp;&nbsp;&nbsp;
+	<br>
+	&nbsp;				
+
+
+      </span>
+
+      														
+
+    </div>	   
+
+
+    <!-- ########################################################################## -->	
+
+
+    <table width="100%" cellspacing="0" cellpadding="0" border="0">
+
+      <tbody><tr>
+
+	<td>
+
+	  
+
+
+
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+
+
+	<tbody><tr>
+		<td valign="top" align="center">
+
+
+
+	<table width="99%" cellspacing="2" cellpadding="2" border="0" onclick="javascript:historyShowhideAsset('O', '1');" class="Historyitems">
+
+
+
+
+
+            	<tbody><tr> 
+                	<td id="date"> 
+                		<table width="100%" cellspacing="0" cellpadding="0" border="0">
+                        	<tbody><tr>
+                            	<td width="35" id="OHT_1"><img src="images/threadcollapse.gif"></td>
+                        	 
+                            	<td width="70%">
+                            	
+                            			操作于
+   		                    			<strong> Nov 10, 2011 02:37 AM </strong>
+
+                           				
+                           				 
+                           				 - <strong>demo</strong> 
+
+
+
+                            	</td>
+                            	
+                            	<td> 
+                            	 |&nbsp;&nbsp;状态 <strong> In Use </strong>
+                            	</td>
+                            	
+                          	</tr>
+						</tbody></table>
+					</td>
+				</tr>
+
+
+				<tr>
+					<td height="0">
+					
+						<table width="99%" cellspacing="0" cellpadding="0" border="0" class="show" id="OHIST_1">
+
+							<tbody><tr> 
+								<td id="history">
+									<ol>	
+
+
+										<li class="mleft-15px">
+
+状态从In Store更改为In Use
+</li>
+										<li class="mleft-15px">
+
+指派给 用户 Administrator
+</li>
+									</ol>
+								</td>
+							</tr>
+						</tbody></table>
+					</td>
+				</tr>
+		</tbody></table>					
+
+
+
+
+<script>
+historyShowhideAsset('O', '1');
+</script>
+
+
+
+	<table width="99%" cellspacing="2" cellpadding="2" border="0" onclick="javascript:historyShowhideAsset('O', '0');" class="Historyitems">
+
+
+
+
+
+            	<tbody><tr> 
+                	<td id="date"> 
+                		<table width="100%" cellspacing="0" cellpadding="0" border="0">
+                        	<tbody><tr>
+                            	<td width="35" id="OHT_0"><img src="images/threadcollapse.gif"></td>
+                        	 
+                            	<td width="70%">
+                            	
+                            			操作于
+   		                    			<strong> Mar 11, 2010 09:15 PM </strong>
+
+
+
+                            	</td>
+                            	
+                            	<td> 
+                            	 |&nbsp;&nbsp;状态 <strong> In Store </strong>
+                            	</td>
+                            	
+                          	</tr>
+						</tbody></table>
+					</td>
+				</tr>
+
+
+				<tr>
+					<td height="0">
+					
+						<table width="99%" cellspacing="0" cellpadding="0" border="0" class="show" id="OHIST_0">
+
+							<tbody><tr> 
+								<td id="history">
+									<ol>	
+
+
+										<li class="mleft-15px">
+
+状态设置为In Store。
+</li>
+									</ol>
+								</td>
+							</tr>
+						</tbody></table>
+					</td>
+				</tr>
+		</tbody></table>					
+
+
+
+
+<script>
+historyShowhideAsset('O', '0');
+</script>
+
+
+
+		</td>
+	</tr>
+</tbody></table><table>	
+
+
+
+
+
+
+</table><table width="100%" cellspacing="1" cellpadding="0" border="0">
+	<tbody><tr>
+		<td>
+		</td>
+	</tr>
+	
+</tbody></table>
+
+
+	</td>
+
+      </tr>
+
+    </tbody></table>
+
+
+
+
+
+    <!-- ########################################################################## -->
+
+
+    <br>
+    &nbsp;	
+
+  </td>
+
+</tr>
+
+
+
+<!-- Resource Details Stops -->
+
+
+
+
+
+
+
+<!-- @@@@@ Last Audit Info -->			
+
+</tbody></table><table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr> 
+	<td valign="top" style="background:#ffffda;" class="pbottom10 ptop10"> 
+		
+		<div id="LAST_SCAN">
+		<div>
+
+
+
+		&nbsp;
+		上次扫描 
+		<strong>
+			Mar 11, 2010 09:15 PM
+		</strong>	
+		
+		
+		&nbsp;
+		扫描状态 : 
+		<strong>
+			成功
+		</strong>	
+	       
+	
+		&nbsp;
+		[
+			<a onclick="NewWindow('WSInvokeScan.do?wsId=904&amp;action=scan&amp;wsName=aetest-xp.helpdesk-test.com','Scan_WS','600','330','yes','center')" title="Update with scan data" class="FontBlackLink" href="javascript:void(0);">
+				立即扫描
+			</a>		
+		]
+
+
+
+
+		<br>
+		<br>
+		&nbsp;
+		错误 : 
+		
+		&nbsp;
+		
+		[
+		
+		<a null="" href="javascript:NewWindow('/asset/Inventory_TroubleShooting.jsp#','troubleshoot','800', '500', 'yes', 'center');">
+			故障诊断
+		</a>			
+		
+		]
+		
+
+
+		
+		
+		   
+	</div></div></td>
+</tr>
+</tbody></table>
+
+<!-- @@@@@ Last Audit Info -->
+
+
+</td></tr>
 				  </tbody></table>
 				</div>
 			    </div>
