@@ -2,6 +2,7 @@
 	pageEncoding="GB2312"%>
 <%@ taglib prefix="s" uri="/struts-tags"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<script src="js/left_panel.js"></script>
 <table cellspacing="0" cellpadding="0" border="0" class="floatRight" style=" height:100%; width:100%; display:block; " id="Left-Section">
 	<tr>
 		<td class="lnavtm alignRight" colspan="3"><img src="images/spacer.gif" class="lnavtr"></td>
@@ -17,16 +18,32 @@
 				<tr>
 					<td valign="top" class="RightItemBorder">
 						<div id="Resourcelinks">
-							<div class="accordionTabTitleBar" id="subHeader"><a onclick="" href="asset_list.action" id="ITAssets">工作站</a></div>
-							<div class="accordionTabTitleBar" id="subHeader"><a onclick="" href="asset_list.action">服务器</a></div>
-							<div class="accordionTabTitleBar" id="subHeader"><a onclick="" href="asset_list.action">网络设备</a></div>
-							<div class="accordionTabTitleBar" id="subHeader"><a onclick="" href="asset_list.action">网络链路</a></div>
-							<div class="accordionTabTitleBar" id="subHeader"><a onclick="" href="asset_list.action" id="assetGroups">安全设备</a></div>
-							<div class="accordionTabTitleBar" id="subHeader"><a onclick="" href="asset_list.action">存储</a></div>
-							<div class="accordionTabTitleBar" id="subHeader"><a onclick="" href="asset_list.action">操作系统</a></div>
-							<div class="accordionTabTitleBar" id="subHeader"><a onclick="" href="asset_list.action">中间件</a></div>
-							<div class="accordionTabTitleBar" id="subHeader"><a onclick="" href="asset_list.action">数据库</a></div>
-							<div class="accordionTabTitleBar" id="subHeader"><a onclick="" href="asset_list.action">应用软件</a></div>
+							<div class="accordionTabTitleBar"><a onclick="" href="asset_list.action" id="ITAssets">工作站</a></div>
+							<div class="accordionTabTitleBar"><a onclick="" href="asset_list.action">服务器</a></div>
+							<div id="netDeviceItem" class="accordionTabTitleBar"><a onclick="showNetDeviceSubLinks();" href="javascript:void(0);">网络设备</a></div>
+							<div id="netDeviceSubLinks" class="treenodelink" style="display: none; height: 140px; overflow: auto;">
+								<a href="javascript:void(0);">交换机</a>
+								<a href="javascript:void(0);">路由器</a>
+								<a href="javascript:void(0);">防火墙</a>
+							</div>
+							<div class="accordionTabTitleBar"><a onclick="" href="asset_list.action">网络链路</a></div>
+							<div class="accordionTabTitleBar"><a onclick="" href="asset_list.action" id="assetGroups">安全设备</a></div>
+							<div class="accordionTabTitleBar"><a onclick="" href="asset_list.action">存储</a></div>
+							<div class="accordionTabTitleBar"><a onclick="" href="asset_list.action">操作系统</a></div>
+							<div id="middlewareItem" class="accordionTabTitleBar"><a onclick="showMiddlewareSubLinks();" href="javascript:void(0);">中间件</a></div>
+							<div id="middlewareSubLinks" class="treenodelink" style="display: none; height: 140px; overflow: auto;">
+								<a href="javascript:void(0);">WebSphere</a>
+								<a href="javascript:void(0);">Weblogic</a>
+								<a href="javascript:void(0);">Tuxedo</a>
+								<a href="javascript:void(0);">Tomcat</a>
+							</div>
+							<div id="databaseItem" class="accordionTabTitleBar"><a onclick="showDatabaseSubLinks();" href="javascript:void(0);">数据库</a></div>
+							<div id="databaseSubLinks" class="treenodelink" style="display: none; height: 140px; overflow: auto;">
+								<a href="javascript:void(0);">Oralce</a>
+								<a href="javascript:void(0);">DB2</a>
+								<a href="javascript:void(0);">Mysql</a>
+							</div>
+							<div class="accordionTabTitleBar"><a onclick="" href="asset_list.action">应用软件</a></div>
 						</div>
 					</td>
 				</tr>
