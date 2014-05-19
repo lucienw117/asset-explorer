@@ -7,6 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=GB2312">
 <title>ManageEngine AssetExplorer</title>
 <link rel="stylesheet" href="style/style.css" type="text/css">
+<script src="js/jquery-1.11.1.js"></script>
 </head>
 
 <body leftmargin="0" topmargin="0" onLoad="loadme();init();loadTip();"
